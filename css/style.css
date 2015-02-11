@@ -26,11 +26,11 @@ body {
 }
 
 #header,#siteVisual,#mainTopic,#bread,#footer  {
-	width: 948px;
+	width: auto;
 }
 
 #localnavi {
-	width: 950px;
+	width: 90%;
 }
 
 
@@ -46,9 +46,6 @@ body {
 
 /* ヘッダー
 ================================= */
-#header {
-}
-
 
 
 /* グローバルナビ
@@ -68,7 +65,11 @@ body {
 }
 
 #globalnavi ul {
-	width: 885px;
+	margin-left:7%;
+	width: 80%;
+	min-width:70%;
+	min-width:500px;
+
 	list-style-type: none;
 }
 
@@ -78,18 +79,13 @@ body {
 #globalnavi ul li a {
 	float: left;
 	display: block;
-	width: 175px;
-	color: #CCCCCC;
+	width: 15%;
+	min-width:100px;
+	color: #ccc;
 	line-height: 45px;
 	font-family: 'arial unicode ms';
 	text-decoration: none;
 	text-align: center;
-	/*border-right: solid 1px #777777;*/
-}
-
-
-#globalnavi ul li a#gnavi_li1 {
-	/*border-left: solid 1px #888888;*/
 }
 
 #globalnavi ul li a:hover {
@@ -113,16 +109,8 @@ body {
 /* メイントピック（コンテンツとサブを含んでいる）
 ================================= */
 #mainTopic {
-	margin-top: 25px;
-	margin-bottom: 15px;
-	padding-bottom: 50px;
-	border: solid 1px #E0E0E0;
-	border-radius: 5px;
-	/*
-	box-shadow: 0px 2px 3px #CBCBCB,
-				0px 0px 4px 2px rgba(255,255,255,0.7) inset,
-				0px 0px 4px 2px rgba(255,255,255,0.7) inset;
-	*/
+	margin-top: 0px;
+	margin-bottom: 35px;
 }
 
 /* clearfix! */
@@ -141,19 +129,7 @@ body {
 	width: 800px;
 }
 
-#contents h2 { 
-}
 
-#contents h3 {
-	margin-top: 40px;
-	margin-bottom: 10px;
-	padding: 5px;
-	padding-left: 15px;
-	font-size: 1.5em;
-	color: #444444;
-	border-left: solid 8px #AAAAAA;
-	box-shadow: -2px 2px 3px #CBCBCB;
-}
 
 #contents p {
 	font-size: 1.2em;
@@ -215,16 +191,11 @@ body {
 /* リンク */
 #localnavi .lnavi_links {
 	float: left;
-	padding: 20px;
-	padding-top: 30px;
-	padding-bottom: 15px;
-	margin-left: 30px;
-	width: 420px;
+	margin-left: 4%;
 	background: #FFFFFF;
-	/*border-radius: 10px;*/
-	/*box-shadow: 0px 2px 3px 0px #777777 inset;*/
 	overflow: hidden;
-	height: 258px;
+	height: auto;
+	width: 48%;
 } 
 
 #localnavi .lnavi_links:first-of-type {
@@ -238,36 +209,15 @@ body {
 
 
 #localnavi .lnavi_links h3 {
-	margin: 5px 0px;
 	color: #333333;
 	font-size: 1.1em;
 } 
 
 
-#localnavi p {
-	display: inline;
-	color: #333333;
-	font-size:0.75em;
-}
-
-
-/* さらに詳しくのリンク設定 */
-#localnavi .syosai {
-	color: rgb(0,200,250);
-}
-
-#localnavi :hover p span.syosai {
-	text-decoration: underline;
-} 
-
-#localnavi :visited p span.syosai {
-	color: rgb(0,200,250);
-} 
-/* =================== */
 
 
 #localnavi .lnavi_links img {
-	float: right;
+	width: 100%;	/*float: right;*/
 } 
 
 
@@ -284,122 +234,4 @@ body {
 	background-size: 134% auto;
 	background-repeat: no-repeat;
 	background-image: url(../img/product/formalweb.png);
-}
-
-
-
-
-
-
-
-
-/* パンくず
-================================= */
-#bread {
-	line-height: 42px;
-	width: 946px;
-	border-radius: 5px;
-	border: solid 1px #E0E0E0;
-	box-shadow: 0px 2px 3px 0px #AAAAAA inset;
-	
-	background: #FFF url(../img/bread/bread_1.png) no-repeat;
-	background-position: 0px 0px;
-	background-size: 960px 46px;
-}
-
-#bread span a {
-	text-decoration: none;
-	padding-left: 60px;
-	padding-right: 50px;
-	color: #777;
-	font-size: 1.1em;
-}
-
-#bread span a:hover {
-	text-decoration: underline;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* フッター
-================================= */
-#footer {
-	padding-top: 20px;
-	padding-bottom: 25px;
-	border-radius: 5px;
-	border: solid 2px #E0E0E0;
-	border-radius: 5px;
-	background: #FFF;
-	box-shadow: 0px 2px 3px 0px #AAAAAA inset;
-}
-
-#footer hr {
-	color: #EEE;
-}
-
-#footer .foot_navi  {
-	float: left;
-	margin-left: 45px;
-	margin-bottom: 10px;
-}
-
-#footer .foot_navi ul{
-	list-style-type: none;
-}
-
-#footer .foot_navi ul li {
-	font-size: 0.75em;
-	color: #222;
-	line-height: 1.8;
-}
-
-
-#footer .foot_navi a {
-	text-decoration: none;
-	color: #555;
-	padding: 5px 0px;
-	font-size: 1.5em;
-}
-
-#footer .foot_navi a:hover {
-	text-decoration: underline;
-}
-
-#footer hr {
-	clear: both;
-}
-
-#footer #check {
-	padding-right: 20px;
-	padding-left: 20px;
-}
-
-
-#footer #check:after {
-	content: ".";
-    display: block;
-    visibility: hidden;
-    clear: both;
-    height: 0;
-    font-size: 0;
-}
-
-#footer #check p {
-	float: right;
-}
-
-
-#footer #check address {
-	padding:8px 0px;
-	font-size: 0.875em;
 }
