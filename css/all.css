@@ -42,8 +42,6 @@ body {
 }
 
 
-
-
 /* ヘッダー
 ================================= */
 
@@ -93,19 +91,6 @@ body {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* メイントピック（コンテンツとサブを含んでいる）
 ================================= */
 #mainTopic {
@@ -123,115 +108,3 @@ body {
     font-size: 0;
 }
 
-/* コンテンツ
-================================= */
-#contents {
-	width: 800px;
-}
-
-
-
-#contents p {
-	font-size: 1.2em;
-	line-height: 1.5;
-	padding-left:60px;
-	padding-right:60px;
-}
-
-
-#contents h2 img{
-	margin-left: auto;
-	margin-right: auto;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*  ローカルナビ
-================================= */
-#localnavi {
-	margin-bottom: 30px;
-}
-
-/* clearfix! */
-#localnavi:after {
-	content: ".";
-    display: block;
-    visibility: hidden;
-    clear: both;
-    height: 0;
-    font-size: 0;
-}
-
-/* リンク */
-#localnavi .lnavi_links {
-	float: left;
-	margin-left: 4%;
-	background: #FFFFFF;
-	overflow: hidden;
-	height: auto;
-	width: 48%;
-} 
-
-#localnavi .lnavi_links:first-of-type {
-	margin: 0px;
-}
-
-
-#localnavi .lnavi_links:hover {
-	background-color: rgba(240,240,240,0.1);
-}
-
-
-#localnavi .lnavi_links h3 {
-	color: #333333;
-	font-size: 1.1em;
-} 
-
-
-
-
-#localnavi .lnavi_links img {
-	width: 100%;	/*float: right;*/
-} 
-
-
-
-#localnavi #memoryslot {
-	background-image: url(../img/product/memoryslot.png);
-	background-position: 89% 75%;
-	background-size: 182% auto;
-	background-repeat: no-repeat;
-}
-
-#localnavi #formalweb {
-	background-position: 47% 32%;
-	background-size: 134% auto;
-	background-repeat: no-repeat;
-	background-image: url(../img/product/formalweb.png);
-}

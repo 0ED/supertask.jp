@@ -1,0 +1,54 @@
+
+/* グローバルナビ
+================================= */
+#product #globalnavi ul li a#gnavi_li2 {
+	background: #222;
+}
+#product #globalnavi ul li a#gnavi_li2:hover {
+}
+
+
+/*  ローカルナビ
+================================= */
+#product #localnavi {
+	margin-bottom: 30px;
+}
+
+/* clearfix! */
+#product #localnavi:after {
+	content: ".";
+    display: block;
+    visibility: hidden;
+    clear: both;
+    height: 0;
+    font-size: 0;
+}
+
+/* リンク */
+#product #localnavi .local_links {
+	float: left;
+	margin-left: 4%;
+	background: #FFFFFF;
+	overflow: hidden;
+	height: auto;
+	width: 48%;
+} 
+
+#product #localnavi .local_links:first-of-type {
+	margin: 0px;
+}
+
+
+#product #localnavi .local_links:hover {
+	background-color: rgba(240,240,240,0.1);
+}
+
+
+#product #localnavi .local_links h3 {
+	color: #333;
+	font-size: 1.1em;
+} 
+
+#product #localnavi .local_links img {
+	width: 100%;	
+} 
