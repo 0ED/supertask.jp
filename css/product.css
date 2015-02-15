@@ -1,10 +1,10 @@
 
 /* グローバルナビ
 ================================= */
-#product #globalnavi ul li a#gnavi_li2 {
+#product #globalnavi ul li a#product {
 	background: #222;
 }
-#product #globalnavi ul li a#gnavi_li2:hover {
+#product #globalnavi ul li a#product:hover {
 }
 
 
@@ -38,7 +38,6 @@
 	margin: 0px;
 }
 
-
 #product #localnavi .local_links:hover {
 	background-color: rgba(240,240,240,0.1);
 }
@@ -52,3 +51,5 @@
 #product #localnavi .local_links img {
 	width: 100%;	
 } 
+
+
