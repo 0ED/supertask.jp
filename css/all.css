@@ -80,6 +80,7 @@ body {
 	color: #ccc;
 	line-height: 45px;
 	font-family: 'arial unicode ms';
+	/*font-family: '1';*/
 	text-decoration: none;
 	text-align: center;
 }
@@ -89,6 +90,12 @@ body {
 
 #globalnavi ul li a:hover {
 	background: #222;
+}
+
+
+@font-face {
+	font-family: '1';
+	src: url('../fonts/prismfont_CLv3.ttf');
 }
 
 

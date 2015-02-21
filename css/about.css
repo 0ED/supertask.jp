@@ -1,12 +1,37 @@
 #about #document #mainTopic img {
-	float: right;
-	width: 37%;
-	margin-right: 8%;
-	margin-top: 2%;
+	float: left;
+	width: 41%;
+	margin-right: 0%;
+	margin-top: 5%;
+	margin-left: -6%;
+	z-index: 0;
+	margin-top: -4%;
+	pointer-events: none;
 }
 #about #document #mainTopic #aboutme {
 	float: left;
-	width: 47%;
-	margin-left: 8%;
-	margin-top: 15%;
+	width: 42%;
+	margin-left: 14%;
+	margin-top: 13%;
+	z-index: 99;
+	position: relative;
+	font-family: '1';
+}
+
+#about #document #mainTopic #aboutme h2 {
+	font-family: '1';
+}
+
+#about #document #mainTopic #aboutme p {
+	font-family: '2';
+}
+
+@font-face {
+	font-family: '1';
+	src: url('../fonts/LinLibertine_aSZI.ttf');
+}
+
+@font-face {
+	font-family: '2';
+	src: url('../fonts/LinLibertine_aSI.ttf');
 }
