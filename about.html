@@ -14,9 +14,11 @@
 <link href="css/about.css" rel="stylesheet" type="text/css" /><!--これが骨格-->
 
 <!-- JavaScript -->
-<script type="text/javascript" charset="EUC-JP" src="js/box_link.js"></script>
 <script src="js/jquery.min.js"></script>
-<script src="js/jquery.fittext.js"></script>
+<script src="js/jquery-2.1.3.min.js"></script> 
+<script src="js/jquery.fittext.js"></script> <!-- 文字リサイズ -->
+<script src="rollerblade.min.js"></script>
+<script src="js/lightfox-anime.js"></script> <!-- アニメーション -->
 
 </head>
 <body class="supertask" id="about">
@@ -44,7 +46,9 @@
                 <h2>Hello, I'm Tasuku.</h2>
                 <p>I make network, OSS, compiler, binary, 3d graphics, music, and so on.</p>
             </div>
-             <img src="img/about/LightFox.gif" alt="LightFox"/>
+			<div id="lightfox-anime">
+				<img src="img/about/LightFox-0.png" alt="LightFox" id = "LightFox"/>
+			</div>
 
         <!-- /#mainTopic --></div>
         
