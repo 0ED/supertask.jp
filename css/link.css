@@ -1,0 +1,8 @@
+
+/* グローバルナビ
+================================= */
+#link #globalnavi ul li a#link_gnavi {
+	background: #222;
+}
+#link #globalnavi ul li a#link_gnavi:hover {
+}

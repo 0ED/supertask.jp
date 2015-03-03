@@ -1,3 +1,13 @@
+
+/* グローバルナビ
+================================= */
+#about #globalnavi ul li a#about_gnavi {
+	background: #222;
+}
+#about #globalnavi ul li a#about_gnavi:hover {
+}
+
+
 #about #document #mainTopic img {
 	float: left;
 	width: 41%;

@@ -1,10 +1,10 @@
 
 /* グローバルナビ
 ================================= */
-#product #globalnavi ul li a#product {
+#product #globalnavi ul li a#product_gnavi {
 	background: #222;
 }
-#product #globalnavi ul li a#product:hover {
+#product #globalnavi ul li a#product_gnavi:hover {
 }
 
 
