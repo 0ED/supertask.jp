@@ -15,3 +15,11 @@ p,blockquote,table,th,td,a{
 	padding: 0;
 	width: 100%;
 }
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style-type: none;
+}
