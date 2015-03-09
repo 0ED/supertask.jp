@@ -1,4 +1,0 @@
-#<files ~="" "\.(jpg|gif|png)$"="">  
-#Header set Pragma no-cache  
-#Header set Cache-Control no-cache  
-#</files>  
