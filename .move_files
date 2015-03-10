@@ -1,0 +1,10 @@
+mv index.html ../
+mv product/ ../
+mv about/ ../
+mv hack/ ../
+mv research/ ../
+mv link/ ../
+mv img/ ../
+mv css/ ../
+mv js/ ../
+mv fonts/ ../
