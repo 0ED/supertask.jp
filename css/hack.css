@@ -1,4 +1,3 @@
-
 /* グローバルナビ
 ================================= */
 #hack #globalnavi ul li a#hack_gnavi {
@@ -6,3 +5,21 @@
 }
 #hack #globalnavi ul li a#hack_gnavi:hover {
 }
+#hack #mainTopic header {
+	background-image: url("../img/hack/black_cloth.png");
+	height: 320px;
+}
+
+#hack #mainTopic header h1 {
+	font-family: 'Hiragino Mincho ProN';
+	color: white;
+	font-size: 11em;
+}
+
+
+@font-face {
+	font-family: 'Linux';
+	font-style: normal;
+	src: url('../fonts/LinLibertine_aSZI.ttf');
+}
+
