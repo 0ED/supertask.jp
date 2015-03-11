@@ -16,6 +16,23 @@
 	font-size: 11em;
 }
 
+#hack #mainTopic header ul li {
+	border-right: 2px solid #FFF;
+}
+
+#hack #mainTopic header li:last-child {
+	border: none;
+}
+
+
+#hack #mainTopic article {
+	clear: both;
+}
+
+
+
+
+
 
 @font-face {
 	font-family: 'Linux';

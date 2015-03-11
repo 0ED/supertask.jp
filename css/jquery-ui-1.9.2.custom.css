@@ -1,0 +1,22 @@
+/*! jQuery UI - v1.9.2 - 2015-03-10
+* http://jqueryui.com
+* Copyright 2015 jQuery Foundation and other contributors; Licensed MIT */
+
+/* Layout helpers
+----------------------------------*/
+
+
+/* Tab
+-----------------------------*/
+.ui-tabs .ui-tabs-nav { margin: 0; }
+.ui-tabs .ui-tabs-nav li { list-style: none; float: left; position: relative; top: 0; margin: 0; border-bottom: 0; padding: 0; white-space: nowrap; }
+.ui-tabs .ui-tabs-nav li a { float: left; padding: .5em 1em; text-decoration: none; }
+.ui-widget { font-family: Verdana,Arial,sans-serif; font-size: 1.1em; }
+
+/* Interaction states
+----------------------------------*/
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default { background: #6e6a6a url("images/ui-bg_flat_75_6e6a6a_40x100.png") 50% 50% repeat-x; color: #ffffff; }
+.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited { color: #ffffff; text-decoration: none; }
+.ui-state-hover a, .ui-state-hover a:hover, .ui-state-hover a:link, .ui-state-hover a:visited { color: white; background-color:#ff4e95; text-decoration: none; }
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active { background: #ff4e95 url("images/ui-bg_flat_65_ff4e95_40x100.png") 50% 50% repeat-x; color: #ffffff; }
+

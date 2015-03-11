@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 <head>
 <meta name = "description" content="This is Website for TasukuTAKAHASHI." />
 <meta name = "keyboard" content="SuperTask,TasukuTAKAHASHI,Taskernet,たかはしたすく" />
@@ -7,14 +7,23 @@
 
 <title>SuperTask(Taskernet)</title>
 
-<!-- CSS -->
+<!-- CSS & JavaScript -->
 <link href="../css/reset.css" rel="stylesheet" type="text/css" /><!--これが骨格-->
 <link href="../css/all.css" rel="stylesheet" type="text/css" /><!--これが骨格-->
 <link href="../css/hack.css" rel="stylesheet" type="text/css" /><!--これが骨格-->
-
-<!-- JavaScript -->
 <script src="../js/jquery.min.js"></script>
 <script src="../js/jquery.fittext.js"></script>
+
+<!-- Tabs of JQuery-->
+<link href="../css/jquery-ui-1.9.2.custom.css" rel="stylesheet">
+<script src="../js/jquery-1.8.3.js"></script>
+<script src="../js/jquery-ui-1.9.2.custom.js"></script>
+<script>
+$(function() {
+	$( "#tabs" ).tabs();
+});
+</script>
+
 
 </head>
 <body class="supertask" id="hack">
@@ -37,9 +46,23 @@
 
 
 		<div id = "mainTopic">
-			<header>
-				<h1>Hack</h1>
-			</header>
+			<div id="tabs">
+				<header>
+					<h1>Hack</h1>
+					<ul>
+						<li><a href="#tabs-1">Language processor</a></li>
+						<li><a href="#tabs-2">AI</a></li>
+						<li><a href="#tabs-3">Reverse Engineering</a></li>
+						<li><a href="#tabs-4">Algorithm</a></li>
+					</ul>
+				</header>
+
+				<article>
+					<div id="tabs-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+					<div id="tabs-2">Phasellus mattis tincidunt nibh. Cras orci urna, blandit id, pretium vel, aliquet ornare, felis. Maecenas scelerisque sem non nisl. Fusce sed lorem in enim dictum bibendum.</div>
+					<div id="tabs-3">Nam dui erat, auctor a, dignissim quis, sollicitudin eu, felis. Pellentesque nisi urna, interdum eget, sagittis et, consequat vestibulum, lacus. Mauris porttitor ullamcorper augue.</div>
+				</article>
+			</div>
 
 		<!-- /#mainTopic --></div>
 
