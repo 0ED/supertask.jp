@@ -2,11 +2,10 @@
 /* グローバルナビ
 ================================= */
 #about #globalnavi ul li a#about_gnavi {
-	background: #222;
+	border-bottom: 5px solid #FD80DD;
 }
 #about #globalnavi ul li a#about_gnavi:hover {
 }
-
 
 #about #document #mainTopic img {
 	float: left;
@@ -29,19 +28,19 @@
 }
 
 #about #document #mainTopic #aboutme h2 {
-	font-family: '1';
+	font-family: 'Linux_B';
 }
 
 #about #document #mainTopic #aboutme p {
-	font-family: '2';
+	font-family: 'Linux';
 }
 
 @font-face {
-	font-family: '1';
+	font-family: 'Linux_B';
 	src: url('../fonts/LinLibertine_aSZI.ttf');
 }
 
 @font-face {
-	font-family: '2';
+	font-family: 'Linux';
 	src: url('../fonts/LinLibertine_aSI.ttf');
 }

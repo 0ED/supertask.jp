@@ -25,12 +25,8 @@ body {
 	margin-right: auto;
 }
 
-#header,#siteVisual,#mainTopic,#bread,#footer  {
+#header,#siteVisual,#mainTopic  {
 	width: auto;
-}
-
-#localnavi {
-	width: 90%;
 }
 
 
@@ -49,7 +45,7 @@ body {
 /* グローバルナビ
 ================================= */
 #globalnavi {
-	background: #555;
+	background: #444;
 }
 
 /* clearfix! */
@@ -63,9 +59,8 @@ body {
 }
 
 #globalnavi ul {
-	margin-left:7%;
-	min-width: 80%;
-
+	margin-left:3%;
+	width: 768px;
 	list-style-type: none;
 }
 
@@ -75,12 +70,17 @@ body {
 #globalnavi ul li a {
 	float: left;
 	display: block;
-	width: 10%;
-	min-width: 8%;
-	color: #ccc;
-	line-height: 45px;
-	font-family: 'arial unicode ms';
-	/*font-family: '1';*/
+	/*width: 100px;*/
+	width: 15%;
+	min-width: 100px;
+	color: white;
+	line-height: 40px;
+	font-size: 15px;
+	font-family: "メイリオ","Meiryo",verdana,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",Osaka,"ＭＳ Ｐゴシック","MS PGothic",Sans-Serif;
+	font-weight: 600;
+	border-top: 5px solid #444;
+	border-bottom: 5px solid #444;
+	margin-right: 10px;
 	text-decoration: none;
 	text-align: center;
 }
@@ -89,7 +89,7 @@ body {
 }
 
 #globalnavi ul li a:hover {
-	background: #222;
+	border-bottom: 5px solid #FD80DD;
 }
 
 

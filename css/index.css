@@ -2,7 +2,20 @@
 /* グローバルナビ
 ================================= */
 #index #globalnavi ul li a#index_gnavi {
-	background: #222;
+	border-bottom: 5px solid #FD80DD;
 }
 #index #globalnavi ul li a#index_gnavi:hover {
+}
+
+#index #mainTopic header h1 {
+	font-family: 'Perfume';
+	/*font-family: "メイリオ","Meiryo",verdana,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",Osaka,"ＭＳ Ｐゴシック","MS PGothic",Sans-Serif;*/
+}
+
+#index #mainTopic header {
+}
+
+@font-face {
+	font-family: 'Perfume';
+	src: url('../fonts/Motorblock.ttf');
 }

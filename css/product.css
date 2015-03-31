@@ -2,7 +2,7 @@
 /* グローバルナビ
 ================================= */
 #product #globalnavi ul li a#product_gnavi {
-	background: #222;
+	border-bottom: 5px solid #FD80DD;
 }
 #product #globalnavi ul li a#product_gnavi:hover {
 }
@@ -11,11 +11,18 @@
 /*  ローカルナビ
 ================================= */
 #product #localnavi {
-	margin-bottom: 30px;
+	width: 90%;
+	min-width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#product #localnavi .twin_block {
+	margin-bottom: 50px;
 }
 
 /* clearfix! */
-#product #localnavi:after {
+#product #localnavi .twin_block:after {
 	content: ".";
     display: block;
     visibility: hidden;
@@ -25,31 +32,44 @@
 }
 
 /* リンク */
-#product #localnavi .local_links {
+#product #localnavi .twin_block .local_links {
 	float: left;
-	margin-left: 4%;
+	margin-left: 6%;
 	background: #FFFFFF;
 	overflow: hidden;
 	height: auto;
-	width: 48%;
+	width: 47%;
 } 
 
-#product #localnavi .local_links:first-of-type {
-	margin: 0px;
+/* clearfix! */
+#product #localnavi .twin_block .local_links:after {
+	content: ".";
+    display: block;
+    visibility: hidden;
+    clear: both;
+    height: 0;
+    font-size: 0;
 }
 
-#product #localnavi .local_links:hover {
+#product #localnavi .twin_block .local_links:first-of-type {
+	margin-left: 0px;
+}
+
+#product #localnavi .twin_block .local_links a:hover {
 	background-color: rgba(240,240,240,0.1);
 }
 
-
-#product #localnavi .local_links h3 {
+#product #localnavi .twin_block .local_links a h2 {
+	position: relative;
+	padding: 5px 8px;
+	text-align: center;
+	width: 45%;
+	background-color: rgba(255,255,255,0.85);
 	color: #333;
-	font-size: 1.1em;
+	font-size: 1.6em;
+	margin-top: -50px;
 } 
 
-#product #localnavi .local_links img {
-	width: 100%;	
+#product #localnavi .twin_block .local_links a img {
+	width: 100%;
 } 
-
-

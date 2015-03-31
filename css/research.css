@@ -2,7 +2,7 @@
 /* グローバルナビ
 ================================= */
 #research #globalnavi ul li a#research_gnavi {
-	background: #222;
+	border-bottom: 5px solid #FD80DD;
 }
 #research #globalnavi ul li a#research_gnavi:hover {
 }

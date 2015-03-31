@@ -1,7 +1,7 @@
 /* グローバルナビ
 ================================= */
 #hack #globalnavi ul li a#hack_gnavi {
-	background: #222;
+	border-bottom: 5px solid #FD80DD;
 }
 #hack #globalnavi ul li a#hack_gnavi:hover {
 }
