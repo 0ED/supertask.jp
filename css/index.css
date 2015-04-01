@@ -7,13 +7,33 @@
 #index #globalnavi ul li a#index_gnavi:hover {
 }
 
-#index #mainTopic header h1 {
-	font-family: 'Perfume';
-	/*font-family: "メイリオ","Meiryo",verdana,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",Osaka,"ＭＳ Ｐゴシック","MS PGothic",Sans-Serif;*/
+#index #mainTopic header {
+	position: relative;
 }
 
-#index #mainTopic header {
+#index #mainTopic header img {
+	margin-top: 0;
+	margin-left: 2%;
+	width: 96%;
+	position: absolute;
 }
+
+#index #mainTopic header h1 {
+	font-family: 'Perfume';
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin-top: 15%;
+	position: absolute;
+	text-align: center;
+}
+
+#index #mainTopic header h1 span {
+	font-size: 185px;
+	display: block;
+}
+
 
 @font-face {
 	font-family: 'Perfume';

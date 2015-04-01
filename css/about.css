@@ -7,7 +7,16 @@
 #about #globalnavi ul li a#about_gnavi:hover {
 }
 
-#about #document #mainTopic img {
+#about #document #mainTopic header:after {
+	content: ".";
+    display: block;
+    visibility: hidden;
+    clear: both;
+    height: 0;
+    font-size: 0;
+}
+
+#about #document #mainTopic header img {
 	float: left;
 	width: 41%;
 	margin-right: 0%;
@@ -17,7 +26,7 @@
 	margin-top: -4%;
 	pointer-events: none;
 }
-#about #document #mainTopic #aboutme {
+#about #document #mainTopic header #aboutme {
 	float: left;
 	width: 42%;
 	margin-left: 14%;
@@ -27,11 +36,17 @@
 	font-family: '1';
 }
 
-#about #document #mainTopic #aboutme h2 {
+
+#about #document #mainTopic article img {
+	width: 50%;
+	height: 50%;
+}
+
+#about #document #mainTopic header #aboutme h2 {
 	font-family: 'Linux_B';
 }
 
-#about #document #mainTopic #aboutme p {
+#about #document #mainTopic header #aboutme p {
 	font-family: 'Linux';
 }
 
