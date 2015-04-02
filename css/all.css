@@ -20,12 +20,12 @@ html {
 body {
 }
 
-#header,#globalnavi ul,#siteVisual,#mainTopic,#contents,#localnavi,#bread,#footer {
+#header,#globalnavi ul,#siteVisual,#mainTopic,#contents,#localnavi,#footer {
 	margin-left: auto;
 	margin-right: auto;
 }
 
-#header,#siteVisual,#mainTopic  {
+#header,#mainTopic  {
 	width: auto;
 }
 
@@ -84,9 +84,6 @@ body {
 	text-decoration: none;
 	text-align: center;
 }
-#globalnavi ul li a#about {
-	width: 14%;
-}
 
 #globalnavi ul li a:hover {
 	border-bottom: 5px solid #FD80DD;
@@ -115,6 +112,4 @@ body {
     clear: both;
     height: 0;
     font-size: 0;
-}
-#about #document #mainTopic p {
 }

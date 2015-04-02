@@ -7,7 +7,12 @@
 #about #globalnavi ul li a#about_gnavi:hover {
 }
 
-#about #document #mainTopic header:after {
+#about #mainTopic header{
+	width: 100%;
+	min-width: 950px;
+}
+
+#about #mainTopic .clearfix {
 	content: ".";
     display: block;
     visibility: hidden;
@@ -16,9 +21,10 @@
     font-size: 0;
 }
 
-#about #document #mainTopic header img {
+#about #mainTopic header #lightfox-anime > img {
 	float: left;
-	width: 41%;
+	position: relative;
+	width: 45%;
 	margin-right: 0%;
 	margin-top: 5%;
 	margin-left: -6%;
@@ -26,29 +32,91 @@
 	margin-top: -4%;
 	pointer-events: none;
 }
-#about #document #mainTopic header #aboutme {
+
+#about #mainTopic header #aboutme {
 	float: left;
-	width: 42%;
-	margin-left: 14%;
+	position: relative;
+	width: 47%;
+	margin-left: 10%;
 	margin-top: 13%;
 	z-index: 99;
-	position: relative;
 	font-family: '1';
 }
 
-
-#about #document #mainTopic article img {
-	width: 50%;
-	height: 50%;
-}
-
-#about #document #mainTopic header #aboutme h2 {
+#about #mainTopic header #aboutme > h1 {
 	font-family: 'Linux_B';
 }
 
-#about #document #mainTopic header #aboutme p {
+#about #mainTopic header #aboutme > p {
 	font-family: 'Linux';
 }
+
+#about #mainTopic article {
+	margin-top: 100px;
+}
+
+#about #mainTopic article section {
+	width: 82%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 120px;
+}
+
+#about #mainTopic article section:after {
+	content: ".";
+    display: block;
+    visibility: hidden;
+    clear: both;
+    height: 0;
+    font-size: 0;
+}
+
+#about #mainTopic article section h2 {
+	font-family: "Helvetica Neue";
+	margin-bottom: 50px;
+	font-size: 74px;
+	text-align: center;
+}
+
+#about #mainTopic article section > p {
+	font-family: "Helvetica Neue";
+	font-size: 28px;
+}
+
+#about #mainTopic article section img#myface {
+	float: right;
+	margin-right: 50px;
+	padding: 25px;
+}
+
+#about #mainTopic article section img#rudds {
+	float: left;
+	padding: 25px;
+	width: 600px;
+}
+
+#about #mainTopic article section#intro h2 {
+	color: #07C2FA;
+}
+#about #mainTopic article section#skills h2 {
+	color: #66cc00;
+}
+#about #mainTopic article section#hobby h2 {
+	color: #FF3300;
+}
+
+#about #mainTopic article section#hobby {
+	width: 100%;
+	margin: 0;
+}
+
+#about #mainTopic article section#hobby img#piano {
+	width: 734px;
+	height: 836px;
+	margin-left: -30px;
+}
+
+
 
 @font-face {
 	font-family: 'Linux_B';
