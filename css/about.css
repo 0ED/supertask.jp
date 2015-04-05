@@ -12,7 +12,16 @@
 	min-width: 950px;
 }
 
-#about #mainTopic .clearfix {
+#about #mainTopic header .clearfix {
+	content: ".";
+    display: block;
+    visibility: hidden;
+    clear: both;
+    height: 0;
+    font-size: 0;
+}
+
+#about #mainTopic header:after {
 	content: ".";
     display: block;
     visibility: hidden;
@@ -51,10 +60,23 @@
 	font-family: 'Linux';
 }
 
+@font-face {
+	font-family: 'Linux_B';
+	src: url('../fonts/LinLibertine_aSZI.ttf');
+}
+
+@font-face {
+	font-family: 'Linux';
+	src: url('../fonts/LinLibertine_aSI.ttf');
+}
+
+
+/*
+ * Article
+ */
 #about #mainTopic article {
 	margin-top: 100px;
 }
-
 #about #mainTopic article section {
 	width: 82%;
 	margin-left: auto;
@@ -85,14 +107,18 @@
 
 #about #mainTopic article section img#myface {
 	float: right;
-	margin-right: 50px;
-	padding: 25px;
+	margin: 20px 30px;
+	margin-right: 130px;
+	padding: 15px;
+	box-shadow: 5px 5px 10px rgba(0,0,0,0.4);
 }
 
 #about #mainTopic article section img#rudds {
 	float: left;
-	padding: 25px;
-	width: 600px;
+	margin: 25px;
+	padding: 30px;
+	width: 580px;
+	box-shadow: 3px 3px 10px rgba(0,0,0,0.4);
 }
 
 #about #mainTopic article section#intro h2 {
@@ -101,29 +127,104 @@
 #about #mainTopic article section#skills h2 {
 	color: #66cc00;
 }
+
+#about #mainTopic article section#hobby {
+	margin-bottom: 0px;
+}
+
 #about #mainTopic article section#hobby h2 {
 	color: #FF3300;
 }
 
+
+/**
+ * My hobby
+ */
 #about #mainTopic article section#hobby {
 	width: 100%;
+	min-width: 850px;
 	margin: 0;
 }
 
-#about #mainTopic article section#hobby img#piano {
+#about #mainTopic article section#hobby .hobbies {
+}
+#about #mainTopic article section#hobby .hobbies:after {
+	content: ".";
+    display: block;
+    visibility: hidden;
+    clear: both;
+    height: 0;
+    font-size: 0;
+}
+#about #mainTopic article section#hobby .hobbies img {
+	padding: 10px;
+}
+#about #mainTopic article section#hobby .hobbies .comment {
+	width: 40%;
+	padding: 40px 10px;
+}
+#about #mainTopic article section#hobby .hobbies .comment h3 {
+	font-size: 32px;
+}
+#about #mainTopic article section#hobby .hobbies .comment p {
+	font-size: 22px;
+	padding: 15px 32px;
+}
+
+/* My hobby -> Movie */
+#about #mainTopic article section#hobby #movie {
+}
+#about #mainTopic article section#hobby #movie img {
+	float: left;
+	margin-left: 6%;
+	width: 40%;
+	height: 400px;
+}
+#about #mainTopic article section#hobby #movie .comment {
+	float: right;
+	margin-right: 7%;
+}
+#about #mainTopic article section#hobby #movie .comment h3 {
+}
+#about #mainTopic article section#hobby #movie .comment p {
+}
+
+/* My hobby -> Mountain */
+
+#about #mainTopic article section#hobby #climb {
+}
+#about #mainTopic article section#hobby #climb img {
+	width: 300px;
+	margin-right: 2%;
+	background-color: red;
+}
+#about #mainTopic article section#hobby #climb .comment {
+	float: left; 
+	margin-left: 8%;
+}
+
+#about #mainTopic article section#hobby #piano {
+}
+
+#about #mainTopic article section#hobby #piano img {
 	width: 734px;
-	height: 836px;
 	margin-left: -30px;
 }
 
 
 
-@font-face {
-	font-family: 'Linux_B';
-	src: url('../fonts/LinLibertine_aSZI.ttf');
+#about #mainTopic footer #black_slash {
+	width: 100%;
+	height: 150px;
+	background-color: black;
+	background-image: url("../img/about/black_slash.png");
+	background-size: 100% 100%;
+	background-position: top top;
 }
 
-@font-face {
-	font-family: 'Linux';
-	src: url('../fonts/LinLibertine_aSI.ttf');
+#about #mainTopic footer #footer_info {
+	width: 100%;
+	height: 150px;
+	background-color: black;
 }
+
