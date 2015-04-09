@@ -7,6 +7,10 @@
 #about #globalnavi ul li a#about_gnavi:hover {
 }
 
+#about #mainTopic {
+	margin-bottom: 0px;
+}
+
 #about #mainTopic header{
 	width: 100%;
 	min-width: 950px;
@@ -105,15 +109,15 @@
 	font-size: 28px;
 }
 
-#about #mainTopic article section img#myface {
+#about #mainTopic article section#intro img#myface {
 	float: right;
-	margin: 20px 30px;
-	margin-right: 130px;
+	margin: 5px 5px;
+	margin-right: 110px;
 	padding: 15px;
 	box-shadow: 5px 5px 10px rgba(0,0,0,0.4);
 }
 
-#about #mainTopic article section img#rudds {
+#about #mainTopic article section#intro img#rudds {
 	float: left;
 	margin: 25px;
 	padding: 30px;
@@ -124,17 +128,16 @@
 #about #mainTopic article section#intro h2 {
 	color: #07C2FA;
 }
+
 #about #mainTopic article section#skills h2 {
 	color: #66cc00;
 }
 
-#about #mainTopic article section#hobby {
-	margin-bottom: 0px;
+#about #mainTopic article section#intro p,
+#about #mainTopic article section#skills p {
+	text-indent: 0.7em;
 }
 
-#about #mainTopic article section#hobby h2 {
-	color: #FF3300;
-}
 
 
 /**
@@ -145,6 +148,11 @@
 	min-width: 850px;
 	margin: 0;
 }
+
+#about #mainTopic article section#hobby h2 {
+	color: #FF3300;
+}
+
 
 #about #mainTopic article section#hobby .hobbies {
 }
@@ -190,41 +198,63 @@
 }
 
 /* My hobby -> Mountain */
-
 #about #mainTopic article section#hobby #climb {
 }
 #about #mainTopic article section#hobby #climb img {
 	width: 300px;
 	margin-right: 2%;
-	background-color: red;
 }
 #about #mainTopic article section#hobby #climb .comment {
 	float: left; 
 	margin-left: 8%;
 }
 
+
+/* My hobby -> Piano */
 #about #mainTopic article section#hobby #piano {
+	min-width: 1000px;
 }
 
 #about #mainTopic article section#hobby #piano img {
-	width: 734px;
-	margin-left: -30px;
+	float: left;
+	width: 60%;
+	margin-left: -5%;
+	margin-top: -6%;
+}
+
+#about #mainTopic article section#hobby #piano .comment h3 {
+}
+
+#about #mainTopic article section#hobby #piano .comment {
+	float: right;
+	width: 38%;
+	margin-top: 13%;
+	margin-left: -20%;
+	margin-right: 5%;
 }
 
 
-
-#about #mainTopic footer #black_slash {
+#about #mainTopic footer {
 	width: 100%;
-	height: 150px;
-	background-color: black;
-	background-image: url("../img/about/black_slash.png");
-	background-size: 100% 100%;
-	background-position: top top;
+	min-width: 950px;
+	margin-top: -17%;
+}
+
+#about #mainTopic footer img#black_slash {
+	width: 100%;
+	height: 120px;
+	min-width: 950px;
 }
 
 #about #mainTopic footer #footer_info {
 	width: 100%;
-	height: 150px;
+	height: 250px;
+	margin-top: -6px;
 	background-color: black;
+}
+
+#about #mainTopic footer #footer_info img {
+	width: 100%;
+	height: 250px;
 }
 

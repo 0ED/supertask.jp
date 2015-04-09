@@ -39,6 +39,7 @@
 	overflow: hidden;
 	height: auto;
 	width: 47%;
+	box-shadow: 4px 4px 8px rgba(0,0,0,0.4);
 } 
 
 /* clearfix! */
@@ -53,6 +54,9 @@
 
 #product #localnavi .twin_block .local_links:first-of-type {
 	margin-left: 0px;
+}
+
+#product #localnavi .twin_block .local_links {
 }
 
 #product #localnavi .twin_block .local_links a:hover {
