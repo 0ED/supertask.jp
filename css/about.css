@@ -201,11 +201,12 @@
 #about #mainTopic article section#hobby #climb {
 }
 #about #mainTopic article section#hobby #climb img {
-	width: 300px;
+	width: 38%;
 	margin-right: 2%;
 }
 #about #mainTopic article section#hobby #climb .comment {
 	float: left; 
+	margin-top: 6%;
 	margin-left: 8%;
 }
 
@@ -219,7 +220,7 @@
 	float: left;
 	width: 60%;
 	margin-left: -5%;
-	margin-top: -6%;
+	margin-top: -20%;
 }
 
 #about #mainTopic article section#hobby #piano .comment h3 {
@@ -228,7 +229,7 @@
 #about #mainTopic article section#hobby #piano .comment {
 	float: right;
 	width: 38%;
-	margin-top: 13%;
+	margin-top: 0%;
 	margin-left: -20%;
 	margin-right: 5%;
 }
