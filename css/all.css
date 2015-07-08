@@ -64,6 +64,12 @@ body {
 	list-style-type: none;
 }
 
+#globalnavi img {
+	margin-top: 5px;
+	height: 36px;
+	width: 60px;
+}
+
 #globalnavi ul li {
 }
 
