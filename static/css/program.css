@@ -1,31 +1,31 @@
 /* グローバルナビ
 ================================= */
-#hack #globalnavi ul li a#hack_gnavi {
+#program #globalnavi ul li a#program_gnavi {
 	border-bottom: 5px solid #FD80DD;
 }
-#hack #globalnavi ul li a#hack_gnavi:hover {
+#program #globalnavi ul li a#program_gnavi:hover {
 }
-#hack #mainTopic header {
-	background-image: url("../img/hack/black_cloth.png");
+#program #mainTopic header {
+	background-image: url("../img/program/black_cloth.png");
 	height: 320px;
 }
 
-#hack #mainTopic header h1 {
+#program #mainTopic header h1 {
 	font-family: 'Hiragino Mincho ProN';
 	color: white;
 	font-size: 11em;
 }
 
-#hack #mainTopic header ul li {
+#program #mainTopic header ul li {
 	border-right: 2px solid #FFF;
 }
 
-#hack #mainTopic header li:last-child {
+#program #mainTopic header li:last-child {
 	border: none;
 }
 
 
-#hack #mainTopic article {
+#program #mainTopic article {
 	clear: both;
 }
 

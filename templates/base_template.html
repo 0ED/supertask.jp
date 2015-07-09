@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name = "description" content="This is Website for TasukuTAKAHASHI." />
+	<meta name = "keyboard" content="SuperTask,TasukuTAKAHASHI,Taskernet,たかはしたすく" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Supertask - {{title}}</title>
+
+	<!-- CSS -->
+	<link href="static/css/reset.css" rel="stylesheet" type="text/css" />
+	<link href="static/css/all.css" rel="stylesheet" type="text/css" />
+	<link href="static/css/{{id}}.css" rel="stylesheet" type="text/css" />
+
+	<!-- JavaScript -->
+	<script src="static/js/jquery.min.js"></script>
+	<script src="static/js/jquery.fittext.js"></script>
+	<script src="static/js/i18next-1.10.1.min.js"></script>
+	{% block add_head %}{% endblock %}
+</head>
+
+<body class="supertask" id="{{id}}">
+
+<div id = "document">
+		<div id = "globalnavi">
+			<ul>
+				{% for path,filename,title in globalnavi_zip %}
+				<li><a href="{{path}}" id="{{filename}}_gnavi">{{title}}</a></li>{% endfor %}
+			</ul>
+			<div id="lang_select">
+				<img src="static/img/header/lang_en.jpg" alt="English" />
+				<img src="static/img/header/lang_jp.jpg" alt="Japanese" />
+			</div>
+		<!-- /#globalnavi --></div>
+
+		<div id = "mainTopic">
+			{% block content %}{% endblock %}
+		<!-- /#mainTopic --></div>
+
+		<script type="text/javascript">
+			{% block scale_js %}{% endblock %}
+		</script>
+
+<!-- /#document --></div>
+</body>
+</html>

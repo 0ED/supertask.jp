@@ -1,12 +1,12 @@
 /* ====================================
-	
+
 	所々、CSSの要素が空っぽのところがあるが、これはわかりやすくするために
 	あえて入れている。（ちなみに、この方法は牧野工房というWEBコーディング専
 	門の会社の方法を利用している。）
-	
+
 	http://waic.jp/docs/jis2010-understanding/#h2_Resources
-	
-	
+
+
 ===================================== */
 
 
@@ -46,6 +46,7 @@ body {
 ================================= */
 #globalnavi {
 	background: #444;
+	min-width: 800px;
 }
 
 /* clearfix! */
@@ -93,6 +94,21 @@ body {
 
 #globalnavi ul li a:hover {
 	border-bottom: 5px solid #FD80DD;
+}
+
+#globalnavi #lang_select {
+	padding: 8px 30px;
+	padding-bottom: 0px;
+	text-align: right;
+}
+
+#globalnavi #lang_select img {
+	width: 40px;
+	height: 25px;
+	margin-right: 3px;
+}
+#globalnavi #lang_select img:last-child {
+	margin-right:0px;
 }
 
 

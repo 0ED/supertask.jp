@@ -2,10 +2,10 @@
 
 {% block content %}
 <header>
-	<img src="img/home/perfume.png" />
+	<img src="static/img/{{id}}/perfume.png" />
 	<h1><span>Super</span><span>task</span></h1>
 </header>
 {% endblock %}
 {% block scale_js %}
-	$("#index #mainTopic header h1 span").fitText(0.7,{minFontSize:'64px',maxFontSize: '410px'});
+	$("#{{id}} #mainTopic header").fitText(1.2);
 {% endblock %}
