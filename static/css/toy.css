@@ -1,0 +1,57 @@
+/* グローバルナビ
+================================= */
+#toy #globalnavi ul li a#toy_gnavi {
+	border-bottom: 5px solid #FD80DD;
+}
+#toy #globalnavi ul li a#toy_gnavi:hover {
+}
+#toy #mainTopic header {
+	background-image: url("../img/toy/black_cloth.png");
+}
+
+/* clearfix! */
+#toy #mainTopic header:after {
+	content: ".";
+    display: block;
+    visibility: hidden;
+    clear: both;
+    height: 0;
+    font-size: 0;
+}
+
+#toy #mainTopic header h1 {
+	float: right;
+	font-family: 'Hiragino Mincho ProN';
+	color: white;
+	font-size: 12em;
+	line-height: 200px;
+	margin-top: 40px;
+	margin-right: 110px;
+	text-align: right;
+}
+
+/*
+ * ここのfloat&clearfix設定により,localnaviを設定
+ */
+#toy #mainTopic header ul#localnavi {
+	padding-top: 250px;
+	margin-left: 30px;
+}
+
+#toy #mainTopic header ul#localnavi li {
+	border-right: 2px solid #FFF;
+}
+
+#toy #mainTopic header ul#localnavi li:last-child {
+	border: none;
+}
+
+#toy #mainTopic article {
+	clear: both;
+}
+
+@font-face {
+	font-family: 'Linux';
+	font-style: normal;
+	src: url('../fonts/LinLibertine_aSZI.ttf');
+}

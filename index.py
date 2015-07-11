@@ -9,7 +9,7 @@ from bottle import route, run, view, get, post, request, static_file, url
 from bottle import TEMPLATE_PATH,jinja2_view
 from bottle import jinja2_template as template
 
-ids= ['home','product','about','program','research']
+ids= ['home','product','about','toy','research']
 titles = map(lambda x: x.upper(), ids)
 pathes = copy.deepcopy(ids)
 pathes[0] = '.'
@@ -35,6 +35,10 @@ def about(name):
 def request(name):
 	i = ids.index(name)
 	return {'id':ids[i], 'title':titles[i], 'globalnavi_zip': globalnavi_zip}
+
+@route('/favicon.ico')
+def favicon():
+	pass
 
 def main():
 	app = bottle.app()
