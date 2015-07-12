@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name = "description" content="This is Website for TasukuTAKAHASHI." />
+	<meta name = "keyboard" content="SuperTask,TasukuTAKAHASHI,Taskernet,たかはしたすく" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Supertask - ABOUT</title>
+
+	<!-- CSS -->
+	<link href="../static/css/reset.css" rel="stylesheet" type="text/css" />
+	<link href="../static/css/all.css" rel="stylesheet" type="text/css" />
+	<link href="../static/css/about.css" rel="stylesheet" type="text/css" />
+
+	<!-- JavaScript -->
+	<script src="../static/js/jquery.min.js"></script>
+	<script src="../static/js/jquery.fittext.js"></script>
+	<script src="../static/js/i18next-1.10.1.min.js"></script>
+	
+<script>
+jQuery(function() {
+  var lang = (navigator.languages ? navigator.languages[0] : (navigator.language || navigator.userLanguage || navigator.browserLanguage)).substr(0, 2);
+
+  i18n.init({ lng: "en", fallbackLng: "en" }).done(function() {
+    $("body").i18n();
+  });
+});
+</script>
+
+</head>
+
+<body class="supertask" id="about">
+
+<div id = "document">
+		<div id = "globalnavi">
+			<ul>
+				
+					
+						<li><a href=".." id="home_gnavi">HOME</a></li>
+					
+				
+					
+						<li><a href="../product/index.cgi" id="product_gnavi">PRODUCT</a></li>
+					
+				
+					
+						<li><a href="../about" id="about_gnavi">ABOUT</a></li>
+					
+				
+					
+						<li><a href="../toy/index.cgi" id="toy_gnavi">TOY</a></li>
+					
+				
+					
+						<li><a href="../research" id="research_gnavi">RESEARCH</a></li>
+					
+				
+			</ul>
+			<div id="lang_select">
+				<img src="../static/img/header/lang_en.jpg" alt="English" />
+				<img src="../static/img/header/lang_jp.jpg" alt="Japanese" />
+			</div>
+		<!-- /#globalnavi --></div>
+
+		<div id = "mainTopic">
+			
+			<header>
+				<div id="aboutme">
+					<h1 data-i18n="about.aboutme.tasuku"></h1>
+					<p data-i18n="about.aboutme.myfield"></p>
+				</div>
+				<div id="lightfox-anime">
+					<img src="../static/img/about/LightFox.gif" alt="LightFox" id = "LightFox"/>
+				</div>
+				<div class=".clearfix"></div>
+			</header>
+
+			<article>
+				<section id="intro">
+					<h2 data-i18n="about.intro.title"></h2>
+					<p>
+						<span data-i18n="about.intro.contents-1"></span>
+						<a data-i18n="about.intro.contents-2" href="http://rudds.jp/"></a>
+						<span data-i18n="about.intro.contents-3" ></span>
+					</p>
+
+					<img src="../static/img/about/tasuku.jpg" alt="Tasuku TAKAHASHI" id="myface"/>
+					<p data-i18n="about.intro.contents-4"></p>
+					<p data-i18n="about.intro.contents-5" ></p>
+				</section>
+
+				<section id="skills">
+					<h2 data-i18n="about.skill.title"></h2>
+					<p data-i18n="about.skill.contents-1"></p>
+					<p data-i18n="about.skill.contents-2"></p>
+				</section>
+
+				<section id="hobby">
+					<h2>My hobby</h2>
+
+					<div class="hobbies" id="movie">
+						<img src="../static/img/about/movies.png" alt="Movies"/>
+						<div class="comment">
+							<h3>To watch movies and listen to music.</h3>
+							<p>I like to watch movies. For example, PRISON BREAK, HEROES, THE4400, 24, Dark Angel, THE OC, and so on. and to listen to music, "Fear and lothing in Las Vegas", Capsule, Krewella, Perfume, and so on.</p>
+						</div>
+					<!-- /#movie --></div>
+
+					<div class="hobbies" id="climb">
+						<div class="comment">
+							<h3>To climb mountain.</h3>
+							<p>I climb moutain sometimes, I have ever climbed Fujiyama, Tateyama, Atagoyama, Rokkosan and so on. </p>
+						</div>
+						<img src="../static/img/about/climb_bag.png" alt="Mountain" />
+					<!-- /#mountain --></div> <!-- style="width:200px; height: 200px;" -->
+
+					<div class="hobbies" id="piano">
+						<img src="../static/img/about/keyboard.png" alt="To play piano"/>
+						<div class="comment">
+							<h3>To play piano, and make music by DTM.</h3>
+							<p>I play classic piano. and I make music by DTM software. I make background music of game. I'm going to make cool electonic music.</p>
+						</div>
+					<!-- /#piano --></div>
+				</section>
+			</article>
+			<footer>
+				<img src="../static/img/about/black_slash.png" id="black_slash" />
+				<div id="footer_info">
+					<img src="../static/img/about/black.png" />
+				</div>
+			</footer>
+
+		<!-- /#mainTopic --></div>
+
+		<script type="text/javascript">
+			
+			$("#about #mainTopic header #aboutme h1").fitText(1.0,{minFontSize:'12px',maxFontSize: '72px'});
+			$("#about #mainTopic header #aboutme p").fitText(1.4,{minFontSize:'9px',maxFontSize: '64px'});
+
+		</script>
+
+<!-- /#document --></div>
+</body>
+</html>

@@ -1,9 +1,9 @@
 {% extends "base_template.html" %}
 
 {% block add_head %}
-	<link href="static/css/jquery-ui-1.9.2.custom.css" rel="stylesheet">
-	<script src="static/js/jquery-1.8.3.js"></script>
-	<script src="static/js/jquery-ui-1.9.2.custom.js"></script>
+	<link href="{{static_path}}/css/jquery-ui-1.9.2.custom.css" rel="stylesheet">
+	<script src="{{static_path}}/js/jquery-1.8.3.js"></script>
+	<script src="{{static_path}}/js/jquery-ui-1.9.2.custom.js"></script>
 	<script>
 	$(function() {
 		$( "#tabs" ).tabs();

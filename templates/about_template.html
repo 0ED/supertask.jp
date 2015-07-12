@@ -18,7 +18,7 @@ jQuery(function() {
 					<p data-i18n="about.aboutme.myfield"></p>
 				</div>
 				<div id="lightfox-anime">
-					<img src="static/img/{{id}}/LightFox.gif" alt="LightFox" id = "LightFox"/>
+					<img src="{{static_path}}/img/{{id}}/LightFox.gif" alt="LightFox" id = "LightFox"/>
 				</div>
 				<div class=".clearfix"></div>
 			</header>
@@ -32,7 +32,7 @@ jQuery(function() {
 						<span data-i18n="about.intro.contents-3" ></span>
 					</p>
 
-					<img src="static/img/{{id}}/tasuku.jpg" alt="Tasuku TAKAHASHI" id="myface"/>
+					<img src="{{static_path}}/img/{{id}}/tasuku.jpg" alt="Tasuku TAKAHASHI" id="myface"/>
 					<p data-i18n="about.intro.contents-4"></p>
 					<p data-i18n="about.intro.contents-5" ></p>
 				</section>
@@ -47,7 +47,7 @@ jQuery(function() {
 					<h2>My hobby</h2>
 
 					<div class="hobbies" id="movie">
-						<img src="static/img/{{id}}/movies.png" alt="Movies"/>
+						<img src="{{static_path}}/img/{{id}}/movies.png" alt="Movies"/>
 						<div class="comment">
 							<h3>To watch movies and listen to music.</h3>
 							<p>I like to watch movies. For example, PRISON BREAK, HEROES, THE4400, 24, Dark Angel, THE OC, and so on. and to listen to music, "Fear and lothing in Las Vegas", Capsule, Krewella, Perfume, and so on.</p>
@@ -59,11 +59,11 @@ jQuery(function() {
 							<h3>To climb mountain.</h3>
 							<p>I climb moutain sometimes, I have ever climbed Fujiyama, Tateyama, Atagoyama, Rokkosan and so on. </p>
 						</div>
-						<img src="static/img/{{id}}/climb_bag.png" alt="Mountain" />
+						<img src="{{static_path}}/img/{{id}}/climb_bag.png" alt="Mountain" />
 					<!-- /#mountain --></div> <!-- style="width:200px; height: 200px;" -->
 
 					<div class="hobbies" id="piano">
-						<img src="static/img/{{id}}/keyboard.png" alt="To play piano"/>
+						<img src="{{static_path}}/img/{{id}}/keyboard.png" alt="To play piano"/>
 						<div class="comment">
 							<h3>To play piano, and make music by DTM.</h3>
 							<p>I play classic piano. and I make music by DTM software. I make background music of game. I'm going to make cool electonic music.</p>
@@ -72,9 +72,9 @@ jQuery(function() {
 				</section>
 			</article>
 			<footer>
-				<img src="static/img/{{id}}/black_slash.png" id="black_slash" />
+				<img src="{{static_path}}/img/{{id}}/black_slash.png" id="black_slash" />
 				<div id="footer_info">
-					<img src="static/img/{{id}}/black.png" />
+					<img src="{{static_path}}/img/{{id}}/black.png" />
 				</div>
 			</footer>
 {% endblock %}
