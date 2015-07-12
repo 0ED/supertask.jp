@@ -4,4 +4,4 @@ supertask.jp is my website.
 ### memo
 http://i18next-editor.herokuapp.com/
 
-change update hoge
+change update hoge xxxx
