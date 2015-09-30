@@ -7,6 +7,7 @@
 }
 #toy #mainTopic header {
 	background-image: url("../img/toy/black_cloth.png");
+	border-bottom: 8px solid #ff4eAA;
 }
 
 /* clearfix! */
@@ -35,7 +36,7 @@
  */
 #toy #mainTopic header ul#localnavi {
 	padding-top: 250px;
-	margin-left: 30px;
+	margin-left: 4%;
 }
 
 #toy #mainTopic header ul#localnavi li {
@@ -46,8 +47,92 @@
 	border: none;
 }
 
-#toy #mainTopic article {
+#toy #mainTopic header ul#localnavi li a {
+	float: left;
+	background-color: #6e6a6a;
+	color: white;
+	font-size: 18px;
+	padding: 0px 15px;
+	line-height: 40px;
+	font-family: "メイリオ","Meiryo",verdana,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",Osaka,"ＭＳ Ｐゴシック","MS PGothic",Sans-Serif;
+}
+
+#toy #mainTopic header ul#localnavi li a.active {
+	background-color: #ff4e95;
+}
+
+#toy #mainTopic header ul#localnavi:after {
+	content: ".";
+	display: block;
+	visibility: hidden;
 	clear: both;
+	height: 0;
+	font-size: 0;
+}
+
+
+#toy #mainTopic article {
+	margin-top: 10px;
+	clear: both;
+}
+
+@media only screen and (min-width:921px) {
+	/* clearfix! */
+	#toy #mainTopic article:after {
+		content: ".";
+		display: block;
+		visibility: hidden;
+		clear: both;
+		height: 0;
+		font-size: 0;
+	}
+
+	#toy #mainTopic article div#left-contents {
+		width: 62%;
+		border-right: 2px solid #BBB;
+	}
+
+	#toy #mainTopic article div#right-contents {
+		width: 24%;
+	}
+
+	#toy #mainTopic article div#left-contents,
+	#toy #mainTopic article div#right-contents {
+		float: left;
+	}
+}
+
+
+
+#toy #mainTopic article div#left-contents {
+	font-family: Lato, Arial, sans-serif;
+	font-size: 18px;
+	line-height: 31px;
+	padding: 20px 3%;
+	margin-left: 3%;
+}
+#toy #mainTopic article div#right-contents {
+	padding: 20px 2%;
+}
+
+#toy #mainTopic article div#right-contents ul {
+	margin-left:3%;
+	list-style-type: none;
+}
+
+#toy #mainTopic article div#right-contents ul#detail-links li a {
+	color: white;
+	background-color: #33FF33;
+	font-family: "メイリオ","Meiryo",verdana,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",Osaka,"ＭＳ Ｐゴシック","MS PGothic",Sans-Serif;
+	margin: 4px;
+	line-height: 35px;
+	padding: 0px 10px;
+	font-size: 12px;
+	font-weight: 800;
+	float: left;
+	display: block;
+	text-decoration: none;
+	text-align: center;
 }
 
 @font-face {

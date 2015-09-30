@@ -1,14 +1,5 @@
 {% extends "base_template.html" %}
 {% block add_head %}
-<script>
-jQuery(function() {
-  var lang = (navigator.languages ? navigator.languages[0] : (navigator.language || navigator.userLanguage || navigator.browserLanguage)).substr(0, 2);
-
-  i18n.init({ lng: "en", fallbackLng: "en" }).done(function() {
-    $("body").i18n();
-  });
-});
-</script>
 {% endblock %}
 
 {% block content %}

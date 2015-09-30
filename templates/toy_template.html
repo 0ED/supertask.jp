@@ -1,9 +1,7 @@
 {% extends "base_template.html" %}
 
 {% block add_head %}
-	<link href="{{static_path}}/css/jquery-ui-1.9.2.custom.css" rel="stylesheet">
 	<script src="{{static_path}}/js/jquery-1.8.3.js"></script>
-	<script src="{{static_path}}/js/jquery-ui-1.9.2.custom.js"></script>
 	<script>
 	$(function() {
 		$( "#tabs" ).tabs();
@@ -16,18 +14,28 @@
 				<header>
 					<h1>Toy</h1>
 					<ul id="localnavi">
-						<li><a href="#tabs-1">Parsing</a></li>
-						<li><a href="#tabs-2">Network</a></li>
-						<li><a href="#tabs-3">Graphic</a></li>
-						<li><a href="#tabs-4">Algorithm</a></li>
-						<li><a href="#tabs-5">Other</a></li>
+						{% for a_link in localnavi_links %}
+							{% if a_link == localnavi_link %}
+								<li><a class="active" href="?key_line={{a_link}},Introduction">{{a_link}}</a></li>
+							{% else  %}
+								<li><a href="?key_line={{a_link}},Introduction">{{a_link}}</a></li>
+							{% endif %}
+						{% endfor %}
 					<!-- /ul#localnavi --></ul>
 				</header>
 
 				<article>
-					<div id="tabs-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-					<div id="tabs-2">Phasellus mattis tincidunt nibh. Cras orci urna, blandit id, pretium vel, aliquet ornare, felis. Maecenas scelerisque sem non nisl. Fusce sed lorem in enim dictum bibendum.</div>
-					<div id="tabs-3">Nam dui erat, auctor a, dignissim quis, sollicitudin eu, felis. Pellentesque nisi urna, interdum eget, sagittis et, consequat vestibulum, lacus. Mauris porttitor ullamcorper augue.</div>
+					<div id="left-contents">
+					{{my_article}}
+					</div>
+
+					<div id="right-contents">
+						<ul id="detail-links">
+							{% for detail_link in detail_links %}
+								<li><a href="?contents={{localnavi_link}},{{detail_links}}">{{detail_link}}</a></li>
+							{% endfor %}
+						</ul>
+					</div>
 				</article>
 			</div>
 {% endblock %}

@@ -106,6 +106,8 @@
 
 #about #mainTopic article section p {
 	font-family: "Helvetica Neue";
+	border-left: 4px solid #AAA;
+	line-height: 1.4;
 }
 
 #about #mainTopic article section#intro p,
@@ -134,7 +136,7 @@
 	color: #07C2FA;
 }
 #about #mainTopic article section#intro p {
-	border-left: 4px solid #07C2FA;
+	/*border-left: 4px solid #07C2FA;*/
 }
 
 #about #mainTopic article section#skills h2 {
@@ -142,7 +144,7 @@
 }
 
 #about #mainTopic article section#skills p {
-	border-left: 4px solid #66cc00;
+	/*border-left: 4px solid #66cc00;*/
 }
 
 #about #mainTopic article section#intro p,
@@ -180,7 +182,7 @@
 	padding: 10px;
 }
 #about #mainTopic article section#hobby .hobbies p {
-	border-left: 4px solid #FF3300;
+	/*border-left: 4px solid #FF3300;*/
 }
 #about #mainTopic article section#hobby .hobbies .comment {
 	width: 40%;

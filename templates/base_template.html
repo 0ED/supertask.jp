@@ -15,35 +15,37 @@
 	<script src="{{static_path}}/js/jquery.min.js"></script>
 	<script src="{{static_path}}/js/jquery.fittext.js"></script>
 	<script src="{{static_path}}/js/i18next-1.10.1.min.js"></script>
+	<script>
+		$(function(){ i18n.init({resGetPath: 'articles/{{id}}/trans-__lng__.json'}) });
+	</script>
+	<script src="{{static_path}}/js/lang_setting.js"></script>
+
+	<!-- Each original head -->
 	{% block add_head %}{% endblock %}
 </head>
 
 <body class="supertask" id="{{id}}">
 
 <div id = "document">
-		<div id = "globalnavi">
-			<ul>
-				{% for g_path,g_id,g_title in globalnavi_zip %}
-					{% if id == "home" %}
-						<li><a href="{{g_path}}" id="{{g_id}}_gnavi">{{g_title}}</a></li>
-					{% else %}
-						<li><a href=".{{g_path}}" id="{{g_id}}_gnavi">{{g_title}}</a></li>
-					{% endif %}
-				{% endfor %}
-			</ul>
-			<div id="lang_select">
-				<img src="{{static_path}}/img/header/lang_en.jpg" alt="English" />
-				<img src="{{static_path}}/img/header/lang_jp.jpg" alt="Japanese" />
-			</div>
-		<!-- /#globalnavi --></div>
+<div id = "globalnavi">
+<ul>
+{% for g_path,g_id,g_title in globalnavi_zip %}
+	<li><a href="{{g_path}}" id="{{g_id}}_gnavi">{{g_title}}</a></li>
+{% endfor %}
+</ul>
+<div id="lang_select">
+<img src="{{static_path}}/img/header/lang_en.jpg" alt="English" id="trans-en" />
+<img src="{{static_path}}/img/header/lang_jp.jpg" alt="Japanese" id="trans-ja" />
+</div>
+<!-- /#globalnavi --></div>
 
-		<div id = "mainTopic">
-			{% block content %}{% endblock %}
-		<!-- /#mainTopic --></div>
+<div id = "mainTopic">
+{% block content %}{% endblock %}
+<!-- /#mainTopic --></div>
 
-		<script type="text/javascript">
-			{% block scale_js %}{% endblock %}
-		</script>
+<script type="text/javascript">
+{% block scale_js %}{% endblock %}
+</script>
 
 <!-- /#document --></div>
 </body>

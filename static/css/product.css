@@ -8,59 +8,29 @@
 }
 
 
-/*  ローカルナビ
-================================= */
+#product header {
+	margin-bottom: 40px;
+}
+
+#product header a img {
+	width: 100%;	
+}
+
+
 #product #localnavi {
 	width: 90%;
-	min-width: 900px;
 	margin-left: auto;
 	margin-right: auto;
 }
 
-#product #localnavi .twin_block {
-	margin-bottom: 50px;
-}
-
-/* clearfix! */
-#product #localnavi .twin_block:after {
-	content: ".";
-    display: block;
-    visibility: hidden;
-    clear: both;
-    height: 0;
-    font-size: 0;
-}
-
-/* リンク */
 #product #localnavi .twin_block .local_links {
-	float: left;
-	margin-left: 6%;
-	background: #FFFFFF;
-	overflow: hidden;
+	background: white;
+	overflow: hidden; /* 要素が現れているところまで画像を表示 */
 	height: auto;
-	width: 47%;
 	box-shadow: 4px 4px 8px rgba(0,0,0,0.4);
 } 
-
-/* clearfix! */
-#product #localnavi .twin_block .local_links:after {
-	content: ".";
-    display: block;
-    visibility: hidden;
-    clear: both;
-    height: 0;
-    font-size: 0;
-}
-
 #product #localnavi .twin_block .local_links:first-of-type {
 	margin-left: 0px;
-}
-
-#product #localnavi .twin_block .local_links {
-}
-
-#product #localnavi .twin_block .local_links a:hover {
-	background-color: rgba(240,240,240,0.1);
 }
 
 #product #localnavi .twin_block .local_links a h2 {
@@ -77,3 +47,56 @@
 #product #localnavi .twin_block .local_links a img {
 	width: 100%;
 } 
+
+
+
+
+/*
+ * タブレット
+ */
+@media only screen and (max-width:920px) {
+	#product #localnavi .twin_block {
+		margin-left: auto;
+		margin-right: auto;
+		width: 90%;
+	}
+	#product #localnavi .local_links {
+		margin-bottom: 12%;
+	}
+}
+
+/*
+ * PC version
+ */
+@media only screen and (min-width:921px) {
+	#product #localnavi .twin_block {
+		margin-bottom: 50px;
+	}
+
+	/* clearfix! */
+	#product #localnavi .twin_block:after {
+		content: ".";
+		display: block;
+		visibility: hidden;
+		clear: both;
+		height: 0;
+		font-size: 0;
+	}
+
+	#product #localnavi .twin_block .local_links {
+		float: left;
+		margin-left: 6%;
+		width: 47%;
+	}
+
+	/* clearfix! */
+	#product #localnavi .twin_block .local_links:after {
+		content: ".";
+		display: block;
+		visibility: hidden;
+		clear: both;
+		height: 0;
+		font-size: 0;
+	}
+}
+
