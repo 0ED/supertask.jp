@@ -9,8 +9,25 @@
 
 
 #product header {
-	margin-bottom: 40px;
 }
+
+
+/* clearfix! */
+#product header:after {
+	content: ".";
+	display: block;
+	visibility: hidden;
+	clear: both;
+	height: 0;
+	font-size: 0;
+}
+
+
+#product header,
+#product #localnavi {
+	min-width: 650px;
+}
+
 
 #product header a img {
 	width: 100%;	
