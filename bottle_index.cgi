@@ -9,6 +9,14 @@ from bottle import route, run, view, get, post, request, static_file, url
 from bottle import TEMPLATE_PATH,jinja2_view
 from bottle import jinja2_template as template
 
+administrator_mail = "i1558129@cse.kyoto-su.ac.jp"
+error_article = """\
+You missed reading a article.<br />Please send a message of error to administrator (%s).<br />
+<br />
+記事の読み込みに失敗しました．<br />管理者(%s)にメールしてください．<br />
+""" % (administrator_mail, administrator_mail)
+error_article = error_article.decode('utf-8')
+
 ids= ['home','product','about','toy','research']
 titles = map(lambda x: x.upper(), ids)
 pathes = copy.deepcopy(ids)
@@ -51,7 +59,7 @@ def get_json_for_toy(name, key_line):
 	try:
 		my_article = open(detail_link + '.html').read().decode('utf-8')
 	except IOError: 
-		my_article = "記事の読み込みに失敗しました．管理者(lightfox.task@gmail.com)にメールしてください．".decode('utf-8')
+		my_article = error_article
 
 	a_json.update({'localnavi_link':localnavi_link, 'localnavi_links':localnavi_links, 'detail_links':detail_links, 'my_article':my_article})
 	return a_json
@@ -71,7 +79,7 @@ def get_json(name):
 
 def main():
 	app = bottle.app()
-	app.run(host="localhost", port=8080, debug=True, reloader=True)
+	app.run(host="localhost", port=80, debug=True, reloader=True)
 
 if __name__ == '__main__':
 	main()
