@@ -28,9 +28,12 @@
 	min-width: 650px;
 }
 
+#product header ul li a img.hide {
+	display: none;
+}
 
-#product header a img {
-	width: 100%;	
+#product header ul li a img {
+	width: 100%;
 }
 
 

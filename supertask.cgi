@@ -22,22 +22,29 @@ titles = map(lambda x: x.upper(), ids)
 pathes = copy.deepcopy(ids)
 pathes[0] = '.'
 globalnavi_zip = zip(pathes,ids,titles)
+TEMPLATE_FILE_NAME = '_template.html'
 TEMPLATE_PATH.append("./templates")
 
 @route('/', name='home')
 def home():
-	return template('home_template.html',get_json("home"))
+	return template('home' + TEMPLATE_FILE_NAME,get_json("home"))
 
-@route('/<name>', method='GET')
-def other(name):
-	if name == 'toy':
-		key_line = request.query.key_line
-		if not key_line: 
-			key_line='Parsing,Introduction'
-		return template('toy_template.html',get_json_for_toy(name, key_line))
-	elif name == 'product':
-		pass # I'll extend
-	return template(name + '_template.html',get_json(name))
+@route('/<page_tag>', method='GET')
+def other(page_tag):
+	if page_tag == 'toy': return toy_page(page_tag)
+	elif page_tag == 'product': pass #return product_page(page_tag)
+
+	return template(page_tag + TEMPLATE_FILE_NAME,get_json(page_tag))
+
+def toy_page(page_tag):
+	key_line = request.query.key_line
+	if not key_line:
+		key_line='Parsing,Introduction'
+	return template(page_tag + TEMPLATE_FILE_NAME,get_json_for_toy(page_tag, key_line))
+
+def product_page(page_tag):
+	pass
+
 
 @route('/<filepath:path>')
 def static(filepath):
