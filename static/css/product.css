@@ -7,7 +7,6 @@
 #product #globalnavi ul li a#product_gnavi:hover {
 }
 
-
 #product header {
 }
 
@@ -28,9 +27,19 @@
 	min-width: 650px;
 }
 
+
+#product header div.bx-pager,
+#product div#localnavi div.twin_block {
+	visibility: hidden;
+}
+
+/*
+ * bxsliderで最初の2秒間、「表示、読み込み」をしない領域(img.hide)
+ */
 #product header ul li a img.hide {
 	display: none;
 }
+
 
 #product header ul li a img {
 	width: 100%;
@@ -74,7 +83,9 @@
 /*
  * タブレット
  */
-@media only screen and (max-width:920px) {
+
+/*
+@media only screen and (min-device-width: 320px) and (max-device-width: 921px) {
 	#product #localnavi .twin_block {
 		margin-left: auto;
 		margin-right: auto;
@@ -84,11 +95,14 @@
 		margin-bottom: 12%;
 	}
 }
+*/
+
 
 /*
  * PC version
  */
-@media only screen and (min-width:921px) {
+/*@media not screen and (max-device-width: 921px) {*/
+/*@media screen and (man-width:921px) {*/
 	#product #localnavi .twin_block {
 		margin-bottom: 50px;
 	}
@@ -118,5 +132,5 @@
 		height: 0;
 		font-size: 0;
 	}
-}
+/*}*/
 

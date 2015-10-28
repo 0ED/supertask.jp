@@ -12,10 +12,12 @@ $(document).ready(function() {
 		mode: 'fade',
 		speed: 500,
 		hideControlOnEnd: 'true',
-		captions: 'true'
+		captions: 'true',
+		onSliderLoad: function() {
+			$('#product header div.bx-pager').css('visibility','visible');
+			$('#product div#localnavi div.twin_block').css('visibility','visible');
+		}
 	});
-
-	//$('#product header ul img.hide').css('display','block');
 });
 
 

@@ -24,6 +24,7 @@
 
 #home #mainTopic header h1 {
 	font-family: 'Perfume';
+	font-size: 200%;
 	display: block;
 	text-align: center;
 	margin-left: auto;
@@ -34,6 +35,14 @@
 	bottom: 0;
 	margin-top: 15%;
 	position: absolute;
+}
+
+@media only screen 
+and (min-device-width: 320px)
+and (max-device-width: 568px) {
+	#home #mainTopic header h1 {
+		font-size: 150px;
+	}
 }
 
 #home #mainTopic header h1 span {
