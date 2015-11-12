@@ -1,6 +1,6 @@
 {% extends "base_template.html" %}
 {% block add_head %}
-	<script src="{{static_path}}/js/setting_read_about-page.js" type="text/javascript"></script>
+	<!--<script src="{{static_path}}/js/setting_about-page.js" type="text/javascript"></script>-->
 {% endblock %}
 
 {% block content %}
@@ -71,7 +71,11 @@
 			</footer>
 {% endblock %}
 
-{% block scale_js %}
-			$("#{{id}} #mainTopic header #aboutme h1").fitText(1.0,{minFontSize:'12px',maxFontSize: '72px'});
-			$("#{{id}} #mainTopic header #aboutme p").fitText(1.4,{minFontSize:'9px',maxFontSize: '64px'});
+{% block back_js %}
+	<script src="{{static_path}}/js/setting_about-page.js" type="text/javascript"></script>
+
+	<script>
+			//$("#about #mainTopic header #aboutme h1").fitText(1.0,{minFontSize:'12px',maxFontSize: '72px'});
+			//$("#about #mainTopic header #aboutme p").fitText(1.4,{minFontSize:'9px',maxFontSize: '64px'});
+	</script>
 {% endblock %}

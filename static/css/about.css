@@ -62,9 +62,10 @@
 }
 
 #about #mainTopic header #aboutme > p {
-	/*font-family: 'Linux';*/
+	/*font-family: "ƒƒCƒŠƒI","Meiryo",verdana,"ƒqƒ‰ƒMƒmŠpƒS Pro W3","Hiragino Kaku Gothic Pro",Osaka,"‚l‚r ‚oƒSƒVƒbƒN","MS PGothic",Sans-Serif;*/
 }
 
+/*
 @font-face {
 	font-family: 'Linux_B';
 	src: url('../fonts/LinLibertine_aSZI.ttf');
@@ -74,6 +75,7 @@
 	font-family: 'Linux';
 	src: url('../fonts/LinLibertine_aSI.ttf');
 }
+*/
 
 
 /*
@@ -121,8 +123,10 @@
 
 #about #mainTopic article section#intro img#myface {
 	float: right;
-	margin-right: 100px;
-	border: 6px solid #DDD;
+	margin: 25px;
+	border-radius: 15px;
+	    -webkit-border-radius: 15px;
+		-moz-border-radius: 15px;
 }
 
 #about #mainTopic article section#intro img#rudds {

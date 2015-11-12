@@ -2,12 +2,12 @@
 	"about" : {
 		"aboutme" : {
 			"tasuku" : "Hello, I'm Tasuku.",
-			"myfield" : "My field is network, OSS, compiler, binary, 3d graphics, music, and so on."
+			"myfield" : "My major is computer science. As the field, distributed system, parsing, graphic etc."
 		},
 
 		"intro" : {
 			"title" : "Self-Introduction",
-			"contents-1" : "My name is Tasuku TAKAHASHI. Now, I am master of computer and 22 years old(2015). And, I go to Kyoto Sangyo University in Kyoto Japan. My special field is computer science. Especially I investigate Network. I belong ",
+			"contents-1" : "My name is Tasuku TAKAHASHI. My major is computer science. Now I'm master of science and 22 years old(2015). And, I go to Kyoto Sangyo University in Kyoto Japan. My special field is computer science. Especially I investigate Network. I belong ",
 			"contents-2" : "Research Unit in Dependable Distributed Systems(Rudds)",
 			"contents-3" : " now.",
 			"contents-4" : "In addition to research, I study about network, software, compiler, web parser, binary, 3d graphics, making music. In network, I make structured P2P network, In compiler, I make programming language. In web parser, I parse big data on web. In binary, I research binary file and study file system for Security Contest or CTF. In 3d graphics, I try to make future application. In to making music, I make music by DTM software.",
@@ -16,8 +16,8 @@
 
 		"skill" : {
 			"title" : "My skills",
-			"contents-1" : "My field network, software, compiler, web parser, binary, 3d graphics, making music, and so on. In network, I make structured P2P network, In compiler, I make programming language. In web parser, I parse big data on web. In binary, I research binary file and study file system for Security Contest or CTF. In 3d graphics, I try to make future application. In to making music, I make music by DTM software.",
-			"contents-2" : "I'm using Python, C++, Java, C, Go, Shell, JavaScript, AppleScript, Objective-C, PHP, HTML, CSS as programming language. Especially I'm using often Python, C++, Java."
+			"contents-1" : " In network, I make structured P2P network, In compiler, I make programming language. In web parser, I parse big data on web. In binary, I research binary file and study file system for Security Contest or CTF. In 3d graphics, I try to make future application. In to making music, I make music by DTM software.",
+			"contents-2" : "I can use Python, C++, Java, C, Go, Shell, JavaScript, AppleScript,  PHP, HTML, CSS as programming language. Especially I'm using often Python, C++, Java."
 		}
 	}
 }

@@ -10,7 +10,8 @@ $(document).ready(function() {
 		auto: 'true',
 		infiniteLoop: 'true',
 		mode: 'fade',
-		speed: 500,
+		pause: 8000, //default:4000
+		speed: 700,
 		hideControlOnEnd: 'true',
 		captions: 'true',
 		onSliderLoad: function() {

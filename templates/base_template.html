@@ -16,34 +16,22 @@
 	<script src="{{static_path}}/js/jquery.fittext.js" type="text/javascript"></script>
 	<script src="{{static_path}}/js/i18next-1.10.1.min.js" type="text/javascript"></script>
 	<script type="text/javascript">
-		//$(function(){ i18n.init({}) });
-		$(function() {
-			var auto_selected_lang = ""; //現在はデフォルトは英語
+		$(function(){
+			i18n.init({
+				resGetPath: '{{static_path}}/articles/{{id}}/trans-__lng__.json'
+			}, function(err, t) {
+				var auto_selected_lang = ''; //現在はデフォルトは英語
 
-			if (i18n.lng() === "en" || i18n.lng() === "ja") { }
-			else {
-				auto_selected_lang = (navigator.languages ? navigator.languages[0] : (navigator.language || navigator.userLanguage || navigator.browserLanguage)).substr(0, 2);
-			}
-
-			i18n.init({ 
-				resGetPath: '{{static_path}}/articles/{{id}}/trans-__lng__.json',
-				lng: auto_selected_lang,
-				fallbackLng: auto_selected_lang
-			}).done(function() {
-				$("#about div#mainTopic").i18n();
-			});
-
-			$("#trans-ja").click(function() {
-				i18n.setLng('ja-JP');
-				i18n.init({ lng: "ja", fallbackLng: "ja" }).done(function() {
-					$("#about div#mainTopic").i18n();
-				});
-			});
-			$("#trans-en").click(function() {
-				i18n.setLng('en-US');
-				i18n.init({ lng: "en", fallbackLng: "en" }).done(function() {
-					$("#about div#mainTopic").i18n();
-				});
+				if (i18n.lng() === 'en' || i18n.lng() === 'ja') {
+					/* キャッシュがあるとき */
+					auto_selected_lang = i18n.lng();
+				}
+				else {
+					/*キャッシュがなく、どの言語にするべきか、わからない場合。*/
+					auto_selected_lang = (navigator.languages ? navigator.languages[0] : (navigator.language || navigator.userLanguage || navigator.browserLanguage)).substr(0, 2);
+				}
+				i18n.setLng(auto_selected_lang);
+				$("#{{id}} div#mainTopic").i18n();
 			});
 		});
 	</script>
@@ -72,9 +60,7 @@
 {% block content %}{% endblock %}
 <!-- /#mainTopic --></div>
 
-<script type="text/javascript">
-{% block scale_js %}{% endblock %}
-</script>
+{% block back_js %}{% endblock %}
 
 <!-- /#document --></div>
 </body>

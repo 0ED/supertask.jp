@@ -28,7 +28,9 @@
 				<section>
 			</article>
 {% endblock %}
-{% block scale_js %}
-				$("#mainTopic header #nirf h1").fitText(0.36,{minFontSize:'112px',maxFontSize: '342px'});
-				$("#mainTopic header #nirf p").fitText(2.4,{minFontSize:'18px',maxFontSize: '50px'});
+{% block back_js %}
+	<script type="text/javascript">
+		$("#mainTopic header #nirf h1").fitText(0.36,{minFontSize:'112px',maxFontSize: '342px'});
+		$("#mainTopic header #nirf p").fitText(2.4,{minFontSize:'18px',maxFontSize: '50px'});
+	</script>
 {% endblock %}

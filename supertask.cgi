@@ -39,7 +39,7 @@ def other(page_tag):
 def toy_page(page_tag):
 	key_line = request.query.key_line
 	if not key_line:
-		key_line='Parsing,Introduction'
+		key_line='Network,Introduction'
 	return template(page_tag + TEMPLATE_FILE_NAME,get_json_for_toy(page_tag, key_line))
 
 def product_page(page_tag):
@@ -82,12 +82,12 @@ def get_order_links(path):
 
 def get_json(name):
 	i = ids.index(name)
-	return {'id':ids[i], 'title':titles[i], 'globalnavi_zip': globalnavi_zip}
+	return {'id':ids[i], 'title':titles[i], 'static_path': '', 'globalnavi_zip': globalnavi_zip}
 
 def main():
 	app = bottle.app()
-	#app.run(host="localhost", port=8080, debug=True, reloader=True)
-	app.run(host="153.126.146.45", port=80, debug=True, reloader=True)
+	app.run(host="localhost", port=8080, debug=True, reloader=True)
+	#app.run(host="153.126.146.45", port=80, debug=True, reloader=True)
 
 if __name__ == '__main__':
 	main()
