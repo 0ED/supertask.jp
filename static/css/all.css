@@ -44,6 +44,8 @@ body {
 
 /* グローバルナビ
 ================================= */
+
+
 #home nav.naver ul li a#home_gnavi,
 #about nav.naver ul li a#about_gnavi,
 #product nav.naver ul li a#product_gnavi,
@@ -61,9 +63,9 @@ body {
 	background-color: #333;
 }
 
-
 nav.naver {
 	background: #444;
+	width: 100%;
 	/*min-width: 800px;*/
 }
 
@@ -79,17 +81,15 @@ nav.naver:after {
 
 nav.naver ul {
 	margin-left:3%;
-	width: 768px;
+	/*width: 768px;*/
+	width: 70%;
 	list-style-type: none;
 }
 
 nav.naver img {
 	margin-top: 5px;
 	height: 36px;
-	width: 60px;
-}
-
-nav.naver ul li {
+	width: 10%;
 }
 
 nav.naver ul li a {
@@ -97,7 +97,6 @@ nav.naver ul li a {
 	display: block;
 	/*width: 100px;*/
 	width: 15%;
-	min-width: 100px;
 	color: white;
 	line-height: 40px;
 	font-size: 15px;
@@ -128,7 +127,6 @@ nav.naver #lang_select img {
 nav.naver #lang_select img:last-child {
 	margin-right:0px;
 }
-
 
 @font-face {
 	font-family: '1';

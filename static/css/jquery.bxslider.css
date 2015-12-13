@@ -16,7 +16,8 @@
 
 .bx-wrapper {
 	position: relative;
-	margin: 0 auto 60px;
+	/*margin: 0 auto 60px;*/
+	margin-bottom: 5%;
 	padding: 0;
 	*zoom: 1;
 }
@@ -65,8 +66,7 @@
 
 /* PAGER */
 .bx-wrapper .bx-pager {
-	left: 40px;
-	bottom: 25px;
+	bottom: 3%;
 	text-align: left;
 	font-size: .85em;
 	font-family: Arial;
@@ -94,6 +94,23 @@
 	-webkit-border-radius: 10px;
 	border-radius: 10px;
 }
+
+/* Mobile by Tasuku */
+@media screen and (min-width: 0px) and (max-width: 320px) {
+	.bx-wrapper .bx-pager.bx-default-pager a {
+		width: 12px;
+		height: 12px;
+		margin: 0 5px;
+	}
+}
+@media screen and (min-width: 321px) and (max-width: 920px) {
+	.bx-wrapper .bx-pager.bx-default-pager a {
+		width: 18px;
+		height: 18px;
+		margin: 0 7px;
+	}
+}
+
 
 .bx-wrapper .bx-pager.bx-default-pager a:hover,
 .bx-wrapper .bx-pager.bx-default-pager a.active {
@@ -201,3 +218,7 @@
 	font-size: 2.25em;
 	padding: 12px 60px;
 }
+
+
+
+

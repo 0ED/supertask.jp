@@ -86,8 +86,8 @@ def get_json(name):
 
 def main():
 	app = bottle.app()
-	app.run(host="localhost", port=8080, debug=True, reloader=True)
-	#app.run(host="153.126.146.45", port=80, debug=True, reloader=True)
+	#app.run(host="localhost", port=8080, debug=True, reloader=True)
+	app.run(host="153.126.146.45", port=80, debug=True, reloader=True)
 
 if __name__ == '__main__':
 	main()

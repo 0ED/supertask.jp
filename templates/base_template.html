@@ -4,14 +4,14 @@
 	<meta name = "description" content="This is Website for TasukuTAKAHASHI." />
 	<meta name = "keyboard" content="SuperTask,TasukuTAKAHASHI,Taskernet,縺溘°縺ッ縺励◆縺吶¥" />
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, target-densitydpi=160">
 	<title>Supertask - {{title}}</title>
 
 	<!-- CSS -->
 	<link href="{{static_path}}/css/reset.css" rel="stylesheet" type="text/css" />
 	<link href="{{static_path}}/css/all.css" rel="stylesheet" type="text/css" />
 	<link href="{{static_path}}/css/{{id}}.css" rel="stylesheet" type="text/css" />
-	<link href="{{static_path}}/css/jquery.fs.naver.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="{{static_path}}/css/jquery.fs.naver.css" rel="stylesheet" type="text/css" />
 
 
 	<!-- JavaScript -->
@@ -44,7 +44,7 @@
 		$(document).ready(function() {
 		  $("nav").naver({
 			labels: {
-			  closed: "Menu",
+			  closed: "Supertask",
 			  open: "Close"
 			},
 			maxWidth: "950px"
@@ -62,20 +62,6 @@
 <body class="supertask" id="{{id}}">
 
 <div id = "document">
-
-<!--
-<div id = "globalnavi">
-	<ul>
-		{% for g_path,g_id,g_title in globalnavi_zip %}
-			<li><a href="{{g_path}}" id="{{g_id}}_gnavi">{{g_title}}</a></li>
-		{% endfor %}
-	</ul>
-	<div id="lang_select">
-		<img src="{{static_path}}/img/header/lang_us.jpg" alt="English" id="trans-en" />
-		<img src="{{static_path}}/img/header/lang_jp.jpg" alt="Japanese" id="trans-ja" />
-	</div>
-</div>
--->
 
 <nav id="globalnavi" class="naver">
 	<ul>

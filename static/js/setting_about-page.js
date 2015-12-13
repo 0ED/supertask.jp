@@ -13,6 +13,7 @@ $(function() {
 		$("#about div#mainTopic header div#aboutme").css('font-family', '"メイリオ","Meiryo","Hiragino Kaku Gothic Pro"');
 		$("#about #mainTopic header #aboutme h1").fitText(1.5,{minFontSize:'12px',maxFontSize: '72px'});
 		$("#about #mainTopic header #aboutme p").fitText(1.9,{minFontSize:'9px',maxFontSize: '64px'});
+		$("#about #mainTopic article section h2").fitText(1.7,{minFontSize:'32px',maxFontSize: '72px'});
 	}
 
 	function setting_font_for_en() {
@@ -20,6 +21,10 @@ $(function() {
 		$("#about div#mainTopic header div#aboutme").css('font-family', 'serif');
 		$("#about #mainTopic header #aboutme h1").fitText(1.0,{minFontSize:'12px',maxFontSize: '72px'});
 		$("#about #mainTopic header #aboutme p").fitText(1.4,{minFontSize:'9px',maxFontSize: '64px'});
+		$("#about #mainTopic article section h2").fitText(1.1,{minFontSize:'28px',maxFontSize: '72px'});
+		$("#about #mainTopic article section p").fitText(1.8,{minFontSize:'9px',maxFontSize: '38px'});
+		$("#about #mainTopic article section div.hobbies p").fitText(1.4,{minFontSize:'14px',maxFontSize: '38px'});
+		$("#about #mainTopic article section div.hobbies h3").fitText(1.1,{minFontSize:'16px',maxFontSize: '42px'});
 	}
 
 	if (i18n.lng() === "ja") { setting_font_for_ja(); }

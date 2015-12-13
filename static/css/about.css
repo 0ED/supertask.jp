@@ -7,7 +7,7 @@
 
 #about #mainTopic header{
 	width: 100%;
-	min-width: 950px;
+	/*min-width: 750px;*/
 }
 
 #about #mainTopic header .clearfix {
@@ -51,6 +51,19 @@
 	/*font-family: '1';*/
 }
 
+@media screen and (min-width: 0px) and (max-width: 980px) {
+	#about #mainTopic header #lightfox-anime > img {
+		width: 52%;
+		margin-left: -8%;
+	}
+	#about #mainTopic header #aboutme {
+		width: 50%;
+		margin-left: 5%;
+		margin-top: 15%;
+	}
+}
+
+
 #about #mainTopic header #aboutme > h1 {
 	/*font-family: 'Linux_B';*/
 }
@@ -76,13 +89,13 @@
  * Article
  */
 #about #mainTopic article {
-	margin-top: 100px;
+	margin-top: 7%;
 }
 #about #mainTopic article section {
 	width: 82%;
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: 120px;
+	margin-bottom: 15%;
 }
 
 #about #mainTopic article section:after {
@@ -96,7 +109,7 @@
 
 #about #mainTopic article section h2 {
 	font-family: "Helvetica Neue";
-	margin-bottom: 50px;
+	margin-bottom: 3%;
 	font-size: 74px;
 	text-align: center;
 }
@@ -123,13 +136,6 @@
 		-moz-border-radius: 15px;
 }
 
-#about #mainTopic article section#intro img#rudds {
-	float: left;
-	margin: 25px;
-	padding: 30px;
-	width: 580px;
-	box-shadow: 3px 3px 10px rgba(0,0,0,0.4);
-}
 
 #about #mainTopic article section#intro h2 {
 	color: #07C2FA;
@@ -158,7 +164,7 @@
  */
 #about #mainTopic article section#hobby {
 	width: 100%;
-	min-width: 850px;
+	/*min-width: 850px;*/
 	margin: 0;
 }
 
@@ -178,23 +184,22 @@
     font-size: 0;
 }
 #about #mainTopic article section#hobby .hobbies img {
-	padding: 10px;
+	padding: 7% 0%;
 }
 #about #mainTopic article section#hobby .hobbies p {
 	/*border-left: 4px solid #FF3300;*/
 }
 #about #mainTopic article section#hobby .hobbies .comment {
 	width: 40%;
-	padding: 0px 10px;
+	padding: 0px 0px;
 }
 #about #mainTopic article section#hobby .hobbies .comment h3 {
 	font-size: 34px;
 }
 #about #mainTopic article section#hobby .hobbies .comment p {
-	font-size: 28px;
-	margin-top: 10px;
-	margin-left: 30px;
-	padding: 5px 0px 0px 15px;
+	margin-top: 3%;
+	margin-left: 5%;
+	padding: 2% 0px 0px 5%;
 }
 
 /* My hobby -> Movie */
@@ -204,6 +209,8 @@
 	float: left;
 	margin-left: 6%;
 	width: 40%;
+	padding-top: 15%;
+	padding-bottom: 0%;
 }
 #about #mainTopic article section#hobby #movie .comment {
 	float: right;
@@ -231,7 +238,7 @@
 
 /* My hobby -> Piano */
 #about #mainTopic article section#hobby #piano {
-	min-width: 1000px;
+	/*min-width: 1000px;*/
 }
 
 #about #mainTopic article section#hobby #piano img {
@@ -239,6 +246,7 @@
 	width: 60%;
 	margin-left: -5%;
 	margin-top: -20%;
+	padding: 0;
 }
 
 #about #mainTopic article section#hobby #piano .comment h3 {
@@ -255,14 +263,14 @@
 
 #about #mainTopic footer {
 	width: 100%;
-	min-width: 950px;
+	/*min-width: 950px;*/
 	margin-top: -17%;
 }
 
 #about #mainTopic footer img#black_slash {
 	width: 100%;
 	height: 120px;
-	min-width: 950px;
+	/*min-width: 950px;*/
 }
 
 #about #mainTopic footer #footer_info {
@@ -277,3 +285,27 @@
 	height: 250px;
 }
 
+
+@media screen and (min-width: 0px) and (max-width: 980px) {
+	#about #mainTopic article section {
+		width: 88%;
+	}
+	#about #mainTopic article section#intro p,
+	#about #mainTopic article section#skills p {
+		padding: 0;
+	}
+
+	#about #mainTopic article section p {
+		border: none;
+	}
+	#about #mainTopic article section#intro img#myface {
+		margin: 0px 10px;
+		width: 38%;
+		text-align: center;
+	}
+}
+
+/*
+@media screen and (min-width: 0x) and (max-width: 320px) {
+}
+*/
