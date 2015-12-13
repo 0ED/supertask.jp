@@ -1,10 +1,5 @@
 /* グローバルナビ
 ================================= */
-#toy #globalnavi ul li a#toy_gnavi {
-	border-bottom: 5px solid #FD80DD;
-}
-#toy #globalnavi ul li a#toy_gnavi:hover {
-}
 #toy #mainTopic header {
 	background-image: url("../img/toy/black_cloth.png");
 	border-bottom: 8px solid #ff4eAA;

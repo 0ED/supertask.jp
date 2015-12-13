@@ -17,7 +17,7 @@ You missed reading a article.<br />Please send a message of error to administrat
 """ % (administrator_mail, administrator_mail)
 error_article = error_article.decode('utf-8')
 
-ids= ['home','product','about','toy','research']
+ids= ['home','about','product','toy']
 titles = map(lambda x: x.upper(), ids)
 pathes = copy.deepcopy(ids)
 pathes[0] = '.'

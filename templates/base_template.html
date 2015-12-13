@@ -4,12 +4,15 @@
 	<meta name = "description" content="This is Website for TasukuTAKAHASHI." />
 	<meta name = "keyboard" content="SuperTask,TasukuTAKAHASHI,Taskernet,縺溘°縺ッ縺励◆縺吶¥" />
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
 	<title>Supertask - {{title}}</title>
 
 	<!-- CSS -->
 	<link href="{{static_path}}/css/reset.css" rel="stylesheet" type="text/css" />
 	<link href="{{static_path}}/css/all.css" rel="stylesheet" type="text/css" />
 	<link href="{{static_path}}/css/{{id}}.css" rel="stylesheet" type="text/css" />
+	<link href="{{static_path}}/css/jquery.fs.naver.css" rel="stylesheet" type="text/css" media="all" />
+
 
 	<!-- JavaScript -->
 	<script src="{{static_path}}/js/jquery.min.js" type="text/javascript"></script>
@@ -35,7 +38,22 @@
 			});
 		});
 	</script>
-	<!--<script src="{{static_path}}/js/lang_setting.js"></script>-->
+
+	<script src="{{static_path}}/js/jquery.fs.naver.js"></script>
+	<script>
+		$(document).ready(function() {
+		  $("nav").naver({
+			labels: {
+			  closed: "Menu",
+			  open: "Close"
+			},
+			maxWidth: "950px"
+		  });
+		});
+	</script>
+
+
+
 
 	<!-- Each original head -->
 	{% block add_head %}{% endblock %}
@@ -44,23 +62,42 @@
 <body class="supertask" id="{{id}}">
 
 <div id = "document">
+
+<!--
 <div id = "globalnavi">
-<ul>
-{% for g_path,g_id,g_title in globalnavi_zip %}
-	<li><a href="{{g_path}}" id="{{g_id}}_gnavi">{{g_title}}</a></li>
-{% endfor %}
-</ul>
-<div id="lang_select">
-<img src="{{static_path}}/img/header/lang_us.jpg" alt="English" id="trans-en" />
-<img src="{{static_path}}/img/header/lang_jp.jpg" alt="Japanese" id="trans-ja" />
+	<ul>
+		{% for g_path,g_id,g_title in globalnavi_zip %}
+			<li><a href="{{g_path}}" id="{{g_id}}_gnavi">{{g_title}}</a></li>
+		{% endfor %}
+	</ul>
+	<div id="lang_select">
+		<img src="{{static_path}}/img/header/lang_us.jpg" alt="English" id="trans-en" />
+		<img src="{{static_path}}/img/header/lang_jp.jpg" alt="Japanese" id="trans-ja" />
+	</div>
 </div>
-<!-- /#globalnavi --></div>
+-->
+
+<nav id="globalnavi" class="naver">
+	<ul>
+		{% for g_path,g_id,g_title in globalnavi_zip %}
+			<li><a href="{{g_path}}" id="{{g_id}}_gnavi">{{g_title}}</a></li>
+		{% endfor %}
+	</ul>
+	<div id="lang_select">
+		<img src="{{static_path}}/img/header/lang_us.jpg" alt="English" id="trans-en" />
+		<img src="{{static_path}}/img/header/lang_jp.jpg" alt="Japanese" id="trans-ja" />
+	</div>
+</nav>
+
+
 
 <div id = "mainTopic">
 {% block content %}{% endblock %}
 <!-- /#mainTopic --></div>
 
+
 {% block back_js %}{% endblock %}
+
 
 <!-- /#document --></div>
 </body>

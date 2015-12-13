@@ -1,12 +1,6 @@
 
 /* グローバルナビ
 ================================= */
-#about #globalnavi ul li a#about_gnavi {
-	border-bottom: 5px solid #FD80DD;
-}
-#about #globalnavi ul li a#about_gnavi:hover {
-}
-
 #about #mainTopic {
 	margin-bottom: 0px;
 }
