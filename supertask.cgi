@@ -1,7 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from bottle import route, run, view, get, post, request, static_file, url
+import bottle
+from bottle import route, run, view, get, post, request, static_file, url, error
 from bottle import TEMPLATE_PATH,jinja2_view
 from bottle import jinja2_template as template
 
@@ -36,6 +37,10 @@ def static(filepath):
 @route('/favicon.ico')
 def favicon():
 	pass
+
+@bottle.error(404)
+def error_404(error):
+	return 'Sorry, Nothing at this URL.'
 
 
 def get_error_article():
@@ -86,9 +91,9 @@ def get_json(name):
 
 def main():
 	TEMPLATE_PATH.append("./templates")
-	from bottle import app
-	supertask_server = app()
-	supertask_server.run(host="localhost", port=8080, debug=True, reloader=True)
+	from access_log_middleware import AccessLogMiddleware
+	supertask_server = AccessLogMiddleware(bottle.app())
+	bottle.run(host="localhost", port=8080, debug=True, app=supertask_server, reloader=True)
 	#app.run(host="153.126.146.45", port=80, debug=True, reloader=True)
 
 if __name__ == '__main__':
