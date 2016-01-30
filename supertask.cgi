@@ -93,8 +93,8 @@ def main():
 	TEMPLATE_PATH.append("./templates")
 	from access_log_middleware import AccessLogMiddleware
 	supertask_server = AccessLogMiddleware(bottle.app())
-	bottle.run(host="localhost", port=8080, debug=True, app=supertask_server, reloader=True)
-	#app.run(host="153.126.146.45", port=80, debug=True, reloader=True)
+	#bottle.run(host="localhost", port=8080, debug=True, app=supertask_server, reloader=True)
+	bottle.run(host="153.126.146.45", port=80, debug=True, app=supertask_server, reloader=True)
 
 if __name__ == '__main__':
 	main()
