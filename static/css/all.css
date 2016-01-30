@@ -14,13 +14,7 @@
 /* 大枠
 ===================================== */
 
-html {
-}
-
-body {
-}
-
-#header,nav.naver ul,#siteVisual,#mainTopic,#contents,#localnavi,#footer {
+#header,nav#globalnavi ul,#mainTopic,#contents,#footer {
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -46,11 +40,11 @@ body {
 ================================= */
 
 
-#home nav.naver ul li a#home_gnavi,
-#about nav.naver ul li a#about_gnavi,
-#product nav.naver ul li a#product_gnavi,
-#toy nav.naver ul li a#toy_gnavi,
-#research nav.naver ul li a#research_gnavi {
+#home nav#globalnavi ul li a#home_gnavi,
+#about nav#globalnavi ul li a#about_gnavi,
+#product nav#globalnavi ul li a#product_gnavi,
+#toy nav#globalnavi ul li a#toy_gnavi,
+#research nav#globalnavi ul li a#research_gnavi {
 	border-bottom: 5px solid #FD80DD;
 }
 
@@ -63,14 +57,14 @@ body {
 	background-color: #333;
 }
 
-nav.naver {
+nav#globalnavi {
 	background: #444;
 	width: 100%;
 	/*min-width: 800px;*/
 }
 
 /* clearfix! */
-nav.naver:after {
+nav#globalnavi:after {
 	content: ".";
     display: block;
     visibility: hidden;
@@ -79,20 +73,20 @@ nav.naver:after {
     font-size: 0;
 }
 
-nav.naver ul {
+nav#globalnavi ul {
 	margin-left:3%;
-	/*width: 768px;*/
-	width: 70%;
+	width: 828px;
+	/*width: 70%;*/
 	list-style-type: none;
 }
 
-nav.naver img {
+nav#globalnavi img {
 	margin-top: 5px;
 	height: 36px;
 	width: 10%;
 }
 
-nav.naver ul li a {
+nav#globalnavi ul li a {
 	float: left;
 	display: block;
 	/*width: 100px;*/
@@ -109,22 +103,22 @@ nav.naver ul li a {
 	text-align: center;
 }
 
-nav.naver ul li a:hover {
+nav#globalnavi ul li a:hover {
 	border-bottom: 5px solid #FD80DD;
 }
 
-nav.naver #lang_select {
+nav#globalnavi #lang_select {
 	padding: 8px 30px;
 	padding-bottom: 0px;
 	text-align: right;
 }
 
-nav.naver #lang_select img {
+nav#globalnavi #lang_select img {
 	width: 40px;
 	height: 25px;
 	margin-right: 3px;
 }
-nav.naver #lang_select img:last-child {
+nav#globalnavi #lang_select img:last-child {
 	margin-right:0px;
 }
 
@@ -150,3 +144,167 @@ nav.naver #lang_select img:last-child {
     height: 0;
     font-size: 0;
 }
+
+
+
+
+/* ------------- 記事の見出しのデコレーション ---------- */
+/* 吹き出しの見出し */
+.post-body .tri_line {
+  position: relative;
+  color: #111;
+  background: #fff;
+  font-size: 16px;
+  line-height: 1;
+  border :2px solid #555;
+  margin: 30px -10px 20px -10px;
+  padding: 15px 5px 12px 10px;
+  border-radius: 8px;
+}
+.post-body .tri_line:after, .tri_line:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  height: 0;
+  width: 0;
+}
+.post-body .tri_line:after {
+  left: 33px;
+  border: 11px solid transparent;
+  border-top: 11px solid #fff;
+}
+.post-body .tri_line:before {
+  left: 30px;
+  border: 14px solid transparent;
+  border-top: 14px solid #555;
+}
+
+/* 丸っこい見出し */
+.post-body .circle_line {
+  position: relative;
+  color: #111;
+  background: #ccc;
+  font-size: 20px;
+  line-height: 1;
+  margin: 30px 20px 10px -10px;
+  padding: 14px 5px 10px 50px;
+  border-radius: 22px 0 0 22px;
+}
+.post-body .circle_line:before {
+  content: "";
+  position: absolute;
+  background: #eee;
+  top: 50%;
+  left: 14px;
+  margin-top :-10px;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  box-shadow: 1px 1px 1px #777 inset;
+}
+.post-body .circle_line:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -22px;
+  height: 0;
+  width: 0;
+  border: 22px solid #ccc;
+  border-right-color: transparent;
+}
+
+/* 点線 */
+.post-body .point_line {
+  position: relative;
+  font-size: 20px;
+  line-height: 1;
+  margin:30px -30px 10px -25px;
+  padding: 15px 5px 15px 20px;
+  border-left: 10px solid #777;
+  border-bottom: 3px dashed #555;
+}
+
+.post-body .point_line:after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  height: 0;
+  width: 100%;
+  /*border-bottom: 3px dashed #555;*/
+}
+
+/* ワンポイント見出し */
+.post-body .one_point_line {
+    position: relative;
+    color: #111;
+    font-size: 1.143em;
+    font-weight: bold;
+    margin: 0 0 1.5em;
+    padding: 0.5em 0.5em 0.5em 1.7em;
+    border-bottom: 3px solid #B92A2C;
+}
+ 
+.post-body .one_point_line:before {
+    content: "";
+    position: absolute;
+    background: #333;
+    top: 0;
+    left: 0.4em;
+    height: 12px;
+    width: 12px;
+    transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+}
+ 
+.post-body .one_point_line:after {
+    content: "";
+    position: absolute;
+    background:#333;
+    top: 1.0em;
+    left: 0;
+    height: 8px;
+    width: 8px;
+    transform: rotate(15deg);
+    -moz-transform: rotate(15deg);
+    -webkit-transform: rotate(15deg);
+    -o-transform: rotate(15deg);
+    -ms-transform: rotate(15deg);
+}
+
+.post-body hr {
+    border: 0;
+    height: 2px;
+    background: #333;
+    background-image: -webkit-linear-gradient(left, #ccc, #333, #ccc);
+    background-image:    -moz-linear-gradient(left, #ccc, #333, #ccc);
+    background-image:     -ms-linear-gradient(left, #ccc, #333, #ccc);
+    background-image:      -o-linear-gradient(left, #ccc, #333, #ccc);
+}
+
+/* SNS Tools */
+.sns-accounts{margin-bottom:50px;}
+.sns-accounts ul {padding:0;margin:0;}
+.sns-accounts li{list-style:none;display:inline-block;margin-right:10px;padding:0;font-weight:700;text-transform:uppercase}
+.sns-accounts li:first-child {font-size:16px;color:#22a1c4;}
+.sns-accounts li a{display:block;text-align:center;}
+.sns-accounts span{display:none;}
+.sns-accounts li a i{display:block;color:white;width:40px;height:40px;line-height:40px;font-size:18px;border-radius:40px;font-weight:normal;transition:all .3s;}
+.sns-accounts{margin-bottom:30px;line-height:52px;min-height:52px;}
+.sns-accounts li a i.fa.fa-facebook{background:#3b5998;border:1px solid transparent;}
+.sns-accounts li a i.fa.fa-twitter{background:#19bfe5;border:1px solid transparent;}
+.sns-accounts li a i.fa.fa-google-plus{background:#d64136;border:1px solid transparent;}
+.sns-accounts li a i.fa.fa-linkedin{background:#006699;border:1px solid transparent;}
+.sns-accounts li a i.fa.fa-pinterest{background:#cb2027;border:1px solid transparent;}
+.sns-accounts li a i.fa.fa-github{color:white; background:#235;border:1px solid transparent;}
+/*
+.sns-accounts li a i.fa.fa-facebook:hover{background:#fff;color:#3b5998;border:1px solid #4666aa;}
+.sns-accounts li a i.fa.fa-twitter:hover{background:#fff;color:#19bfe5;border:1px solid #2acef4;}
+.sns-accounts li a i.fa.fa-google-plus:hover{background:#fff;color:#d64136;border:1px solid #e95247;}
+.sns-accounts li a i.fa.fa-linkedin:hover{background:#fff;color:#006699;border:1px solid #017ab6;}
+.sns-accounts li a i.fa.fa-pinterest:hover{background:#fff;color:#cb2027;border:1px solid #e33239;}
+.sns-accounts li a i.fa.fa-github:hover{background:#fff;color:#235;border:1px solid #235;}
+*/

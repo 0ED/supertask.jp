@@ -7,10 +7,10 @@
 	<script src="{{static_path}}/js/parallax.js"></script>
 	<script type="text/javascript">
 	</script>
+
 {% endblock %}
 
 {% block content %}
-			
 			<header>
 				<ul class="bxslider">
 					<li><a href="http://rudds.jp/labo3d"><img class='active' title="Labo3D" src="{{static_path}}/img/{{id}}/big_labo3d.png" width="100%"/></a></li>
@@ -20,46 +20,41 @@
 				</ul>
 			</header>
 
-			<div class="content" id="localnavi" data-width="451" data-start="center" data-stop="center">
+			<div id="localnavi">
 				<div class = "twin_block">
-					<div class = "local_links">
-						<a href="https://github.com/0ED/MemorySlot">
-							<img src="{{static_path}}/img/{{id}}/small_memoryslot.png" alt="Memory Slot" />
-							<h2>Memory Slot</h2>
-						</a>
-					<!-- /.local_links --></div>
-
-					<div class = "local_links">
-						<a href="http://www.cse.kyoto-su.ac.jp/~g1144704/jikken">
-							<img src="{{static_path}}/img/{{id}}/small_formalweb.png" alt="Formal Web" />
-							<h2>Formal Web</h2>
-						</a>
-					<!-- /.local_links --></div>
+                    <a class="local_links" href="http://rudds.jp/labo3d">
+                        <img src="{{static_path}}/img/{{id}}/small_labo3d.png" alt="Labo3D" />
+                    </a>
+                    <a class="local_links" href="http://www.cse.kyoto-su.ac.jp/~g1144704/jikken" target='_blank'>
+                        <img src="{{static_path}}/img/{{id}}/small_formalweb.png" alt="Formal Web" />
+                    </a>
 				</div>
 
 				<div class = "twin_block">
-					<div class = "local_links">
-						<a href="research">
-							<img src="{{static_path}}/img/{{id}}/small_nirf.png" alt="NIRF" />
-							<h2>NIRF</h2>
-						</a>
-					<!-- /.local_links --></div>
-
-					<div class = "local_links">
-						<a href="https://github.com/0ED/paladin">
-							<img src="{{static_path}}/img/{{id}}/small_paladin.png" alt="Programming language Paladin" />
-							<h2>Paladin</h2>
-						</a>
-					<!-- /.local_links --></div>
+                    <a class="local_links" href="https://github.com/0ED/MemorySlot">
+                        <img src="{{static_path}}/img/{{id}}/small_memoryslot.png" alt="Memory Slot" />
+                    </a>
+                    <a class="local_links"  href="research">
+                        <img src="{{static_path}}/img/{{id}}/small_nirf.png" alt="NIRF" />
+                    </a>
 				</div>
 
-			<!-- /#localnavi --></div>
+				<div class = "twin_block">
+                    <a class="local_links" href="https://github.com/0ED/paladin">
+                        <img src="{{static_path}}/img/{{id}}/small_paladin.png" alt="Programming language Paladin" />
+                    </a>
+                    <a class="local_links" href="">
+                        <img src="{{static_path}}/img/{{id}}/small_coming_soon.png" alt="Coming soon" />
+                    </a>
+				</div>
+			</div>
 
 {% endblock %}
 
 
-{% block scale_js %}
-		$("#{{id}} #mainTopic header .bx-caption").fitText(1.2,{minFontSize:'12px',maxFontSize: '72px'});
-
+{% block back_js %}
+		<script type="text/javascript">
+			$("#{{id}} div#mainTopic .local_links h2").fitText(0.9,{minFontSize:'13px',maxFontSize: '92px'});
+		</script>
 
 {% endblock %}

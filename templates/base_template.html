@@ -13,7 +13,6 @@
 	<link href="{{static_path}}/css/{{id}}.css" rel="stylesheet" type="text/css" />
 	<link href="{{static_path}}/css/jquery.fs.naver.css" rel="stylesheet" type="text/css" />
 
-
 	<!-- JavaScript -->
 	<script src="{{static_path}}/js/jquery.min.js" type="text/javascript"></script>
 	<script src="{{static_path}}/js/jquery.fittext.js" type="text/javascript"></script>
@@ -42,7 +41,7 @@
 	<script src="{{static_path}}/js/jquery.fs.naver.js"></script>
 	<script>
 		$(document).ready(function() {
-		  $("nav").naver({
+		  $("nav#globalnavi").naver({
 			labels: {
 			  closed: "Supertask",
 			  open: "Close"
@@ -66,7 +65,11 @@
 <nav id="globalnavi" class="naver">
 	<ul>
 		{% for g_path,g_id,g_title in globalnavi_zip %}
-			<li><a href="{{g_path}}" id="{{g_id}}_gnavi">{{g_title}}</a></li>
+            {% if g_title == 'BLOG' %}
+                <li><a href="http://memotask.blogspot.jp" target='_blank' id="{{g_id}}_gnavi">{{g_title}}</a></li>
+            {% else  %}
+                <li><a href="{{g_path}}" id="{{g_id}}_gnavi">{{g_title}}</a></li>
+            {% endif %}
 		{% endfor %}
 	</ul>
 	<div id="lang_select">

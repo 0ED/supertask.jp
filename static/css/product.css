@@ -16,15 +16,6 @@
 }
 
 
-#product header,
-#product #localnavi {
-}
-
-
-#product header div.bx-pager,
-#product div#localnavi div.twin_block {
-	visibility: hidden;
-}
 
 /*
  * bxsliderで最初の2秒間、「表示、読み込み」をしない領域(img.hide)
@@ -39,61 +30,23 @@
 }
 
 
-#product #localnavi {
-	width: 90%;
-	margin-left: auto;
-	margin-right: auto;
-}
 
-#product #localnavi .twin_block .local_links {
-	background: white;
-	overflow: hidden;
-	height: auto;
+
+#product #localnavi .twin_block a.local_links {
+    display: block;
+    padding 0;
+	background: #EEE;
 	box-shadow: 4px 4px 8px rgba(0,0,0,0.4);
 } 
-#product #localnavi .twin_block .local_links:first-of-type {
+
+#product #localnavi .twin_block a.local_links:first-of-type {
 	margin-left: 0px;
 }
 
-#product #localnavi .twin_block .local_links a h2 {
-	position: relative;
-	padding: 5px 8px;
-	text-align: center;
-	width: 45%;
-	background-color: rgba(255,255,255,0.85);
-	color: #333;
-	font-size: 1.6em;
-	margin-top: -50px;
-} 
-
-#product #localnavi .twin_block .local_links a img {
+#product #localnavi .twin_block a.local_links img {
 	width: 100%;
+    vertical-align:bottom; /* 余分な空白のための呪文 */
 } 
-
-
-
-
-/*
- * タブレット
-
-@media only screen and (min-device-width: 320px) and (max-device-width: 920px) {
-	#product #localnavi .twin_block {
-		margin-left: auto;
-		margin-right: auto;
-		width: 90%;
-	}
-	#product #localnavi .local_links {
-		margin-bottom: 12%;
-	}
-}
- */
-
-/*
- * PC version
- */
-#product #localnavi .twin_block {
-	margin-bottom: 6%;
-}
 
 /* clearfix! */
 #product #localnavi .twin_block:after {
@@ -106,18 +59,48 @@
 }
 
 #product #localnavi .twin_block .local_links {
-	float: left;
-	margin-left: 6%;
-	width: 47%;
 }
 
-/* clearfix! */
-#product #localnavi .twin_block .local_links:after {
-	content: ".";
-	display: block;
-	visibility: hidden;
-	clear: both;
-	height: 0;
-	font-size: 0;
+#product #localnavi .twin_block a {
+    display: block;
 }
 
+/*
+ * PC version
+ */
+@media only screen and (min-width: 921px) {
+    #product #localnavi {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #product #localnavi .twin_block .local_links {
+        float: left;
+        margin-left: 6%;
+        width: 47%;
+    }
+    
+    #product #localnavi .twin_block {
+        margin-bottom: 5%;
+    }
+}
+
+/*
+ * タブレット
+ */
+@media only screen and (min-width: 320px) and (max-width: 920px) {
+	#product #localnavi {
+		width: 85%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+    #product #localnavi .twin_block a.local_links {
+        margin-bottom: 7%;
+    }
+    /*
+	#product #localnavi .local_links {
+		margin-bottom: 12%;
+	}
+    */
+}

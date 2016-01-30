@@ -19,44 +19,63 @@
 	float: right;
 	font-family: 'Hiragino Mincho ProN';
 	color: white;
-	font-size: 12em;
 	line-height: 200px;
 	margin-top: 40px;
-	margin-right: 110px;
+	margin-right: 7%;
 	text-align: right;
 }
+
+@media screen and (min-width: 0px) and (max-width:321px) {
+	#toy #mainTopic header h1 {
+		font-size: 8em;
+	}
+}
+@media screen and (min-width: 321px) and (max-width:921px) {
+	#toy #mainTopic header h1 {
+		font-size: 10em;
+	}
+}
+@media screen and (min-width:921px) {
+	#toy #mainTopic header h1 {
+		font-size: 12em;
+	}
+}
+
 
 /*
  * ここのfloat&clearfix設定により,localnaviを設定
  */
-#toy #mainTopic header ul#localnavi {
+#toy #mainTopic header nav#localnavi ul {
 	padding-top: 250px;
 	margin-left: 4%;
 }
 
-#toy #mainTopic header ul#localnavi li {
+#toy #mainTopic header nav#localnavi ul li {
 	border-right: 2px solid #FFF;
 }
 
-#toy #mainTopic header ul#localnavi li:last-child {
+#toy #mainTopic header nav#localnavi ul li:last-child {
 	border: none;
 }
 
-#toy #mainTopic header ul#localnavi li a {
+#toy #mainTopic header nav#localnavi ul li a {
 	float: left;
 	background-color: #6e6a6a;
 	color: white;
 	font-size: 18px;
-	padding: 0px 15px;
+	padding: 0px 10px;
 	line-height: 40px;
 	font-family: "メイリオ","Meiryo",verdana,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",Osaka,"ＭＳ Ｐゴシック","MS PGothic",Sans-Serif;
 }
 
-#toy #mainTopic header ul#localnavi li a.active {
+
+
+
+#toy #mainTopic header nav#localnavi ul li a.active {
 	background-color: #ff4e95;
 }
 
-#toy #mainTopic header ul#localnavi:after {
+#toy #mainTopic header nav#localnavi ul:after {
 	content: ".";
 	display: block;
 	visibility: hidden;
@@ -71,6 +90,9 @@
 	clear: both;
 }
 
+/*
+ * PCの設定
+ */
 @media only screen and (min-width:921px) {
 	/* clearfix! */
 	#toy #mainTopic article:after {
@@ -82,7 +104,7 @@
 		font-size: 0;
 	}
 
-	#toy #mainTopic article div#left-contents {
+	#toy #mainTopic article div#post-body {
 		width: 62%;
 		border-right: 5px solid #BBB;
 	}
@@ -91,7 +113,7 @@
 		width: 24%;
 	}
 
-	#toy #mainTopic article div#left-contents,
+	#toy #mainTopic article div#post-body,
 	#toy #mainTopic article div#right-contents {
 		float: left;
 	}
@@ -99,7 +121,7 @@
 
 
 
-#toy #mainTopic article div#left-contents {
+#toy #mainTopic article div#post-body {
 	font-family: Arial, sans-serif;
 	color: #3d5054;
 	padding: 20px 3%;
@@ -109,28 +131,28 @@
 /*
  * 各記事のメインタイトル、主に画像になる
  */
-#toy #mainTopic article div#left-contents h2 {
+#toy #mainTopic article div#post-body h2 {
 	
 }
 
-#toy #mainTopic article div#left-contents h3 {
+#toy #mainTopic article div#post-body h3 {
 	padding-left: 25px;
 	padding-bottom: 5px;
 	font-size: 32px;	
 	border-bottom: 3px solid #3d5054;
 }
 
-#toy #mainTopic article div#left-contents p {
+#toy #mainTopic article div#post-body p {
 	font-size: 18px;
 	line-height: 31px;
 	padding: 20px 15px;
 }
 
-#toy #mainTopic article div#left-contents ul {
+#toy #mainTopic article div#post-body ul {
 	
 }
 
-#toy #mainTopic article div#left-contents ul li {
+#toy #mainTopic article div#post-body ul li {
 	
 }
 

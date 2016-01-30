@@ -1,25 +1,39 @@
 {% extends "base_template.html" %}
 
 {% block add_head %}
+	<script>
+		$(document).ready(function() {
+		  $("nav#globalnavi").naver({
+			labels: {
+			  closed: "Contents",
+			  open: "Close"
+			},
+			maxWidth: "950px"
+		  });
+		});
+	</script>
 {% endblock %}
 
 {% block content %}
 			<div id="tabs">
 				<header>
 					<h1>Toy</h1>
-					<ul id="localnavi">
-						{% for a_link in localnavi_links %}
-							{% if a_link == localnavi_link %}
-								<li><a class="active" href="?key_line={{a_link}},Introduction">{{a_link}}</a></li>
-							{% else  %}
-								<li><a href="?key_line={{a_link}},Introduction">{{a_link}}</a></li>
-							{% endif %}
-						{% endfor %}
-					<!-- /ul#localnavi --></ul>
+
+                    <nav id='localnavi'>
+					    <ul>
+                            {% for a_link in localnavi_links %}
+                                {% if a_link == localnavi_link %}
+                                    <li><a class="active" href="?key_line={{a_link}},Introduction">{{a_link}}</a></li>
+                                {% else  %}
+                                    <li><a href="?key_line={{a_link}},Introduction">{{a_link}}</a></li>
+                                {% endif %}
+                            {% endfor %}
+                        <!-- /ul#localnavi --></ul>
+                   </nav>
 				</header>
 
 				<article>
-					<div id="left-contents">
+					<div id="post-body">
 					{{my_article}}
 					</div>
 
@@ -34,5 +48,5 @@
 			</div>
 {% endblock %}
 
-{% block scale_js %}
+{% block back_js %}
 {% endblock %}
