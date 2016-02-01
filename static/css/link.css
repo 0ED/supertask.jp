@@ -1,13 +1,6 @@
 
 /* グローバルナビ
 ================================= */
-#link #globalnavi ul li a#link_gnavi {
-	border-bottom: 5px solid #FD80DD;
-}
-#link #globalnavi ul li a#link_gnavi:hover {
-}
-
-
 
 #link #mainTopic {
 	margin-top: 50px;
@@ -18,16 +11,14 @@
 }
 
 #link #mainTopic h2 {
-	font-size: 28px;
+	font-size: 26px;
 }
 
-#link #mainTopic h2 span {
-	font-size: 18px;
+#link #mainTopic h3 {
+	font-size: 21px;
 }
 
 #link #mainTopic ul {
-	padding-left: 30px;
-	padding-top: 7px;
 	list-style-type: square;
 }
 

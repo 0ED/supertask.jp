@@ -1,44 +1,59 @@
-/* グローバルナビ
-================================= */
-#toy #mainTopic header {
-	background-image: url("../img/toy/black_cloth.png");
-	border-bottom: 8px solid #ff4eAA;
+/*
+ * Toy
+ */
+nav#localnavi select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	font-size: 21px;
+	position: relative;
+	width: 100%;
+	padding: 8px;
+	background: url('../img/toy/arrow_for_select.png') no-repeat, linear-gradient(to bottom, #fff 0%,#efebe1 100%);
+	font-family: 'skia',Arial, sans-serif;
+	background-position: 98% 50%;
+	background-size: 25px;
 }
 
-/* clearfix! */
-#toy #mainTopic header:after {
-	content: ".";
-    display: block;
-    visibility: hidden;
-    clear: both;
-    height: 0;
-    font-size: 0;
+/* ヘッダーの画像 */
+#toy #mainTopic header {
+	background-image: url("../img/toy/black_cloth.png");
 }
+#toy #mainTopic header:after {content:"."; display:block; visibility:hidden; clear:both; height:0; font-size:0;} /* clearfix! */
 
 #toy #mainTopic header h1 {
 	float: right;
 	font-family: 'Hiragino Mincho ProN';
 	color: white;
-	line-height: 200px;
 	margin-top: 40px;
 	margin-right: 7%;
 	text-align: right;
 }
 
-@media screen and (min-width: 0px) and (max-width:321px) {
+
+@media screen and (min-width: 0px) and (max-width:371px) { /* 321*/
 	#toy #mainTopic header h1 {
-		font-size: 8em;
+		font-size: 64px;
+		line-height: 64px;
 	}
+	#toy #mainTopic header nav#localnavi ul { padding-top: 120px; }
+	#toy #mainTopic header nav#localnavi select { margin-top: 20px; }
 }
-@media screen and (min-width: 321px) and (max-width:921px) {
+@media screen and (min-width: 372px) and (max-width:921px) {
 	#toy #mainTopic header h1 {
-		font-size: 10em;
+		font-size: 138px;
+		line-height: 138px;
 	}
+	#toy #mainTopic header nav#localnavi ul { padding-top: 210px; }
+	#toy #mainTopic header nav#localnavi select { margin-top: 30px; }
 }
-@media screen and (min-width:921px) {
+@media screen and (min-width:922px) {
 	#toy #mainTopic header h1 {
-		font-size: 12em;
+		font-size: 200px;
+		line-height: 200px;
 	}
+	#toy #mainTopic header nav#localnavi ul { padding-top: 240px; }
+	#toy #mainTopic header { border-bottom: 8px solid #ff4eAA; }
 }
 
 
@@ -46,7 +61,6 @@
  * ここのfloat&clearfix設定により,localnaviを設定
  */
 #toy #mainTopic header nav#localnavi ul {
-	padding-top: 250px;
 	margin-left: 4%;
 }
 
@@ -65,9 +79,8 @@
 	font-size: 18px;
 	padding: 0px 10px;
 	line-height: 40px;
-	font-family: "メイリオ","Meiryo",verdana,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",Osaka,"ＭＳ Ｐゴシック","MS PGothic",Sans-Serif;
+	font-weight: 800;
 }
-
 
 
 
@@ -117,15 +130,29 @@
 	#toy #mainTopic article div#right-contents {
 		float: left;
 	}
+	#toy #mainTopic article div#post-body {
+		margin-left: 3%;
+	}
 }
+
+/*
+ * スマートフォンの設定
+ */
+@media only screen and (man-width:920px) {
+}
+
+
+#toy #mainTopic article div#post-body,
+#toy #mainTopic article div#right-contents {
+	padding: 20px 2%;
+}
+
 
 
 
 #toy #mainTopic article div#post-body {
 	font-family: Arial, sans-serif;
 	color: #3d5054;
-	padding: 20px 3%;
-	margin-left: 3%;
 }
 
 /*
@@ -157,12 +184,7 @@
 }
 
 
-#toy #mainTopic article div#right-contents {
-	padding: 20px 2%;
-}
-
 #toy #mainTopic article div#right-contents ul {
-	margin-left:3%;
 	list-style-type: none;
 }
 

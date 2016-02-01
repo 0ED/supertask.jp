@@ -1,0 +1,14 @@
+{% extends "base_template.html" %}
+
+{% block content %}
+<header>
+	<img src="{{static_path}}/img/{{id}}/perfume.png" />
+	<!--<h1><span>Super</span><span>task</span></h1>-->
+</header>
+{% endblock %}
+
+{% block back_js %}
+	<script type="text/javascript">
+		$("#home #mainTopic header").fitText(1.2);
+	</script>
+{% endblock %}

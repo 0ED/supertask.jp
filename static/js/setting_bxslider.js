@@ -15,8 +15,8 @@ $(document).ready(function() {
 		hideControlOnEnd: 'true',
 		captions: 'true',
 		onSliderLoad: function() {
-			$('#product header div.bx-pager').css('visibility','visible');
-			$('#product div#localnavi div.twin_block').css('visibility','visible');
+			$('#product header .bx-pager').css('visibility','visible');
+			$('#product #localnavi .twin_block').css('visibility','visible');
 		}
 	});
 });

@@ -14,45 +14,26 @@
 /* 大枠
 ===================================== */
 
-#header,nav#globalnavi ul,#mainTopic,#contents,#footer {
+#header,nav#globalnavi ul,#mainTopic,#footer {
 	margin-left: auto;
 	margin-right: auto;
 }
 
-#header,#mainTopic  {
-	width: auto;
-}
-
-
-body {
+body, #mainTopic,#bread,#footer {
 	background: white;
-}
-#siteVisual,#mainTopic,#bread,#footer {
-	background: white;
+	font-family: 'skia';
 }
 
-
-/* ヘッダー
-================================= */
-
-
-/* グローバルナビ
-================================= */
-
-
-#home nav#globalnavi ul li a#home_gnavi,
-#about nav#globalnavi ul li a#about_gnavi,
-#product nav#globalnavi ul li a#product_gnavi,
-#toy nav#globalnavi ul li a#toy_gnavi,
-#research nav#globalnavi ul li a#research_gnavi {
+#home nav#globalnavi ul li a#home_gnavi, #about nav#globalnavi ul li a#about_gnavi,
+#product nav#globalnavi ul li a#product_gnavi, #toy nav#globalnavi ul li a#toy_gnavi,
+#research nav#globalnavi ul li a#research_gnavi, #link nav#globalnavi ul li a#link_gnavi {
 	border-bottom: 5px solid #FD80DD;
 }
 
-#home .naver.enabled .naver-container ul li a#home_gnavi,
-#about .naver.enabled .naver-container ul li a#about_gnavi,
-#product .naver.enabled .naver-container ul li a#product_gnavi,
-#toy .naver.enabled .naver-container ul li a#toy_gnavi,
-#research .naver.enabled .naver-container ul li a#rearch_gnavi {
+
+#home nav#globalnavi.enabled ul li a#home_gnavi, #about nav#globalnavi.enabled ul li a#about_gnavi,
+#product nav#globalnavi.enabled ul li a#product_gnavi, #toy nav#globalnavi.enabled ul li a#toy_gnavi,
+#research nav#globalnavi.enabled ul li a#rearch_gnavi, #link nav#globalnavi.enabled ul li a#link_gnavi {
 	border-bottom: 2px solid #CCC;
 	background-color: #333;
 }
@@ -94,8 +75,14 @@ nav#globalnavi ul li a {
 	color: white;
 	line-height: 40px;
 	font-size: 15px;
+    /*
+	font-size: 15px;
 	font-family: "メイリオ","Meiryo",verdana,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",Osaka,"ＭＳ Ｐゴシック","MS PGothic",Sans-Serif;
-	font-weight: 600;
+	font-weight: 900;
+    */
+	font-size: 18px;
+	font-family: "skia", "メイリオ","Meiryo",verdana,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",Osaka,"ＭＳ Ｐゴシック","MS PGothic",Sans-Serif;
+	font-weight: 900;
 	border-top: 5px solid #444;
 	border-bottom: 5px solid #444;
 	margin-right: 10px;
@@ -144,6 +131,32 @@ nav#globalnavi #lang_select img:last-child {
     height: 0;
     font-size: 0;
 }
+
+
+
+
+/* --------- スマホ用のグローバルメニューの設定 ------- */
+nav#globalnavi.enabled .naver-container ul li a{
+	float: none;
+	width: 100%;
+	border: none;
+	border-bottom: 2px solid #CCC;
+}
+nav#globalnavi.enabled .naver-container ul {
+	margin-left: 0px;
+	width: 100%;
+}
+
+nav#globalnavi.enabled .naver-container div#lang_select {
+	padding: 0;
+	padding: 5px 0;
+	text-align: center;
+}
+/* ------------------------------- */
+
+
+
+
 
 
 
@@ -286,7 +299,6 @@ nav#globalnavi #lang_select img:last-child {
 }
 
 /* SNS Tools */
-.sns-accounts{margin-bottom:50px;}
 .sns-accounts ul {padding:0;margin:0;}
 .sns-accounts li{list-style:none;display:inline-block;margin-right:10px;padding:0;font-weight:700;text-transform:uppercase}
 .sns-accounts li:first-child {font-size:16px;color:#22a1c4;}

@@ -1,7 +1,8 @@
 
 /* グローバルナビ
 ================================= */
-#product header {
+#product header .bx-pager {
+	visibility: hidden;
 }
 
 
@@ -30,7 +31,9 @@
 }
 
 
-
+#product #localnavi .twin_block {
+	visibility: hidden;
+}
 
 #product #localnavi .twin_block a.local_links {
     display: block;
@@ -87,9 +90,9 @@
 }
 
 /*
- * タブレット
+ * タブレットとスマホ
  */
-@media only screen and (min-width: 320px) and (max-width: 920px) {
+@media only screen and (min-width: 0px) and (max-width: 920px) {
 	#product #localnavi {
 		width: 85%;
 		margin-left: auto;
@@ -98,9 +101,4 @@
     #product #localnavi .twin_block a.local_links {
         margin-bottom: 7%;
     }
-    /*
-	#product #localnavi .local_links {
-		margin-bottom: 12%;
-	}
-    */
 }

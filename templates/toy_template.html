@@ -1,21 +1,16 @@
 {% extends "base_template.html" %}
 
 {% block add_head %}
+	<script src="{{static_path}}/js/jquery.mobilemenu.min.js"></script>
 	<script>
-		$(document).ready(function() {
-		  $("nav#globalnavi").naver({
-			labels: {
-			  closed: "Contents",
-			  open: "Close"
-			},
-			maxWidth: "950px"
-		  });
+		$(document).ready(function(){
+			$('nav#localnavi ul').mobileMenu({topOptionText: 'Select a content', switchWidth:922, prependTo: 'nav#localnavi', combine:true});
+			//$('nav#localnavi ul').mobileMenu();
 		});
 	</script>
 {% endblock %}
 
 {% block content %}
-			<div id="tabs">
 				<header>
 					<h1>Toy</h1>
 
@@ -28,8 +23,8 @@
                                     <li><a href="?key_line={{a_link}},Introduction">{{a_link}}</a></li>
                                 {% endif %}
                             {% endfor %}
-                        <!-- /ul#localnavi --></ul>
-                   </nav>
+                   		</ul>
+                	</nav>
 				</header>
 
 				<article>
@@ -45,7 +40,6 @@
 						</ul>
 					</div>
 				</article>
-			</div>
 {% endblock %}
 
 {% block back_js %}

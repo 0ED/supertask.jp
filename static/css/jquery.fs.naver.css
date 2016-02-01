@@ -6,22 +6,6 @@
  * Copyright 2015 Ben Plum; MIT Licensed 
  */
 
-/* 
- * Naver v3.1.2 - 2015-04-04 
- * A jQuery plugin for responsive navigation. Part of the Formstone Library. 
- * http://formstone.it/naver/ 
- * 
- * Copyright 2015 Ben Plum; MIT Licensed 
- */
-
-/* 
- * Naver v3.1.2 - 2014-11-25 
- * A jQuery plugin for responsive navigation. Part of the Formstone Library. 
- * http://formstone.it/naver/ 
- * 
- * Copyright 2014 Ben Plum; MIT Licensed 
- */
-
 .naver {
   margin: 0;
 }
@@ -99,23 +83,3 @@
 .naver.enabled .naver-container {
 }
 
-/*
- * My setting by tasuku.
- */
-
-.naver.enabled .naver-container ul li a{
-	float: none;
-	width: 100%;
-	border: none;
-	border-bottom: 2px solid #CCC;
-}
-.naver.enabled .naver-container ul {
-	margin-left: 0px;
-	width: 100%;
-}
-
-.naver.enabled .naver-container div#lang_select {
-	padding: 0;
-	padding: 5px 0;
-	text-align: center;
-}

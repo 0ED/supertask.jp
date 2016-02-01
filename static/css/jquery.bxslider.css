@@ -132,12 +132,12 @@
 
 .bx-wrapper .bx-prev {
 	left: 10px;
-	background: url(images/controls.png) no-repeat 0 -32px;
+	//background: url(images/controls.png) no-repeat 0 -32px;
 }
 
 .bx-wrapper .bx-next {
 	right: 10px;
-	background: url(images/controls.png) no-repeat -43px -32px;
+	//background: url(images/controls.png) no-repeat -43px -32px;
 }
 
 .bx-wrapper .bx-prev:hover {
@@ -224,7 +224,8 @@
 
 .bx-wrapper .bx-caption span {
 	color: white;
-	font-family: Arial;
+	font-family: "Skia", Arial;
+    font-weight: bold;
 	display: block;
 	/*font-size: 2.25em;*/
 	//padding: 5% 20%;
@@ -232,14 +233,14 @@
 }
 
 /* Label for bxslider */
-@media screen and (min-width: 0px) and (max-width: 320px) {
+@media screen and (min-width: 0px) and (max-width: 371px) {
 	.bx-wrapper .bx-caption span {
-		font-size: 1.05em;
+		font-size: 1.15em;
 	}
 }
-@media screen and (min-width: 321px) and (max-width: 920px) {
+@media screen and (min-width: 372px) and (max-width: 920px) {
 	.bx-wrapper .bx-caption span {
-		font-size: 1.4em;
+		font-size: 2.1em;
 	}
 }
 @media screen and (min-width: 921px) and (max-width: 1300px){

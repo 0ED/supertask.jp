@@ -1,16 +1,24 @@
 {% extends "base_template.html" %}
 
+{% block add_head %}
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+{% endblock %}
+
 {% block content %}
 <div class='post-body'>
-    <h2 class='point_line'>Memo Task</h2>
+    <h2 class='point_line' data-i18n="affiliated_institution"></h2>
+    <a href="http://rudds.jp" target="_blank"><img src="{{static_path}}/img/link/rudds_logo.jpg" /></a>
+
+    <h2 class='point_line' data-i18n="myblog.blog"></h2>
+    <h3 class='tri_line' data-i18n="myblog.memotask"></h3>
     <a href="http://memotask.blogspot.jp" target="_blank"><img src="{{static_path}}/img/link/memotask_logo.png" width="200" /></a>
 
-    <h2 class='point_line'>トビタテ留学Japan</h2>
+    <h3 class='tri_line' data-i18n="myblog.tobitate"></h3>
     <a href="http://tobitate4.blogspot.jp" target="_blank"><img src="{{static_path}}/img/link/tobitate_logo.png" width="200" /></a>
 
-    <h2 class='point_line'>トビタテ留学Japan</h2>
+    <h2 class='point_line' data-i18n="sns_accounts"></h2>
     <div class="sns-accounts">
-        <ul class="entry-share-list clearfix">
+        <ul>
         <li class="facebook_share"><a href="https://www.facebook.com/tasuku.takahashi.142" target="_blank"><i class="fa fa-facebook"></i><span class="share-text"></span></a></li>
         <li class="twitter_share"><a href="https://twitter.com/pythor" target="_blank"><i class="fa fa-twitter"></i><span class="share-text"></span></a></li>
         <li class="github_share"><a href="https://github.com/0ED" target="_blank"><i class="fa fa-github"></i><span class="share-text"></span></a></li>
