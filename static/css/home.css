@@ -48,7 +48,7 @@
 	margin-left: 10%;
 	margin-top: 13%;
 	z-index: 99;
-	/*font-family: '1';*/
+	/*font-family:'1';*/
 }
 
 @media screen and (min-width: 0px) and (max-width: 980px) {
@@ -65,28 +65,26 @@
 
 
 #home #mainTopic header #aboutme > h1 {
-	font-family: "skia","Helvetica Neue";
-    font-weight: 700;
+	font-family: 'Skia',"Helvetica Neue";
+    font-weight: bold;
 	/*font-family: 'Linux_B';*/
 }
 
 #home #mainTopic header #aboutme > p {
-	font-family: "skia","Helvetica Neue";
-    font-weight: 500;
+	font-family: 'Skia',"Helvetica Neue";
+    font-weight: normal;
 	/*font-family: "ƒƒCƒŠƒI","Meiryo",verdana,"ƒqƒ‰ƒMƒmŠpƒS Pro W3","Hiragino Kaku Gothic Pro",Osaka,"‚l‚r ‚oƒSƒVƒbƒN","MS PGothic",Sans-Serif;*/
 }
 
-/*
-@font-face {
-	font-family: 'Linux_B';
-	src: url('../fonts/LinLibertine_aSZI.ttf');
-}
 
 @font-face {
-	font-family: 'Linux';
-	src: url('../fonts/LinLibertine_aSI.ttf');
+  font-family: 'MySkia';
+    src:  url('../fonts/webfonts_Skia/Skia.ttf.woff') format('woff'),
+    url('../fonts/webfonts_Skia/Skia.ttf.svg#Skia') format('svg'),
+    url('../fonts/webfonts_Skia/Skia.ttf.eot'),
+    url('../fonts/webfonts_Skia/Skia.eot?#iefix') format('embedded-opentype'); 
+    font-style: normal;
 }
-*/
 
 
 /*
