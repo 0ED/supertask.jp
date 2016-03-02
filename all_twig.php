@@ -132,8 +132,10 @@ function main() {
 /*
  * ファイルが直接呼び出された時にだけ実行．
  */
+/*
 if (realpath($argv[0]) == __FILE__) {
 	main();
 }
+*/
 
 ?>
