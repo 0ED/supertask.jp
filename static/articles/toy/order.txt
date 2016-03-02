@@ -1,4 +1,0 @@
-Parsing
-Network
-Graphics
-Other
