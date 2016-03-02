@@ -28,12 +28,10 @@
 }
 
 #link #mainTopic ul li a {
-	color: #F5D;
 	font-size: 24px;
 }
 
 #link #mainTopic ul li a:hover {
-	text-decoration: underline;
 }
 
 #link #mainTopic address {

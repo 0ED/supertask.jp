@@ -16,6 +16,13 @@ class ToyTwig extends BaseTwig {
 	public function __construct($id, $relative_path) {
 		parent::__construct($id, $relative_path);
 		$this->error_article = "You missed reading a article.<br />Please send a message of error to administrator (i1558129@cse.kyoto-su.ac.jp).<br /><br />記事の読み込みに失敗しました．<br />管理者(i1558129@cse.kyoto-su.ac.jp)にメールしてください．<br />";
+		$this->default_key_line = 'Parsing,Introduction';
+	}
+
+	public function getHTML() {
+		$html_tmp = parent::getHTML();
+		$twig = new Twig_Environment(new Twig_Loader_String());
+		return $twig->render($html_tmp, array('static_path'=>$this->static_path));
 	}
 
 	public function getJson() {
@@ -23,7 +30,7 @@ class ToyTwig extends BaseTwig {
 		$root = $this->relative_path.'/static/articles/toy/';
 		
 		if (isset($_GET['key_line'])) $key_line = $_GET['key_line'];
-		else $key_line = 'Network,Introduction';
+		else $key_line = $this->default_key_line;
 
 		list($l_link, $detail_link) = explode(',', $key_line);	//ex. Network,Introduction
 		$page_path = $root.$l_link.'/'.$detail_link.'.html';		//ex. static/articles/toy/Network/Introduction.html
@@ -64,8 +71,6 @@ class BaseTwig {
 	 * コンストラクタ．プロパティを設定して応答する．
 	 */
 	public function __construct($id, $relative_path) {
-		$loader = new Twig_Loader_Filesystem(dirname(__FILE__).'/templates');
-		$this->twig = new Twig_Environment($loader);
 		$this->ids = array('home','product','toy','link');
 		$this->id = $id;
 		$this->static_path = $relative_path.'/static';
@@ -83,8 +88,9 @@ class BaseTwig {
 	 * テンプレートエンジンによって生成したHTMLの結果を応答する．
 	 */
 	public function getHTML() {
-		$html = $this->twig->render($this->id.'_template.html', $this->getJson());
-		return $html;
+		$loader = new Twig_Loader_Filesystem(dirname(__FILE__).'/templates');
+		$twig = new Twig_Environment($loader);
+		return $twig->render($this->id.'_template.html', $this->getJson());
 	}
 
 
