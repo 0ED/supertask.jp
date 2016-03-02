@@ -1,0 +1,210 @@
+/*
+ * Toy
+ */
+nav#localnavi select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	font-size: 21px;
+	position: relative;
+	width: 100%;
+	padding: 8px;
+	background: url('../img/toy/arrow_for_select.png') no-repeat, linear-gradient(to bottom, #fff 0%,#efebe1 100%);
+	font-family: 'skia',Arial, sans-serif;
+	background-position: 98% 50%;
+	background-size: 25px;
+}
+
+/* ヘッダーの画像 */
+#toy #mainTopic header {
+	background-image: url("../img/toy/black_cloth.png");
+}
+#toy #mainTopic header:after {content:"."; display:block; visibility:hidden; clear:both; height:0; font-size:0;} /* clearfix! */
+
+#toy #mainTopic header h1 {
+	float: right;
+	font-family: 'Hiragino Mincho ProN';
+	color: white;
+	margin-top: 40px;
+	margin-right: 7%;
+	text-align: right;
+}
+
+
+@media screen and (min-width: 0px) and (max-width:371px) { /* 321*/
+	#toy #mainTopic header h1 {
+		font-size: 64px;
+		line-height: 64px;
+	}
+	#toy #mainTopic header nav#localnavi ul { padding-top: 120px; }
+	#toy #mainTopic header nav#localnavi select { margin-top: 20px; }
+}
+@media screen and (min-width: 372px) and (max-width:921px) {
+	#toy #mainTopic header h1 {
+		font-size: 138px;
+		line-height: 138px;
+	}
+	#toy #mainTopic header nav#localnavi ul { padding-top: 210px; }
+	#toy #mainTopic header nav#localnavi select { margin-top: 30px; }
+}
+@media screen and (min-width:922px) {
+	#toy #mainTopic header h1 {
+		font-size: 200px;
+		line-height: 200px;
+	}
+	#toy #mainTopic header nav#localnavi ul { padding-top: 240px; }
+	#toy #mainTopic header { border-bottom: 8px solid #ff4eAA; }
+}
+
+
+/*
+ * ここのfloat&clearfix設定により,localnaviを設定
+ */
+#toy #mainTopic header nav#localnavi ul {
+	margin-left: 4%;
+}
+
+#toy #mainTopic header nav#localnavi ul li {
+	border-right: 2px solid #FFF;
+}
+
+#toy #mainTopic header nav#localnavi ul li:last-child {
+	border: none;
+}
+
+#toy #mainTopic header nav#localnavi ul li a {
+	float: left;
+	background-color: #6e6a6a;
+	color: white;
+	font-size: 18px;
+	padding: 0px 10px;
+	line-height: 40px;
+	font-weight: 800;
+}
+
+
+
+#toy #mainTopic header nav#localnavi ul li a.active {
+	background-color: #ff4e95;
+}
+
+#toy #mainTopic header nav#localnavi ul:after {
+	content: ".";
+	display: block;
+	visibility: hidden;
+	clear: both;
+	height: 0;
+	font-size: 0;
+}
+
+
+#toy #mainTopic article {
+	margin-top: 20px;
+	clear: both;
+}
+
+/*
+ * PCの設定
+ */
+@media only screen and (min-width:921px) {
+	/* clearfix! */
+	#toy #mainTopic article:after {
+		content: ".";
+		display: block;
+		visibility: hidden;
+		clear: both;
+		height: 0;
+		font-size: 0;
+	}
+
+	#toy #mainTopic article div#post-body {
+		width: 62%;
+		border-right: 5px solid #BBB;
+	}
+
+	#toy #mainTopic article div#right-contents {
+		width: 24%;
+	}
+
+	#toy #mainTopic article div#post-body,
+	#toy #mainTopic article div#right-contents {
+		float: left;
+	}
+	#toy #mainTopic article div#post-body {
+		margin-left: 3%;
+	}
+}
+
+/*
+ * スマートフォンの設定
+ */
+@media only screen and (man-width:920px) {
+}
+
+
+#toy #mainTopic article div#post-body,
+#toy #mainTopic article div#right-contents {
+	padding: 20px 2%;
+}
+
+
+
+
+#toy #mainTopic article div#post-body {
+	font-family: Arial, sans-serif;
+	color: #3d5054;
+}
+
+/*
+ * 各記事のメインタイトル、主に画像になる
+ */
+#toy #mainTopic article div#post-body h2 {
+	
+}
+
+#toy #mainTopic article div#post-body h3 {
+	padding-left: 25px;
+	padding-bottom: 5px;
+	font-size: 32px;	
+	border-bottom: 3px solid #3d5054;
+}
+
+#toy #mainTopic article div#post-body p {
+	font-size: 18px;
+	line-height: 31px;
+	padding: 20px 15px;
+}
+
+#toy #mainTopic article div#post-body ul {
+	
+}
+
+#toy #mainTopic article div#post-body ul li {
+	
+}
+
+
+#toy #mainTopic article div#right-contents ul {
+	list-style-type: none;
+}
+
+#toy #mainTopic article div#right-contents ul#detail-links li a {
+	color: white;
+	background-color: #33FF33;
+	font-family: "メイリオ","Meiryo",verdana,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",Osaka,"ＭＳ Ｐゴシック","MS PGothic",Sans-Serif;
+	margin: 4px;
+	line-height: 35px;
+	padding: 0px 10px;
+	font-size: 12px;
+	font-weight: 800;
+	float: left;
+	display: block;
+	text-decoration: none;
+	text-align: center;
+}
+
+@font-face {
+	font-family: 'Linux';
+	font-style: normal;
+	src: url('../fonts/LinLibertine_aSZI.ttf');
+}

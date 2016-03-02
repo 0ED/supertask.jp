@@ -1,0 +1,316 @@
+
+/* ã‚°ãƒ­ãƒ¼ãƒãƒ«ãƒŠãƒ“
+================================= */
+#home #mainTopic {
+	margin-bottom: 0px;
+}
+
+#home #mainTopic header{
+	width: 100%;
+	/*min-width: 750px;*/
+}
+
+#home #mainTopic header .clearfix {
+	content: ".";
+    display: block;
+    visibility: hidden;
+    clear: both;
+    height: 0;
+    font-size: 0;
+}
+
+#home #mainTopic header:after {
+	content: ".";
+    display: block;
+    visibility: hidden;
+    clear: both;
+    height: 0;
+    font-size: 0;
+}
+
+#home #mainTopic header #lightfox-anime > img {
+	visibility: hidden;
+	float: left;
+	position: relative;
+	width: 45%;
+	margin-right: 0%;
+	margin-top: 5%;
+	margin-left: -6%;
+	z-index: 0;
+	margin-top: -4%;
+	pointer-events: none;
+}
+
+#home #mainTopic header #aboutme {
+	float: left;
+	position: relative;
+	width: 47%;
+	margin-left: 10%;
+	margin-top: 13%;
+	z-index: 99;
+	/*font-family:'1';*/
+}
+
+@media screen and (min-width: 0px) and (max-width: 980px) {
+	#home #mainTopic header #lightfox-anime > img {
+		width: 52%;
+		margin-left: -8%;
+	}
+	#home #mainTopic header #aboutme {
+		width: 50%;
+		margin-left: 5%;
+		margin-top: 15%;
+	}
+}
+
+
+#home #mainTopic header #aboutme > h1 {
+	font-family: 'Skia',"Helvetica Neue";
+    font-weight: bold;
+	/*font-family: 'Linux_B';*/
+}
+
+#home #mainTopic header #aboutme > p {
+	font-family: 'Skia',"Helvetica Neue";
+    font-weight: normal;
+	/*font-family: "ƒƒCƒŠƒI","Meiryo",verdana,"ƒqƒ‰ƒMƒmŠpƒS Pro W3","Hiragino Kaku Gothic Pro",Osaka,"‚l‚r ‚oƒSƒVƒbƒN","MS PGothic",Sans-Serif;*/
+}
+
+
+@font-face {
+  font-family: 'MySkia';
+    src:  url('../fonts/webfonts_Skia/Skia.ttf.woff') format('woff'),
+    url('../fonts/webfonts_Skia/Skia.ttf.svg#Skia') format('svg'),
+    url('../fonts/webfonts_Skia/Skia.ttf.eot'),
+    url('../fonts/webfonts_Skia/Skia.eot?#iefix') format('embedded-opentype'); 
+    font-style: normal;
+}
+
+
+/*
+ * Article
+ */
+#home #mainTopic article {
+	margin-top: 7%;
+}
+#home #mainTopic article section {
+	width: 82%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 15%;
+}
+
+#home #mainTopic article section:after {
+	content: ".";
+    display: block;
+    visibility: hidden;
+    clear: both;
+    height: 0;
+    font-size: 0;
+}
+
+#home #mainTopic article section h2 {
+	font-family: "skia","Helvetica Neue";
+    font-weight: 700;
+	margin-bottom: 3%;
+	font-size: 74px;
+	text-align: center;
+}
+
+#home #mainTopic article section p {
+    color: #282828;
+	font-family: "skia","Helvetica Neue";
+    font-weight: 600;
+	border-left: 4px solid #AAA;
+	line-height: 1.4;
+}
+
+#home #mainTopic article section#intro p,
+#home #mainTopic article section#skills p {
+	display: block;
+	margin: 0em 0em 0.8em 1px;
+	padding: 5px 0px 0px 20px;
+	font-size: 28px;
+}
+
+#home #mainTopic article section#intro img#myface {
+	float: right;
+	margin: 25px;
+	border-radius: 15px;
+	    -webkit-border-radius: 15px;
+		-moz-border-radius: 15px;
+}
+
+
+#home #mainTopic article section#intro h2 {
+	color: #07C2FA;
+}
+#home #mainTopic article section#intro p {
+	/*border-left: 4px solid #07C2FA;*/
+}
+
+#home #mainTopic article section#skills h2 {
+	color: #66cc00;
+}
+
+#home #mainTopic article section#skills p {
+	/*border-left: 4px solid #66cc00;*/
+}
+
+#home #mainTopic article section#intro p,
+#home #mainTopic article section#skills p {
+	text-indent: 0.7em;
+}
+
+
+
+/**
+ * My hobby
+ */
+#home #mainTopic article section#hobby {
+	width: 100%;
+	/*min-width: 850px;*/
+	margin: 0;
+}
+
+#home #mainTopic article section#hobby h2 {
+	color: #FF3300;
+}
+
+
+#home #mainTopic article section#hobby .hobbies {
+}
+#home #mainTopic article section#hobby .hobbies:after {
+	content: ".";
+    display: block;
+    visibility: hidden;
+    clear: both;
+    height: 0;
+    font-size: 0;
+}
+#home #mainTopic article section#hobby .hobbies img {
+	padding: 7% 0%;
+}
+#home #mainTopic article section#hobby .hobbies p {
+	/*border-left: 4px solid #FF3300;*/
+}
+#home #mainTopic article section#hobby .hobbies .comment {
+	width: 40%;
+	padding: 0px 0px;
+}
+#home #mainTopic article section#hobby .hobbies .comment h3 {
+	font-size: 34px;
+}
+#home #mainTopic article section#hobby .hobbies .comment p {
+	margin-top: 3%;
+	margin-left: 5%;
+	padding: 2% 0px 0px 5%;
+}
+
+/* My hobby -> Movie */
+#home #mainTopic article section#hobby #movie {
+}
+#home #mainTopic article section#hobby #movie img {
+	float: left;
+	margin-left: 6%;
+	width: 40%;
+	padding-top: 15%;
+	padding-bottom: 0%;
+}
+#home #mainTopic article section#hobby #movie .comment {
+	float: right;
+	margin-top: 3%;
+	margin-right: 7%;
+}
+#home #mainTopic article section#hobby #movie .comment h3 {
+}
+#home #mainTopic article section#hobby #movie .comment p {
+}
+
+/* My hobby -> Mountain */
+#home #mainTopic article section#hobby #climb {
+}
+#home #mainTopic article section#hobby #climb img {
+	width: 38%;
+	margin-right: 2%;
+}
+#home #mainTopic article section#hobby #climb .comment {
+	float: left;
+	margin-top: 6%;
+	margin-left: 8%;
+}
+
+
+/* My hobby -> Piano */
+#home #mainTopic article section#hobby #piano {
+	/*min-width: 1000px;*/
+}
+
+#home #mainTopic article section#hobby #piano img {
+	float: left;
+	width: 60%;
+	margin-left: -5%;
+	margin-top: -20%;
+	padding: 0;
+}
+
+#home #mainTopic article section#hobby #piano .comment h3 {
+}
+
+#home #mainTopic article section#hobby #piano .comment {
+	float: right;
+	width: 38%;
+	margin-top: 0%;
+	margin-left: -20%;
+	margin-right: 5%;
+}
+
+
+#home #mainTopic footer {
+	width: 100%;
+	/*min-width: 950px;*/
+	margin-top: -17%;
+}
+
+#home #mainTopic footer img#black_slash {
+	width: 100%;
+	height: 120px;
+	/*min-width: 950px;*/
+}
+
+#home #mainTopic footer #footer_info {
+	width: 100%;
+	height: 250px;
+	margin-top: -6px;
+	background-color: black;
+}
+
+#home #mainTopic footer #footer_info img {
+	width: 100%;
+	height: 250px;
+}
+
+
+@media screen and (min-width: 0px) and (max-width: 980px) {
+	#home #mainTopic article section {
+		width: 88%;
+	}
+	#home #mainTopic article section#intro p,
+	#home #mainTopic article section#skills p {
+		padding: 0;
+	}
+
+	#home #mainTopic article section p {
+		border: none;
+	}
+	#home #mainTopic article section#intro img#myface {
+		margin: 0px 10px;
+		width: 38%;
+		text-align: center;
+	}
+}
+
+/*
+@media screen and (min-width: 0x) and (max-width: 320px) {
+}
+*/
