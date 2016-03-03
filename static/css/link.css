@@ -1,39 +1,8 @@
-
-/* グローバルナビ
-================================= */
-
+@import 'post_body.css';
+@import 'sns.css';
 #link #mainTopic {
-	margin-top: 50px;
-	margin-bottom: 50px;
+	margin: 50px 0;
 	margin-left: auto;
 	margin-right: auto;
 	width: 75%;	
-}
-
-#link #mainTopic h2 {
-	font-size: 26px;
-}
-
-#link #mainTopic h3 {
-	font-size: 21px;
-}
-
-#link #mainTopic ul {
-	list-style-type: square;
-}
-
-#link #mainTopic img {
-    margin: 0;
-    padding: 0;
-}
-
-#link #mainTopic ul li a {
-	font-size: 24px;
-}
-
-#link #mainTopic ul li a:hover {
-}
-
-#link #mainTopic address {
-	margin-top: 25px;
 }

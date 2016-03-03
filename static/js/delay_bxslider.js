@@ -1,10 +1,7 @@
 $('.bxslider').bxSlider({
-	
 });
 
-/*
- * HTMLのDOMの読み込みが終わったら、処理する
- */
+/* HTMLのDOMの読み込みが終わったら，処理する． */
 $(document).ready(function() {
 	$('.bxslider').bxSlider({
 		auto: 'true',
@@ -21,10 +18,7 @@ $(document).ready(function() {
 	});
 });
 
-
-/*
- * HTMLのDOM、画像、CSS、JSなどの読み込みが終わったら、処理する
- */
+/* HTMLのDOM、画像、CSS、JSなどの読み込みが終わったら，処理する． */
 $(window).load(function() {
 	//2秒間静止
 	$('#product header ul img.hide').delay(2000).queue(function(next) {

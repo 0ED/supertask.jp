@@ -1,0 +1,169 @@
+.post-body ul {
+}
+.post-body ul li {
+	
+}
+.post-body h2 {
+	font-size: 28px;	
+}
+.post-body h3 {
+	font-size: 21px;
+}
+.post-body p {
+	font-size: 18px;
+	line-height: 31px;
+	padding: 8px 15px;
+}
+.post-body blockquote {
+	width: 70%;
+    border:1px solid #f3f3f3;
+	background:#f3f3f3 url('../img/toy/quote.png') no-repeat scroll top left;
+	margin:10px 0px 10px 5%;
+    padding-left:50px;
+    box-shadow: 1px 1px 2px rgba(204, 204, 204, 0.9), inset 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+.post-body blockquote p {
+	/*background: url('../img/toy/quote.png') no-repeat scroll bottom right;*/
+	padding:30px 50px 30px 0;
+    margin:0;
+    font-style:italic;
+}
+
+/* 下線 */
+.post-body .under_line {
+	margin-top: 30px;
+	margin-bottom: 20px;
+	padding: 15px 5px 10px 30px;
+	border-bottom: 3px solid #3d5054;
+}
+
+/* 吹き出しの見出し */
+.post-body .tri_line {
+  position: relative;
+  color: #111;
+  background: #fff;
+  line-height: 1;
+  border: 2px solid #555;
+  margin: 10px 2% 20px 2%;
+  padding: 15px 5px 12px 10px;
+  border-radius: 8px;
+}
+.post-body .tri_line:after, .tri_line:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  height: 0;
+  width: 0;
+}
+.post-body .tri_line:after {
+  left: 33px;
+  border: 11px solid transparent;
+  border-top: 11px solid #fff;
+}
+.post-body .tri_line:before {
+  left: 30px;
+  border: 14px solid transparent;
+  border-top: 14px solid #555;
+}
+
+/* 丸っこい見出し */
+.post-body .circle_line {
+  position: relative;
+  color: #111;
+  background: #ccc;
+  line-height: 1;
+  margin: 30px 20px 10px -10px;
+  padding: 14px 5px 10px 50px;
+  border-radius: 22px 0 0 22px;
+}
+.post-body .circle_line:before {
+  content: "";
+  position: absolute;
+  background: #eee;
+  top: 50%;
+  left: 14px;
+  margin-top :-10px;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  box-shadow: 1px 1px 1px #777 inset;
+}
+.post-body .circle_line:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -22px;
+  height: 0;
+  width: 0;
+  border: 22px solid #ccc;
+  border-right-color: transparent;
+}
+
+/* 点線 */
+.post-body .point_line {
+  position: relative;
+  line-height: 1;
+  margin:30px -30px 10px -25px;
+  padding: 15px 5px 15px 20px;
+  border-left: 10px solid #777;
+  border-bottom: 3px dashed #555;
+}
+
+.post-body .point_line:after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  height: 0;
+  width: 100%;
+  /*border-bottom: 3px dashed #555;*/
+}
+
+/* ワンポイント見出し */
+.post-body .one_point_line {
+    position: relative;
+    color: #111;
+    font-weight: bold;
+    margin: 0 0 1.5em;
+    padding: 0.5em 0.5em 0.5em 1.7em;
+}
+ 
+.post-body .one_point_line:before {
+    content: "";
+    position: absolute;
+    background: #333;
+    top: 0;
+    left: 0.4em;
+    height: 12px;
+    width: 12px;
+    transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+}
+ 
+.post-body .one_point_line:after {
+    content: "";
+    position: absolute;
+    background:#333;
+    top: 1.0em;
+    left: 0;
+    height: 8px;
+    width: 8px;
+    transform: rotate(15deg);
+    -moz-transform: rotate(15deg);
+    -webkit-transform: rotate(15deg);
+    -o-transform: rotate(15deg);
+    -ms-transform: rotate(15deg);
+}
+
+.post-body hr {
+    border: 0;
+    height: 2px;
+    background: #333;
+    background-image: -webkit-linear-gradient(left, #ccc, #333, #ccc);
+    background-image:    -moz-linear-gradient(left, #ccc, #333, #ccc);
+    background-image:     -ms-linear-gradient(left, #ccc, #333, #ccc);
+    background-image:      -o-linear-gradient(left, #ccc, #333, #ccc);
+}

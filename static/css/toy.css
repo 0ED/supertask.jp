@@ -1,6 +1,5 @@
-/*
- * Toy
- */
+@import 'post_body.css';
+
 nav#localnavi select {
 	-webkit-appearance: none;
 	-moz-appearance: none;
@@ -117,7 +116,7 @@ nav#localnavi select {
 		font-size: 0;
 	}
 
-	#toy #mainTopic article div#post-body {
+	#toy #mainTopic article div.post-body {
 		width: 62%;
 		border-right: 5px solid #BBB;
 	}
@@ -126,11 +125,11 @@ nav#localnavi select {
 		width: 24%;
 	}
 
-	#toy #mainTopic article div#post-body,
+	#toy #mainTopic article div.post-body,
 	#toy #mainTopic article div#right-contents {
 		float: left;
 	}
-	#toy #mainTopic article div#post-body {
+	#toy #mainTopic article div.post-body {
 		margin-left: 3%;
 	}
 }
@@ -142,15 +141,12 @@ nav#localnavi select {
 }
 
 
-#toy #mainTopic article div#post-body,
+#toy #mainTopic article div.post-body,
 #toy #mainTopic article div#right-contents {
 	padding: 20px 2%;
 }
 
-
-
-
-#toy #mainTopic article div#post-body {
+#toy #mainTopic article div.post-body {
 	font-family: Arial, sans-serif;
 	color: #3d5054;
 }
@@ -158,30 +154,6 @@ nav#localnavi select {
 /*
  * 各記事のメインタイトル、主に画像になる
  */
-#toy #mainTopic article div#post-body h2 {
-	
-}
-
-#toy #mainTopic article div#post-body h3 {
-	padding-left: 25px;
-	padding-bottom: 5px;
-	font-size: 32px;	
-	border-bottom: 3px solid #3d5054;
-}
-
-#toy #mainTopic article div#post-body p {
-	font-size: 18px;
-	line-height: 31px;
-	padding: 20px 15px;
-}
-
-#toy #mainTopic article div#post-body ul {
-	
-}
-
-#toy #mainTopic article div#post-body ul li {
-	
-}
 
 
 #toy #mainTopic article div#right-contents ul {

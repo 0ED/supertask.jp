@@ -39,7 +39,7 @@ class ToyTwig extends BaseTwig {
 		$my_article = @file_get_contents($page_path);
 		if (!$my_article) {  $my_article = $this->error_article; }
 
-		$a_json = array_merge($a_json,array('l_link_active'=>$l_link, 'l_links'=>$l_links, 'detail_links'=>$detail_links, 'my_article'=>$my_article));
+		$a_json = array_merge($a_json,array('l_link_active'=>$l_link, 'detail_link_active'=> $detail_link, 'l_links'=>$l_links, 'detail_links'=>$detail_links, 'my_article'=>$my_article));
 
 		return $a_json;
 	}
@@ -92,7 +92,6 @@ class BaseTwig {
 		$twig = new Twig_Environment($loader);
 		return $twig->render($this->id.'_template.html', $this->getJson());
 	}
-
 
 	/*
 	 * テンプレートに必要なJson形式の引数を応答する．
