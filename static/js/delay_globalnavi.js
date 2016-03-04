@@ -1,5 +1,5 @@
-/* HTMLのDOMの読み込みが終わったら，処理する． */
-$(document).ready(function() {
+/* HTMLのheadの読み込みが終わったら，処理する． */
+$('html head').ready(function() {
 	$('nav#globalnavi ul, nav#globalnavi #lang_select').css('visibility','visible');
 	$('nav#globalnavi ul, nav#globalnavi #lang_select').css('height','auto');
 });

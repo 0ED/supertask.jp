@@ -1,104 +1,43 @@
+/* Delay: 読み込み順序を保つために，すべて読み終わるまで非表示 */
+#product header .bx-pager {visibility: hidden;}
+#product header ul li a img.hide {display: none;}
+#product #localnavi .twin_block {visibility: hidden;}
 
-/* グローバルナビ
-================================= */
-#product header .bx-pager {
-	visibility: hidden;
+/* トップのスライダーの設定 from here */
+#product header ul li a img {width: 100%;}
+
+/* グリッドリンクの設定 from here  */
+#product #localnavi {
+	margin-left: auto;
+	margin-right: auto;
 }
-
-
-/* clearfix! */
-#product header:after {
-	content: ".";
-	display: block;
-	visibility: hidden;
-	clear: both;
-	height: 0;
-	font-size: 0;
-}
-
-
-
-/*
- * bxsliderで最初の2秒間、「表示、読み込み」をしない領域(img.hide)
- */
-#product header ul li a img.hide {
-	display: none;
-}
-
-
-#product header ul li a img {
-	width: 100%;
-}
-
-
-#product #localnavi .twin_block {
-	visibility: hidden;
-}
-
 #product #localnavi .twin_block a.local_links {
     display: block;
     padding 0;
 	background: #EEE;
 	box-shadow: 4px 4px 8px rgba(0,0,0,0.4);
 } 
-
-#product #localnavi .twin_block a.local_links:first-of-type {
-	margin-left: 0px;
-}
-
 #product #localnavi .twin_block a.local_links img {
 	width: 100%;
     vertical-align:bottom; /* 余分な空白のための呪文 */
-} 
-
-/* clearfix! */
-#product #localnavi .twin_block:after {
-	content: ".";
-	display: block;
-	visibility: hidden;
-	clear: both;
-	height: 0;
-	font-size: 0;
 }
 
-#product #localnavi .twin_block .local_links {
-}
-
-#product #localnavi .twin_block a {
-    display: block;
-}
-
-/*
- * PC version
- */
+/* PC */
 @media only screen and (min-width: 921px) {
-    #product #localnavi {
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    #product #localnavi .twin_block .local_links {
+	#product header:after {content:"."; display:block; visibility:hidden; clear:both; height:0; font-size:0;}
+    #product #localnavi {width: 90%;}
+    #product #localnavi .twin_block {margin-bottom: 5%;}
+	#product #localnavi .twin_block:after {content:"."; display:block; visibility:hidden; clear:both; height:0; font-size:0;}
+    #product #localnavi .twin_block a.local_links {
         float: left;
         margin-left: 6%;
         width: 47%;
     }
-    
-    #product #localnavi .twin_block {
-        margin-bottom: 5%;
-    }
+	#product #localnavi .twin_block a.local_links:first-of-type {margin-left: 0px;}
 }
 
-/*
- * タブレットとスマホ
- */
+/* スマホorタブレット */
 @media only screen and (min-width: 0px) and (max-width: 920px) {
-	#product #localnavi {
-		width: 85%;
-		margin-left: auto;
-		margin-right: auto;
-	}
-    #product #localnavi .twin_block a.local_links {
-        margin-bottom: 7%;
-    }
+	#product #localnavi {width:85%;}
+    #product #localnavi .twin_block a.local_links {margin-bottom:7%;}
 }

@@ -11,6 +11,9 @@ nav#globalnavi {
 }
 nav#globalnavi:after{ content: "."; display:block; visibility:hidden; clear:both; height:0; font-size:0;} /* clearfix! */
 
+/* Delay: 読み込み順序を保つために，すべて読み終わるまで非表示 */
+nav#globalnavi ul,nav#globalnavi #lang_select{height:25px; visibility:hidden;}
+
 /* グローバルナビのリンク一覧 */
 nav#globalnavi ul {list-style-type: none;}
 nav#globalnavi ul li a {
@@ -34,9 +37,6 @@ nav#globalnavi #lang_select img {
 	margin-right: 3px;
 }
 nav#globalnavi #lang_select img:last-child {margin-right:0px;}
-
-/* グローバルナビをdelayさせるために，読み込み時はCSSを表示しない． */
-nav#globalnavi ul,nav#globalnavi #lang_select{height:25px; visibility:hidden;}
 
 /* スマートフォンかタブレット */
 @media screen and (min-width: 0px) and (max-width: 920px) {
