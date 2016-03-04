@@ -151,11 +151,6 @@ nav#localnavi select {
 	color: #3d5054;
 }
 
-/*
- * 各記事のメインタイトル、主に画像になる
- */
-
-
 #toy #mainTopic article div#right-contents ul {
 	list-style-type: none;
 }

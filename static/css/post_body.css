@@ -1,6 +1,22 @@
-.post-body ul {
+.post-body li{
+	list-style-type:none !important;
+	list-style-image:none !important;
+	margin: 5px 0px 5px 0px !important;
+	position:relative;
+	padding-left:20px;
 }
-.post-body ul li {
+.post-body li:after{
+	content:'';
+	display:block; 
+	position:absolute; 
+	background:#aaa;
+	width:9px;
+	height:9px; 
+	top:7px; 
+	left:5px; 
+	transform:rotate(-45deg);
+	-webkit-transform:rotate(-45deg);
+	-o-transform:rotate(-45deg);
 }
 .post-body h2 {
 	font-size: 28px;	
@@ -12,13 +28,24 @@
 	padding: 10px 25px;
 }
 .post-body p {
-	font-size: 18px;
+	text-indent:1em;
+	font-size: 17px;
 	line-height: 31px;
+}
+.post-body br {
+	line-height: 1.4em;
 }
 .post-body img {
 }
+.post-body strong {
+	color:crimson;
+}
+.post-body .second_strong {
+	font-weight: bold;
+	color: darkorange;
+}
 .post-body blockquote {
-	width: 70%;
+	width: 75%;
     border:1px solid #f3f3f3;
 	background:#f3f3f3 url('../img/toy/quote.png') no-repeat scroll top left;
 	margin:10px 0px 10px 5%;
@@ -27,7 +54,8 @@
 }
 .post-body blockquote p {
 	/*background: url('../img/toy/quote.png') no-repeat scroll bottom right;*/
-	padding:30px 50px 30px 0;
+	padding:30px 40px 10px 0;
+	font-size: 16px;
     margin:0;
     font-style:italic;
 }
@@ -43,7 +71,6 @@
 /* 吹き出しの見出し */
 .post-body .tri_line {
   position: relative;
-  color: #111;
   background: #fff;
   line-height: 1;
   border: 2px solid #555;
@@ -72,7 +99,6 @@
 /* 丸っこい見出し */
 .post-body .circle_line {
   position: relative;
-  color: #111;
   background: #ccc;
   line-height: 1;
   margin: 30px 20px 10px -10px;
@@ -125,7 +151,6 @@
 /* ワンポイント見出し */
 .post-body .one_point_line {
     position: relative;
-    color: #111;
     font-weight: bold;
     margin: 0 0 1.5em;
     padding: 0.5em 0.5em 0.5em 1.7em;
