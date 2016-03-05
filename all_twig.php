@@ -16,7 +16,7 @@ class ToyTwig extends BaseTwig {
 	public function __construct($id, $relative_path) {
 		parent::__construct($id, $relative_path);
 		$this->error_article = "You missed reading a article.<br />Please send a message of error to administrator (i1558129@cse.kyoto-su.ac.jp).<br /><br />記事の読み込みに失敗しました．<br />管理者(i1558129@cse.kyoto-su.ac.jp)にメールしてください．<br /><br />";
-		$this->default_key_line = 'Parsing,Introduction';
+		$this->default_key_line = 'Parser,Introduction';
 	}
 
 	public function getHTML() {
