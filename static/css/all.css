@@ -1,7 +1,7 @@
 /* 全体としての設定 */
 body, #mainTopic {
 	background: white;
-	font-family: 'skia';
+	/*font-family: 'skia';*/
 }
 
 /* グローバルナビ全体の設定 */
@@ -38,6 +38,16 @@ nav#globalnavi #lang_select img {
 }
 nav#globalnavi #lang_select img:last-child {margin-right:0px;}
 
+footer {
+	color: white;
+	background-image: url("../img/toy/black_cloth.png");
+	padding: 90px 5%;
+	border-top: 10px solid #FD80DD;
+	text-align: center;
+}
+footer a {color:white;}
+footer a:hover {color:Violet;}
+
 /* スマートフォンかタブレット */
 @media screen and (min-width: 0px) and (max-width: 920px) {
 	nav#globalnavi ul {
@@ -59,7 +69,11 @@ nav#globalnavi #lang_select img:last-child {margin-right:0px;}
 		padding: 5px 0;
 		text-align: center;
 	}
+	footer {
+		font-size: 20px;
+	}
 }
+/* PC */
 @media screen and (min-width: 921px) {
 	nav#globalnavi ul {
 		margin-left:3%;
@@ -86,4 +100,8 @@ nav#globalnavi #lang_select img:last-child {margin-right:0px;}
 		padding-bottom: 0;
 		text-align: right;
 	}
+	footer {
+		font-size: 26px;
+	}
 }
+

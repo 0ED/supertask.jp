@@ -43,11 +43,11 @@
 	}
 }
 #home #mainTopic header #aboutme > h1 {
-	font-family: 'Skia',"Helvetica Neue";
+	/*font-family: 'Skia',"Helvetica Neue";*/
     font-weight: bold;
 }
 #home #mainTopic header #aboutme > p {
-	font-family: 'Skia',"Helvetica Neue";
+	/*font-family: 'Skia',"Helvetica Neue";*/
     font-weight: normal;
 }
 /*
@@ -76,7 +76,7 @@
 #home #mainTopic article section:after {content:"."; display:block; visibility:hidden; clear:both; height:0; font-size:0;}
 
 #home #mainTopic article section h2 {
-	font-family: "skia","Helvetica Neue";
+	/*font-family: "skia","Helvetica Neue";*/
     font-weight: 700;
 	margin-bottom: 3%;
 	text-align: center;
@@ -84,7 +84,7 @@
 
 #home #mainTopic article section p {
     color: #282828;
-	font-family: "skia","Helvetica Neue";
+	/*font-family: "skia","Helvetica Neue";*/
     font-weight: 600;
 	border-left: 4px solid #AAA;
 	line-height: 1.4;

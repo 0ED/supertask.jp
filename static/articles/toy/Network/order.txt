@@ -1,4 +1,2 @@
 Introduction
-Kademlia(P2P)
-TERA
-RMI
+Kademlia_P2P

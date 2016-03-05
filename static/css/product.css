@@ -1,7 +1,8 @@
 /* Delay: 読み込み順序を保つために，すべて読み終わるまで非表示 */
 #product header .bx-pager {visibility: hidden;}
-#product header ul li a img.hide {display: none;}
 #product #localnavi .twin_block {visibility: hidden;}
+#product footer {visibility: hidden;}
+#product header ul li a img.hide {display: none;}
 
 /* トップのスライダーの設定 from here */
 #product header ul li a img {width: 100%;}
@@ -10,6 +11,7 @@
 #product #localnavi {
 	margin-left: auto;
 	margin-right: auto;
+	margin-bottom: 8%;
 }
 #product #localnavi .twin_block a.local_links {
     display: block;
@@ -26,7 +28,8 @@
 @media only screen and (min-width: 921px) {
 	#product header:after {content:"."; display:block; visibility:hidden; clear:both; height:0; font-size:0;}
     #product #localnavi {width: 90%;}
-    #product #localnavi .twin_block {margin-bottom: 5%;}
+
+	#product #localnavi .twin_block {margin-bottom: 5%;}
 	#product #localnavi .twin_block:after {content:"."; display:block; visibility:hidden; clear:both; height:0; font-size:0;}
     #product #localnavi .twin_block a.local_links {
         float: left;

@@ -14,14 +14,15 @@ $(document).ready(function() {
 		onSliderLoad: function() {
 			$('#product header .bx-pager').css('visibility','visible');
 			$('#product #localnavi .twin_block').css('visibility','visible');
+			$('#product footer').css('visibility','visible');
 		}
 	});
 });
 
 /* HTMLのDOM、画像、CSS、JSなどの読み込みが終わったら，処理する． */
 $(window).load(function() {
-	//2秒間静止
-	$('#product header ul img.hide').delay(2000).queue(function(next) {
+	//1.5秒間静止
+	$('#product header ul img.hide').delay(1500).queue(function(next) {
 		$(this).css('display','block');
 		next();
 	});
