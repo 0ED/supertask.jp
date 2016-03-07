@@ -1,5 +1,8 @@
 #!/usr/bin/env python
 # -*- coding:utf-8 -*-
+#
+# 記事を出力するall_twig.phpを起動するためのPHPスクリプトを吐き出すためのPythonスクリプト．
+#
 
 relative_pathes = ['.','..','..','..']
 classes = ['BaseTwig','BaseTwig','ToyTwig','BaseTwig']
