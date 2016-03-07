@@ -1,8 +1,6 @@
 <?php
 require_once dirname(__FILE__).'/vendor/autoload.php';
 
-// memo: https://techpunch.co.uk/development/render-string-twig-template-symfony2
-
 class GlobalNavi {
 	public $path;
 	public $id;
