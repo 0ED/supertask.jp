@@ -28,8 +28,8 @@ $(function(){
 
 		$("#home #mainTopic article section h2").fitText(1.4,{minFontSize:'28px',maxFontSize: '72px'});
 		$("#home #mainTopic article section p").fitText(3.8,{minFontSize:'14px',maxFontSize: '48px'});
-		$("#home #mainTopic article section .hobbies p").fitText(1.4,{minFontSize:'9px',maxFontSize: '38px'});
-		$("#home #mainTopic article section .hobbies h3").fitText(1.1,{minFontSize:'16px',maxFontSize: '42px'});
+		$("#home #mainTopic article section .hobbies h3").fitText(1.3,{minFontSize:'11px',maxFontSize: '62px'});
+		$("#home #mainTopic article section .hobbies p").fitText(1.5,{minFontSize:'9px',maxFontSize: '54px'});
 	}
 
 	function set_font_en() {
@@ -40,8 +40,8 @@ $(function(){
 
 		$("#home #mainTopic article section h2").fitText(1.4,{minFontSize:'22px',maxFontSize: '72px'});
 		$("#home #mainTopic article section p").fitText(2.2,{minFontSize:'16px',maxFontSize: '38px'});
+		$("#home #mainTopic article section .hobbies h3").fitText(1.3,{minFontSize:'11px',maxFontSize: '42px'});
 		$("#home #mainTopic article section .hobbies p").fitText(1.4,{minFontSize:'9px',maxFontSize: '38px'});
-		$("#home #mainTopic article section .hobbies h3").fitText(1.1,{minFontSize:'14px',maxFontSize: '42px'});
 	}
 
 

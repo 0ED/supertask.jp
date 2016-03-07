@@ -60,14 +60,10 @@
     font-style: normal;
 }*/
 
-/*
- * Article
- */
 #home #mainTopic article {
 	margin-top: 7%;
 }
 #home #mainTopic article section {
-	width: 82%;
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 15%;
@@ -84,9 +80,7 @@
 
 #home #mainTopic article section p {
     color: #282828;
-	/*font-family: "skia","Helvetica Neue";*/
     font-weight: 600;
-	border-left: 4px solid #AAA;
 	line-height: 1.4;
 }
 
@@ -94,12 +88,11 @@
 #home #mainTopic article section#skills p {
 	display: block;
 	margin: 0em 0em 0.8em 1px;
-	padding: 5px 0px 0px 20px;
+	text-indent: 1.0em;
 }
 
 #home #mainTopic article section#intro img#myface {
 	float: right;
-	margin: 25px;
 	border-radius: 15px;
 	    -webkit-border-radius: 15px;
 		-moz-border-radius: 15px;
@@ -107,11 +100,6 @@
 
 #home #mainTopic article section#intro h2 {color:#07C2FA;}
 #home #mainTopic article section#skills h2 {color:#66cc00;}
-
-#home #mainTopic article section#intro p,
-#home #mainTopic article section#skills p {
-	text-indent: 0.7em;
-}
 
 /* My hobby */
 #home #mainTopic article section#hobby {
@@ -125,54 +113,42 @@
 }
 
 #home #mainTopic article section#hobby .hobbies:after {content:"."; display:block; visibility:hidden; clear:both; height:0; font-size:0;}
-#home #mainTopic article section#hobby .hobbies img {
-	padding: 7% 0%;
-}
-#home #mainTopic article section#hobby .hobbies p {
-}
 #home #mainTopic article section#hobby .hobbies .comment {
 	width: 40%;
-	padding: 0px 0px;
-}
-#home #mainTopic article section#hobby .hobbies .comment h3 {
 }
 #home #mainTopic article section#hobby .hobbies .comment p {
-	margin-top: 3%;
-	margin-left: 5%;
-	padding: 2% 0px 0px 5%;
+	padding: 3% 0px 0px 6%;
 }
 
 /* My hobby -> Movie */
 #home #mainTopic article section#hobby #movie {
 }
 #home #mainTopic article section#hobby #movie img {
+	width: 40%;
 	float: left;
 	margin-left: 6%;
-	width: 40%;
 	padding-top: 15%;
 	padding-bottom: 0%;
 }
 #home #mainTopic article section#hobby #movie .comment {
 	float: right;
-	margin-top: 3%;
+	margin-top: 9%;
 	margin-right: 7%;
-}
-#home #mainTopic article section#hobby #movie .comment h3 {
-}
-#home #mainTopic article section#hobby #movie .comment p {
 }
 
 /* My hobby -> Mountain */
 #home #mainTopic article section#hobby #climb {
 }
 #home #mainTopic article section#hobby #climb img {
-	width: 38%;
-	margin-right: 2%;
+	width: 46%;
+	margin-top: -7%;
+	margin-left: -4%;
 }
 #home #mainTopic article section#hobby #climb .comment {
+	width: 45%;
 	float: left;
-	margin-top: 6%;
-	margin-left: 8%;
+	margin-top: 9%;
+	margin-left: 7%;
 }
 
 
@@ -187,44 +163,16 @@
 	margin-top: -20%;
 	padding: 0;
 }
-
-#home #mainTopic article section#hobby #piano .comment h3 {
-}
-
 #home #mainTopic article section#hobby #piano .comment {
 	float: right;
-	width: 38%;
-	margin-top: 0%;
+	width: 41%;
+	margin-top: 5%;
 	margin-left: -20%;
-	margin-right: 5%;
+	margin-right: 4%;
 }
 
-
-#home #mainTopic footer {
-	width: 100%;
-	margin-top: -17%;
-}
-
-#home #mainTopic footer img#black_slash {
-	width: 100%;
-	height: 120px;
-	/*min-width: 950px;*/
-}
-
-#home #mainTopic footer #footer_info {
-	width: 100%;
-	height: 250px;
-	margin-top: -6px;
-	background-color: black;
-}
-
-#home #mainTopic footer #footer_info img {
-	width: 100%;
-	height: 250px;
-}
-
-
-@media screen and (min-width: 0px) and (max-width: 980px) {
+/* スマホorタブレット */
+@media screen and (min-width: 0px) and (max-width: 920px) {
 	#home #mainTopic article section {
 		width: 88%;
 	}
@@ -232,18 +180,25 @@
 	#home #mainTopic article section#skills p {
 		padding: 0;
 	}
-
-	#home #mainTopic article section p {
-		border: none;
-	}
 	#home #mainTopic article section#intro img#myface {
 		margin: 0px 10px;
 		width: 38%;
 		text-align: center;
 	}
 }
-
-/*
-@media screen and (min-width: 0x) and (max-width: 320px) {
+/* PC */
+@media screen and (min-width: 921px) {
+	#home #mainTopic article section {
+		width: 82%;
+	}
+	#home #mainTopic article section#intro p,
+	#home #mainTopic article section#skills p {
+		padding: 5px 0px 0px 20px;
+	}
+	#home #mainTopic article section p {
+		border-left: 4px solid #AAA;
+	}
+	#home #mainTopic article section#intro img#myface {
+		margin: 25px;
+	}
 }
-*/

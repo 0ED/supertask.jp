@@ -25,7 +25,7 @@
 	font-size: 21px;
 }
 .post-body .section_pad {
-	padding: 10px 25px;
+	padding: 1.5% 2.5%;
 }
 .post-body p {
 	text-indent:1em;
@@ -62,9 +62,9 @@
 
 /* 下線 */
 .post-body .under_line {
-	margin-top: 30px;
-	margin-bottom: 10px;
-	padding: 15px 5px 10px 30px;
+	margin-top: 3%;
+	margin-bottom: 2%;
+	padding: 3% 5px 1% 30px;
 	border-bottom: 3px solid #3d5054;
 }
 

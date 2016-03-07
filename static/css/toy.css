@@ -15,13 +15,13 @@
 
 /* 記事のの共通部分 */
 #toy #mainTopic article {
-	margin-top: 20px;
+	margin-top: 2%;
 	margin-bottom: 5%;
 	clear: both; /*念のため*/
 }
 #toy #mainTopic article .post-body,
 #toy #mainTopic article #right-contents {
-	padding: 20px 2%;
+	padding: 2% 2%;
 }
 #toy #mainTopic article .post-body {
 	font-family: Arial, sans-serif;

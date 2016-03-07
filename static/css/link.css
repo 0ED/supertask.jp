@@ -1,8 +1,19 @@
 @import 'post_body.css';
 @import 'sns.css';
 #link #mainTopic {
-	margin: 50px 0;
+	margin: 8% 0;
 	margin-left: auto;
 	margin-right: auto;
-	width: 75%;	
+	width: 85%;	
+}
+#link .post-body img {
+	width: 40%;
+}
+/* スマホ */
+@media screen and (min-width: 0px) and (max-width: 371px) {
+	#link .post-body img {width:80%;}
+}
+/* タブレット or PC */
+@media screen and (min-width: 372px) {
+	#link .post-body img {width:40%;}
 }
