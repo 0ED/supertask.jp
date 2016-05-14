@@ -126,8 +126,8 @@
 #home #mainTopic article section#hobby #movie img {
 	width: 40%;
 	float: left;
-	margin-left: 6%;
-	padding-top: 15%;
+	margin-left: 8%;
+	padding-top: 4%;
 	padding-bottom: 0%;
 }
 #home #mainTopic article section#hobby #movie .comment {
@@ -141,8 +141,8 @@
 }
 #home #mainTopic article section#hobby #climb img {
 	width: 46%;
-	margin-top: -7%;
-	margin-left: -4%;
+	margin-top: -8%;
+	margin-left: -3%;
 }
 #home #mainTopic article section#hobby #climb .comment {
 	width: 45%;
@@ -160,7 +160,7 @@
 	float: left;
 	width: 60%;
 	margin-left: -5%;
-	margin-top: -20%;
+	margin-top: -22%;
 	padding: 0;
 }
 #home #mainTopic article section#hobby #piano .comment {
