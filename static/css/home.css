@@ -2,6 +2,7 @@
 	width: 100%;
 }
 #home #mainTopic header:after {content:"."; display:block; visibility:hidden; clear:both; height:0; font-size:0;}
+#home #mainTopic article section img.hide {visibility: hidden;}
 
 /* LightFox */
 #home #mainTopic header #lightfox-anime > img {
