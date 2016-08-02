@@ -1,4 +1,6 @@
 /* 全体としての設定 */
+.clearfix:after{ content: "."; display:block; visibility:hidden; clear:both; height:0; font-size:0;}
+
 body, #mainTopic {
 	background: white;
 	/*font-family: 'skia';*/

@@ -1,12 +1,15 @@
+@import 'sns.css';
 #home #mainTopic header{
 	width: 100%;
 }
 #home #mainTopic header:after {content:"."; display:block; visibility:hidden; clear:both; height:0; font-size:0;}
 #home #mainTopic article section img.hide {visibility: hidden;}
 
+/*
+ * Header
+ */
 /* LightFox */
 #home #mainTopic header #lightfox-anime > img {
-	visibility: hidden;
 	float: left;
 	position: relative;
 	margin-right: 0%;
@@ -51,16 +54,14 @@
 	/*font-family: 'Skia',"Helvetica Neue";*/
     font-weight: normal;
 }
-/*
-@font-face {
-  font-family: 'MySkia';
-    src:  url('../fonts/webfonts_Skia/Skia.ttf.woff') format('woff'),
-    url('../fonts/webfonts_Skia/Skia.ttf.svg#Skia') format('svg'),
-    url('../fonts/webfonts_Skia/Skia.ttf.eot'),
-    url('../fonts/webfonts_Skia/Skia.eot?#iefix') format('embedded-opentype'); 
-    font-style: normal;
-}*/
 
+
+
+
+
+/*
+ * Article
+ */
 #home #mainTopic article {
 	margin-top: 7%;
 }
@@ -91,16 +92,30 @@
 	margin: 0em 0em 0.8em 1px;
 	text-indent: 1.0em;
 }
+#home #mainTopic article section#intro h2 {color:#07C2FA;}
+#home #mainTopic article section#skills h2 {color:#66cc00;}
 
+
+/* Self-introduction */
 #home #mainTopic article section#intro img#myface {
 	float: right;
 	border-radius: 15px;
-	    -webkit-border-radius: 15px;
+		-webkit-border-radius: 15px;
 		-moz-border-radius: 15px;
 }
 
-#home #mainTopic article section#intro h2 {color:#07C2FA;}
-#home #mainTopic article section#skills h2 {color:#66cc00;}
+#home #mainTopic article section#intro .sns-accounts {
+	text-align: center;
+}
+
+/* Skills */
+#home #mainTopic article section#skills img {
+	width: 100%;
+	height: auto;
+	width: 90%;
+	padding: 5% 5%;
+	padding-top: 2%;
+}
 
 /* My hobby */
 #home #mainTopic article section#hobby {
@@ -183,8 +198,17 @@
 	}
 	#home #mainTopic article section#intro img#myface {
 		margin: 0px 10px;
-		width: 38%;
+		width: 32%;
 		text-align: center;
+	}
+	#home #mainTopic article section#intro .sns-accounts li a i{
+		width: 40px;
+		height: 40px;
+		font-size: 18px;
+		line-height: 40px;
+	}
+	#home #mainTopic article section#skills img {
+		border-bottom: dashed 1px #777;
 	}
 }
 /* PC */
@@ -201,5 +225,16 @@
 	}
 	#home #mainTopic article section#intro img#myface {
 		margin: 25px;
+		width: 22%;
+	}
+	#home #mainTopic article section#intro .sns-accounts li a i{
+		width: 70px;
+		height: 70px;
+		font-size: 32px;
+		line-height: 70px;
+	}
+
+	#home #mainTopic article section#skills img {
+		border-bottom: dashed 4px #777;
 	}
 }
