@@ -13,33 +13,6 @@
 	<link href="{{static_path}}/css/{{id}}.css" rel="stylesheet" type="text/css" />
 	<link href="{{static_path}}/css/lib/jquery.fs.naver.css" rel="stylesheet" type="text/css" />
 
-	<!-- JavaScript from here -->
-	<script src="{{static_path}}/js/lib/jquery.min.js" type="text/javascript"></script> <!-- JQUERY -->
-	<script src="{{static_path}}/js/lib/jquery.fittext.js" type="text/javascript"></script> <!-- レスポンシブなテキスト -->
-	<script type="text/javascript">
-		var language_path = '{{static_path}}/articles/{{id}}-__lng__.json';
-		{% block lang_path %}{% endblock %}
-	</script>
-	<script src="{{static_path}}/js/init_lang.js"></script>
-
-	<!-- 言語選択の設定 -->
-	<script src="{{static_path}}/js/lib/i18next-1.10.1.min.js" type="text/javascript"></script>
-	
-	<!-- スマホ用のglobalnaviの設定 -->
-	<script src="{{static_path}}/js/lib/jquery.fs.naver.min.js"></script>
-	<script>
-		$(document).ready(function() {
-		  $("nav#globalnavi").naver({
-			labels: {
-			  closed: "Supertask",
-			  open: "Close"
-			},
-			maxWidth: "920px"
-		  });
-		});
-	</script>
-	<script src="{{static_path}}/js/delay_globalnavi.js"></script>
-
 	<!-- Each original head -->
 	{% block add_head %}{% endblock %}
 </head>
@@ -66,13 +39,43 @@
 
 <div id = "mainTopic">
 	{% block content %}{% endblock %}
+
+	<!-- JavaScript from here -->
+	<script src="{{static_path}}/js/lib/jquery.min.js" type="text/javascript"></script> <!-- JQUERY -->
+	<script src="{{static_path}}/js/lib/jquery.fittext.js" type="text/javascript"></script> <!-- レスポンシブなテキスト -->
+	<script type="text/javascript">
+		var language_path = '{{static_path}}/articles/{{id}}-__lng__.json';
+		{% block lang_path %}{% endblock %}
+	</script>
+	<script src="{{static_path}}/js/init_lang.js"></script>
+
+	<!-- 言語選択の設定 -->
+	<script src="{{static_path}}/js/lib/i18next-1.10.1.min.js" type="text/javascript"></script>
+
+	<!-- スマホ用のglobalnaviの設定 -->
+	<script src="{{static_path}}/js/lib/jquery.fs.naver.min.js"></script>
+	<script>
+		$(document).ready(function() {
+		  $("nav#globalnavi").naver({
+			labels: {
+			  closed: "Supertask",
+			  open: "Close"
+			},
+			maxWidth: "920px"
+		  });
+		});
+	</script>
+	<script src="{{static_path}}/js/delay_globalnavi.js"></script>
 <!-- /#mainTopic --></div>
 
 <footer>
 	<a href='https://www.facebook.com/tasuku.takahashi.142' alt='Who is Tasuku TAKAHASHI' target='_blank'>Tasuku TAKAHASHI</a> ・ <a href='https://twitter.com/pythor' alt='My twtter account' target='_blank'>@pythor</a> ・<a href='http://creativecommons.org/licenses/by-sa/4.0/' alt='License' target='_blank'>CC BY-SA</a>
 </footer>
 
+
+
 {% block back_js %}{% endblock %}
+
 
 <!-- /#document --></div>
 </body>

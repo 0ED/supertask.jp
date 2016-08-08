@@ -1,16 +1,6 @@
 {% extends "base_template.html" %}
 
-{% block lang_path %}
-	language_path = '{{static_path}}/articles/{{id}}/{{l_link_active}}/{{detail_link_active}}-__lng__.json';
-{% endblock %}
-
 {% block add_head %}
-	<script src="{{static_path}}/js/lib/jquery.mobilemenu.min.js"></script>
-	<script>
-		$(document).ready(function(){
-			$('nav#localnavi ul').mobileMenu({topOptionText: 'Select a content', switchWidth:921, prependTo: 'nav#localnavi', combine:true});
-		});
-	</script>
 {% endblock %}
 
 {% block content %}
@@ -45,5 +35,16 @@
 				</article>
 {% endblock %}
 
+
+{% block lang_path %}
+	language_path = '{{static_path}}/articles/{{id}}/{{l_link_active}}/{{detail_link_active}}-__lng__.json';
+{% endblock %}
+
 {% block back_js %}
+	<script src="{{static_path}}/js/lib/jquery.mobilemenu.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('nav#localnavi ul').mobileMenu({topOptionText: 'Select a content', switchWidth:921, prependTo: 'nav#localnavi', combine:true});
+		});
+	</script>
 {% endblock %}

@@ -9,15 +9,49 @@
 			"title" : "Self-Introduction",
 			"contents-1" : "My name is Tasuku TAKAHASHI. And, I study computer science at Kyoto Sangyo Univ as master of science in Kyoto Japan. I'm 23 years old(2016). My expert skills are to make own programming language, Graphics(2D, 3D, UI), and Distributed system. I belong ",
 			"contents-2" : "Research Unit in Dependable Distributed Systems(Rudds)",
-			"contents-3" : " now.",
-			"contents-4" : "In addition to research, I study about network, software, compiler, web parser, binary, 3d graphics, making music. In network, I make structured P2P network, In compiler, I make programming language. In web parser, I parse big data on web. In binary, I research binary file and study file system for Security Contest or CTF. In 3d graphics, I try to make future application. In to making music, I make music by DTM software.",
-			"contents-5" : "And, In the future, I think that I want to work in america. and I'll make something like SF. So I study English and Computer Science now."
+			"contents-3" : " now."
 		},
-
 		"skill" : {
 			"title" : "My skills",
 			"contents-1" : " In network, I make structured P2P network, In compiler, I make programming language. In web parser, I parse big data on web. In binary, I research binary file and study file system for Security Contest or CTF. In 3d graphics, I try to make future application. In to making music, I make music by DTM software.",
 			"contents-2" : "I can use Python, C++, Java, C, Go, Shell, JavaScript, AppleScript,  PHP, HTML, CSS as programming language. Especially I'm using often Python, C++, Java."
+		},
+
+		"hist" : {
+			"title": "History",
+			"e1" : {
+				"name": "Kyoto Sangyo Univ, Japan - CS on Bachlor (2011 Apr - 2015 Mar)",
+				"detail1": "- Studying computer science",
+				"detail2": "- Belonging at Hayashibara labo"
+			},
+			"e2" : {
+				"name": "Kyoto Sangyo Univ, Japan - CS on Master (2015 Apr - 2018 Mar)",
+				"detail1": "- Studying a distributed system, Linux kernel, Recommendation system",
+				"detail2": "- Developing a virtual labo visiting project, Labo3D",
+				"detail3": "- Study abroad in SF for 2 months",
+				"detail4": "- Developing programming language, UnitX"
+			},
+			"e3" : {
+				"name": "Study abroad, San Francisco, US (2016 Apr - 2017 Mar)",
+				"detail1": "- Studying English",
+				"detail2": "- Contributing OSS community at sfcrimedata.org"
+			}
+		},
+
+		"hobbies" : {
+			"title" : "Hobbies",
+			"h1" : {
+				"title" : "Appreciating movies and musics",
+				"description" : "I love some doramas, PRISON BREAK, HEROES, and Gossip Girl etc, and some music, Krewella, Perfume and Capsule etc."
+			},
+			"h2" : {
+				"title" : "Hiking",
+				"description" : "I climb moutain sometimes, I have ever climbed Fujiyama, Tateyama, Atagoyama, Rokkosan and so on."
+			},
+			"h3" : {
+				"title" : "To play a musical instrument, make musics",
+				"description" : "I play classic Piano and Ukulele. and I sometimes make electonic musics by DTM software."
+			}
 		}
 	}
 }
