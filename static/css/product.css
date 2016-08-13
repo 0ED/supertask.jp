@@ -1,4 +1,5 @@
 /* Delay: 読み込み順序を保つために，すべて読み終わるまで非表示 */
+#product header .bx-caption {visibility: hidden;}
 #product header .bx-pager {visibility: hidden;}
 #product #localnavi .twin_block {visibility: hidden;}
 #product footer {visibility: hidden;}
