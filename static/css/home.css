@@ -240,6 +240,9 @@
 	#home #mainTopic article section {
 		width: 88%;
 	}
+    #home #mainTopic article section#intro h2 {
+        display: none;
+    }
     #home #mainTopic article section#intro p {
         /*word-wrap : break-word;*/
         /*word-break: break-all;*/
