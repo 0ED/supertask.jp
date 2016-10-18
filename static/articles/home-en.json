@@ -12,9 +12,7 @@
 			"contents-3" : " now."
 		},
 		"skill" : {
-			"title" : "My skills",
-			"contents-1" : " In network, I make structured P2P network, In compiler, I make programming language. In web parser, I parse big data on web. In binary, I research binary file and study file system for Security Contest or CTF. In 3d graphics, I try to make future application. In to making music, I make music by DTM software.",
-			"contents-2" : "I can use Python, C++, Java, C, Go, Shell, JavaScript, AppleScript,  PHP, HTML, CSS as programming language. Especially I'm using often Python, C++, Java."
+			"title" : "My skills"
 		},
 
 		"hist" : {
@@ -42,7 +40,7 @@
 			"title" : "Hobbies",
 			"h1" : {
 				"title" : "Appreciating movies and musics",
-				"description" : "I love some doramas, PRISON BREAK, HEROES, and Gossip Girl etc, and some music, Krewella, Perfume and Capsule etc."
+				"description" : "I love some dorama, PRISON BREAK, HEROES, and Gossip Girl etc, and some music, Krewella, Perfume and Capsule etc."
 			},
 			"h2" : {
 				"title" : "Hiking",
