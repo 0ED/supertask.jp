@@ -85,7 +85,6 @@
     font-weight: 600;
 	line-height: 1.4;
 }
-
 #home #mainTopic article section#intro p,
 #home #mainTopic article section#skills p {
 	display: block;
@@ -99,12 +98,10 @@
 
 /* Self-introduction */
 #home #mainTopic article section#intro img#myface {
-	float: right;
-	border-radius: 15px;
-		-webkit-border-radius: 15px;
-		-moz-border-radius: 15px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
 }
-
 #home #mainTopic article section#intro .sns-accounts {
 	text-align: center;
 }
@@ -243,15 +240,21 @@
 	#home #mainTopic article section {
 		width: 88%;
 	}
+    #home #mainTopic article section#intro p {
+        /*word-wrap : break-word;*/
+        /*word-break: break-all;*/
+        text-align: justify;
+    }
 	#home #mainTopic article section#intro p,
 	#home #mainTopic article section#skills p {
 		padding: 0;
 	}
 	#home #mainTopic article section#intro img#myface {
-		margin: 0px 10px;
-		width: 32%;
+		margin: 4% 13%;
+		width: 74%;
 		text-align: center;
 	}
+
 	#home #mainTopic article section#intro .sns-accounts li a i{
 		width: 40px;
 		height: 40px;
@@ -267,6 +270,9 @@
 	#home #mainTopic article section {
 		width: 82%;
 	}
+    #home #mainTopic article section#intro p {
+        word-break: break-all;
+    }
 	#home #mainTopic article section#intro p,
 	#home #mainTopic article section#skills p {
 		padding: 5px 0px 0px 20px;
@@ -275,8 +281,9 @@
 		border-left: 4px solid #BBB;
 	}
 	#home #mainTopic article section#intro img#myface {
-		margin: 25px;
+		margin: 0% 4%;
 		width: 22%;
+        float: right;
 	}
 	#home #mainTopic article section#intro .sns-accounts li a i{
 		width: 70px;
