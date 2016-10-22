@@ -9,13 +9,14 @@
             {% set sites = [
                 ["Labo3D", "http://github.com/supertask/labo3d", "%s/img/%s/%s_labo3d.png"],
                 ["UnitX", "https://github.com/supertask/UnitX", "%s/img/%s/%s_unitx.png"],
+                ["SF Crime Data", "https://github.com/sfbrigade/sf-crime-data", "%s/img/%s/%s_sfcrimedata.png"],
                 ["Memory slot", "http://github.com/supertask/MemorySlot", "%s/img/%s/%s_memoryslot.png"],
                 ["Rash hour", "http://github.com/supertask/RashHour", "%s/img/%s/%s_rashhour.png"],
                 ["Formal web", "http://www.cse.kyoto-su.ac.jp/~g1144704/jikken", "%s/img/%s/%s_formalweb.png"],
-                ["NIRF", "./research", "%s/img/%s/%s_nirf.png"],
                 ["Paladin", "https://github.com/supertask/Paladin", "%s/img/%s/%s_paladin.png"],
                 ["Coming soon", "", "%s/img/%s/%s_coming_soon.png"]
             ]%}
+            {#["NIRF", "./research", "%s/img/%s/%s_nirf.png"]#}
 
             {% macro bxslider(a_title, a_link, an_image, active_state) -%}
                 <li><a href={{a_link}} target='_blank'><img class="{{active_state}}" title="{{a_title}}" src="{{an_image}}" width="100%" /></a></li>
