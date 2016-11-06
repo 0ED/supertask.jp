@@ -63,7 +63,10 @@ class ToyTwig extends BaseTwig {
 class HomeTwig extends BaseTwig {
 	public function getJson() {
 		$a_json = parent::getJson();
-		$a_json = array_merge($a_json,array('is_PC'=>$this->is_PC()) );
+        date_default_timezone_set('America/Sao_Paulo');
+        $uuid_lightfox = strtotime("now");
+		$a_json = array_merge($a_json,array('is_PC'=>$this->is_PC(), 'uuid_lightfox'=>$uuid_lightfox));
+		//$a_json = array_merge($a_json,array('is_PC'=>$this->is_PC()));
 		return $a_json;
 	}
 

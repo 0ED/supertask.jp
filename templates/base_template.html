@@ -39,10 +39,20 @@
 
 <div id = "mainTopic">
 	{% block content %}{% endblock %}
-
+    
 	<!-- JavaScript from here -->
 	<script src="{{static_path}}/js/lib/jquery.min.js" type="text/javascript"></script> <!-- JQUERY -->
 	<script src="{{static_path}}/js/lib/jquery.fittext.js" type="text/javascript"></script> <!-- レスポンシブなテキスト -->
+
+    <!-- 画像を遅延表示させる -->
+    <script src="{{static_path}}/js/lib/jquery.lazyload.min.js" type="text/javascript"></script>
+    <script>
+        $(function() {
+            $("img").lazyload();
+            //$("img").lazyload({ effect: 'fadeIn', effectspeed: 500});
+        });
+    </script>
+
 
 	<!-- 言語選択の設定 -->
 	<script type="text/javascript">
