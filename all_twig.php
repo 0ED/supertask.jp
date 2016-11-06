@@ -57,6 +57,21 @@ class ToyTwig extends BaseTwig {
 	}
 }
 
+/*
+ * HomeTwigクラス．
+ */
+class HomeTwig extends BaseTwig {
+	public function getJson() {
+		$a_json = parent::getJson();
+		$a_json = array_merge($a_json,array('is_PC'=>$this->is_PC()) );
+		return $a_json;
+	}
+
+    public function is_PC() {
+        $ua = $_SERVER['HTTP_USER_AGENT'];
+        return (strpos($ua, 'iPhone')===false) && (strpos($ua, 'iPod')===false) && (strpos($ua, 'Android')===false); //(strpos($ua, 'iPad')===false)
+    }
+}
 
 class BaseTwig {
 	

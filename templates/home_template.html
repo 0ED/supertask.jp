@@ -4,6 +4,7 @@
 {% endblock %}
 
 {% block content %}
+            {% if is_PC %}
 			<header>
 				<div id="aboutme">
 					<h1 data-i18n="about.aboutme.tasuku">Hello, I'm Tasuku.</h1>
@@ -13,6 +14,7 @@
 					<img src="{{static_path}}/img/{{id}}/LightFox.gif" alt="LightFox" id = "LightFox"/>
 				</div>
 			</header>
+            {% endif %}
 
 			<article>
 				<section id="intro">
