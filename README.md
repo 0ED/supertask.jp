@@ -1,5 +1,5 @@
 # supertask.jp
-[supertask.jp](supertask.jp) をまず訪れてください。このWEBサイトは、僕のポートフォリオです。
+[supertask.jp](http://supertask.jp) をまず訪れてください。このWEBサイトは、僕のポートフォリオです。
 
 ![supertask.jp](static/img/tmp/home_screen.png)
 
