@@ -1,7 +1,9 @@
 # supertask.jp
-supertask.jp is my website.
+[supertask.jp](supertask.jp) をまず訪れてください。このWEBサイトは、僕のポートフォリオです。
 
-### memo
-http://i18next-editor.herokuapp.com/
+![supertask.jp](static/img/tmp/home_screen.png)
 
-change update hoge xxxx hogege
+## 環境
+- 言語： JS, PHP, HTML, CSS
+- WEBサーバー：Apache
+
