@@ -1,4 +1,0 @@
-A programming language
-UnitX is a script language for Unit. Especially, Unit handling is better than other languages.
-
-#
