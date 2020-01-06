@@ -1,0 +1,5 @@
+神経衰弱を拡張したゲームMemorySlot
+MemorySlot is a board game that extended Japanese Shinkensuijaku.
+
+#boardgame #slotgame #自作ゲーム #神経衰弱 #スロットゲーム
+https://github.com/supertask/MemorySlot

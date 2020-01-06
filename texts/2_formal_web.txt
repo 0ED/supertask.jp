@@ -1,0 +1,6 @@
+初めて作ったWebサイト 2012年
+A website I made for the first time.
+
+デザイン，コーディングなどすべて自分でやっています．
+#自作サイト #html #css #js
+http://supertask.sakura.ne.jp/edu/jikken/
