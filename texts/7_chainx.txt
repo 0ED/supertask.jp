@@ -1,0 +1,15 @@
+Conflict-free Multi-user Collaborative Editing System for 3D Models
+ロックフリー3D協調編集システム
+
+Research achievements:
+Conflict-free Multi-user Collaborative Editing System for 3D Models:
+    https://link.springer.com/chapter/10.1007/978-3-319-93659-8_24
+Towards a Collaborative Editing System on 3D Space:
+    https://link.springer.com/chapter/10.1007/978-3-319-69811-3_58
+#CollaborativeEditing #Unity #ConflictFree #MultiUser
+
+
+Tasuku Takahashi, Kengo Imae, Naohiro Hayashibara: Conflict-free Multi-user Collaborative Editing System for 3D Models. CISIS 2018: 269-279
+Tasuku Takahashi, Kengo Imae, Naohiro Hayashibara: Towards a Collaborative Editing System on 3D Space. BWCCA 2017: 648-657
+
+https://dblp.org/pers/hd/t/Takahashi:Tasuku
