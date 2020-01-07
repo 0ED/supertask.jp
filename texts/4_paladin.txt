@@ -1,3 +1,5 @@
-A very simple programming language, Paladin
+Paladin
+A very simple programming language. 2014
 
-http://supertask.sakura.ne.jp/edu/paladin/
+http://supertask.github.io/edu/paladin/
+#OwnScriptingLanguage #SimpleImplementation

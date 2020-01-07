@@ -1,6 +1,7 @@
+FormalWeb
+A website I made for the first time. 2012
 初めて作ったWebサイト 2012年
-A website I made for the first time.
 
-デザイン，コーディングなどすべて自分でやっています．
+デザイン，コーディングなどスクラッチ実装です．
 #自作サイト #html #css #js
-http://supertask.sakura.ne.jp/edu/jikken/
+http://supertask.github.io/edu/jikken/

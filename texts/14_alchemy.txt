@@ -1,0 +1,9 @@
+Alchemy
+A Unity implementation of Alchemy by Keiichi Matsuda, with DIY headset.
+
+Github
+https://github.com/supertask/Alchemy
+
+https://www.youtube.com/watch?v=2Y4VEec8DbA
+
+#Unity #VFX #ProjectNorthStar

@@ -1,0 +1,7 @@
+The future selfie
+Implemented with RealSense D435i and HDRP in Unity.
+A realtime mesh generation is referred to Keijiro.
+
+https://www.youtube.com/watch?v=XCj0zJmVyhA
+
+#RealSense #Unity #VFX #ProjectNorthStar
