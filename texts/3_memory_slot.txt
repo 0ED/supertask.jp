@@ -1,6 +1,7 @@
 MemorySlot
 A board game that extended Japanese Shinkensuijaku. 2013.
-Github link: https://github.com/supertask/MemorySlot
+
+[Github](https://github.com/supertask/MemorySlot)
 
 
-#boardgame #slotgame #自作ゲーム #神経衰弱の拡張 #スロットゲーム
+#boardgame #slotgame #java

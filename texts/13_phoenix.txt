@@ -1,9 +1,9 @@
-Phoenix
+# Phoenix
+
 Phoenix flying inspired by Fantastic Beasts. 2019
 The first implementation of 6DoF headtracking & spatial mapping on Project North Star.
 
-Github
-https://github.com/supertask/SpatialMappingNorthStar
+[Github](https://github.com/supertask/SpatialMappingNorthStar)
 
 https://www.youtube.com/watch?v=cUEtF2C8fcI
 

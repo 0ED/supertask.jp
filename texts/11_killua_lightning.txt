@@ -1,10 +1,10 @@
-Killua lightning
+# Killua lightning
+
 Killua lightning with Nen on my homemade AR headset.
 
-Github
-https://github.com/supertask/Nen2
+[Github](https://github.com/supertask/Nen2)
 
-YouTube
+
 https://www.youtube.com/watch?v=JluY2r4gJjQ
 
 #MadeWithUnity #LeapMotion #OwnARheadset

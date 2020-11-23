@@ -1,10 +1,7 @@
-UnitX
+# UnitX
+
 A scripting language for daily life specialized in UNIT arithmetic
-単位演算に特化した生活向けの計算機言語UnitX
 
-構文自体もなるべくシンプルにし，繰り返し文，関数，単位演算などの機能を入れています．
+[Demo](https://unitxsimulator.herokuapp.com/) / [Github](https://github.com/supertask/UnitX)
 
-Demo: https://unitxsimulator.herokuapp.com/
-Github: https://github.com/supertask/UnitX
-
-#OwnScriptingLanguage #自作言語
+#ProgrammingLanguage #selfmade #antlr

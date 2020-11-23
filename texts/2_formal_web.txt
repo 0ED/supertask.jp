@@ -1,7 +1,7 @@
-FormalWeb
-A website I made for the first time. 2012
-初めて作ったWebサイト 2012年
+# FormalWeb
 
-デザイン，コーディングなどスクラッチ実装です．
-#自作サイト #html #css #js
-http://supertask.github.io/edu/jikken/
+A website I made for the first time. 2012
+
+[Website](http://supertask.github.io/edu/jikken/)
+
+#html #css #js

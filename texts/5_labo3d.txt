@@ -1,8 +1,7 @@
-Labo3D
-A virtual laboratory visiting system in 3D
-仮想研究室訪問システム
+# Labo3D
+A virtual laboratory visiting system in 3D, 2015
+
+[Github](https://github.com/supertask/Labo3D)
+
 
 #unity #webgl #3dscanning
-
-Github link
-https://github.com/supertask/Labo3D

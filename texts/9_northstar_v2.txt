@@ -1,0 +1,15 @@
+# Project North Star V2
+
+
+AR headset implementation by own in 2018. Here is the [blog](https://medium.com/@pythor/info-to-make-project-north-star-359291368e1f).
+
+## Reference
+
+- [Project North Star](https://leapmotion.github.io/ProjectNorthStar/mechanical.html)
+- [Exiii's North Star v2](https://exiii.jp/2018/12/07/project-north-star-simplified-v2-en/)
+- [1-10's North Star v1](https://github.com/1-10/ProjectNorthStar_1-10_custom)
+
+
+https://twitter.com/supertask_jp/status/1082677064161873920
+
+#ProjectNorthStar #DIY #3dprinting

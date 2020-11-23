@@ -1,5 +1,7 @@
-Paladin
+# Paladin
+
 A very simple programming language. 2014
 
-http://supertask.github.io/edu/paladin/
-#OwnScriptingLanguage #SimpleImplementation
+[Website](http://supertask.github.io/edu/paladin/) / [Github](https://github.com/supertask/Paladin)
+
+#ProgrammingLanguage #selfmade #clang

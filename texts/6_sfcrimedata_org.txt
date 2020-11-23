@@ -1,9 +1,8 @@
-SF Crime Data
+# SF Crime Data
+
 A quick searcher of incident reports in San Francisco.
 Contributed at "Code For San Francisco" for a year.
 
-Website: http://sfcrimedata.org
-Github: https://github.com/supertask/sf-crime-data
-Community: https://codeforsanfrancisco.org
+[Website](http://sfcrimedata.org) / [Github](https://github.com/supertask/sf-crime-data) / [Community](https://codeforsanfrancisco.org)
 
-#opensource #sanfrancisco
+#OSS #CodeForSanFramcisco #CodeForAmerica

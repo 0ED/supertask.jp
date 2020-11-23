@@ -1,7 +1,8 @@
-Neferpitou's Terpsichora
+# Neferpitou's Terpsichora
+
 App a user can manipulate a soldier by fingers.
 
-Github: https://github.com/supertask/Nen2
+[Github](https://github.com/supertask/Nen2)
 
 https://www.youtube.com/watch?v=vNMSoXf-SYc
 

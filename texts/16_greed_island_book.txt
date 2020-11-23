@@ -1,8 +1,7 @@
-Greed island's book
+# Greed island's book
 Implementation of Greed Island book at Hunter x Hunter
 
-Github
-https://github.com/supertask/GreedIslandBook
+[Github](https://github.com/supertask/GreedIslandBook)
 
 https://www.youtube.com/watch?v=jOQN5loi6VE
 
